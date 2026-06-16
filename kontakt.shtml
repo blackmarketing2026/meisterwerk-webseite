@@ -5,12 +5,209 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>Kontakt – Meisterwerk Ingolstadt</title>
-  <meta name="description" content="Kontaktieren Sie Meisterwerk Ingolstadt: Kostenlose Anfrage für Entrümpelung, Haushaltsauflösung und Umzug. Wir antworten innerhalb von 24 Stunden.">
+  <meta name="description" content="Kontaktieren Sie Meisterwerk Ingolstadt: Kostenlose Anfrage für Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice. Wir antworten innerhalb von 24 Stunden.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/kontakt.shtml">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    .kontakt-hero {
+      background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+      color: #fff;
+      padding: 80px 20px 60px;
+      text-align: center;
+    }
+
+    .kontakt-hero h1 {
+      font-size: clamp(1.8rem, 4vw, 2.8rem);
+      margin-bottom: 12px;
+    }
+
+    .kontakt-hero p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 520px;
+      margin: 0 auto;
+    }
+
+    .kontakt-section {
+      padding: 60px 20px 80px;
+      background: #f8f8f8;
+    }
+
+    .kontakt-wrapper {
+      max-width: 720px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 4px 32px rgba(0,0,0,0.08);
+      padding: 48px 48px;
+    }
+
+    /* Radio-Auswahl */
+    .leistung-auswahl {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-bottom: 32px;
+    }
+
+    .leistung-auswahl label {
+      flex: 1;
+      min-width: 140px;
+      cursor: pointer;
+    }
+
+    .leistung-auswahl input[type="radio"] {
+      display: none;
+    }
+
+    .leistung-card {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      padding: 18px 12px;
+      border: 2px solid #e0e0e0;
+      border-radius: 12px;
+      text-align: center;
+      font-weight: 600;
+      font-size: 0.9rem;
+      color: #333;
+      transition: border-color 0.2s, background 0.2s, color 0.2s;
+    }
+
+    .leistung-card .icon {
+      font-size: 1.8rem;
+    }
+
+    .leistung-auswahl input[type="radio"]:checked + .leistung-card {
+      border-color: #e85d04;
+      background: #fff5ef;
+      color: #e85d04;
+    }
+
+    .leistung-auswahl label:hover .leistung-card {
+      border-color: #e85d04;
+    }
+
+    /* Formularfelder */
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      font-weight: 600;
+      font-size: 0.88rem;
+      margin-bottom: 6px;
+      color: #444;
+    }
+
+    .form-group input,
+    .form-group textarea {
+      width: 100%;
+      padding: 13px 16px;
+      border: 1.5px solid #ddd;
+      border-radius: 8px;
+      font-size: 1rem;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+      font-family: inherit;
+      color: #222;
+    }
+
+    .form-group input:focus,
+    .form-group textarea:focus {
+      outline: none;
+      border-color: #e85d04;
+    }
+
+    .form-group textarea {
+      resize: vertical;
+      min-height: 130px;
+    }
+
+    .form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-divider {
+      border: none;
+      border-top: 1.5px solid #f0f0f0;
+      margin: 28px 0;
+    }
+
+    .form-section-label {
+      font-size: 0.8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #999;
+      margin-bottom: 16px;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #e85d04;
+      color: #fff;
+      border: none;
+      padding: 16px;
+      border-radius: 10px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s;
+      margin-top: 8px;
+    }
+
+    .submit-btn:hover  { background: #c94e02; }
+    .submit-btn:disabled { background: #aaa; cursor: not-allowed; }
+
+    .form-hint {
+      font-size: 0.82rem;
+      color: #999;
+      text-align: center;
+      margin-top: 14px;
+    }
+
+    #kontakt-message {
+      min-height: 20px;
+      margin-top: 16px;
+      font-size: 0.92rem;
+      text-align: center;
+    }
+
+    #kontakt-message.success { color: #2e7d32; }
+    #kontakt-message.error   { color: #c62828; }
+
+    .success-box {
+      text-align: center;
+      padding: 40px 20px;
+    }
+
+    .success-box .check {
+      font-size: 3rem;
+      margin-bottom: 16px;
+    }
+
+    .success-box h2 {
+      margin-bottom: 8px;
+    }
+
+    .success-box p {
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      .kontakt-wrapper { padding: 32px 20px; }
+      .form-row { grid-template-columns: 1fr; }
+    }
+  </style>
 </head>
 
 <body>
@@ -19,48 +216,85 @@
 
   <main>
 
-    <section class="page-hero">
+    <section class="kontakt-hero">
       <div class="container">
         <h1>Kontakt & Anfrage</h1>
-        <p>Wir freuen uns auf Ihre Anfrage – kostenlos, unverbindlich und schnell.</p>
+        <p>Kostenlose Anfrage stellen – wir melden uns innerhalb von 24 Stunden bei Ihnen.</p>
       </div>
     </section>
 
-    <section class="content-section">
-      <div class="container">
-        <div class="kontakt-grid">
+    <section class="kontakt-section">
+      <div class="kontakt-wrapper">
 
-          <div class="kontakt-info-block">
-            <h2>So erreichen Sie uns</h2>
-            <div class="kontakt-info-item">
-              <div class="k-icon">📞</div>
-              <div>
-                <strong>Telefon</strong>
-                <p><a href="tel:+49841000000">0841 / 000 000</a></p>
-                <p>Mo–Fr 8–18 Uhr, Sa 9–14 Uhr</p>
-              </div>
+        <form id="kontakt-form" novalidate>
+
+          <p class="form-section-label">Worum geht es?</p>
+
+          <div class="leistung-auswahl">
+            <label>
+              <input type="radio" name="leistung" value="umzug" required>
+              <span class="leistung-card">
+                <span class="icon">🚚</span>
+                Umzüge
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="leistung" value="entruempelung">
+              <span class="leistung-card">
+                <span class="icon">🏠</span>
+                Entrümpelung
+              </span>
+            </label>
+            <label>
+              <input type="radio" name="leistung" value="gartenservice">
+              <span class="leistung-card">
+                <span class="icon">🌿</span>
+                Gartenservice
+              </span>
+            </label>
+          </div>
+
+          <hr class="form-divider">
+
+          <p class="form-section-label">Ihre Nachricht</p>
+
+          <div class="form-group">
+            <label for="betreff">Betreff</label>
+            <input type="text" id="betreff" name="betreff" placeholder="z. B. Umzug Ende Juli, 3-Zimmer-Wohnung" required>
+          </div>
+
+          <div class="form-group">
+            <label for="nachricht">Nachricht</label>
+            <textarea id="nachricht" name="nachricht" placeholder="Beschreiben Sie kurz Ihr Anliegen – wann, wo, was?"></textarea>
+          </div>
+
+          <hr class="form-divider">
+
+          <p class="form-section-label">Ihre Kontaktdaten</p>
+
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="Vor- und Nachname" required autocomplete="name">
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="email">E-Mail-Adresse</label>
+              <input type="email" id="email" name="email" placeholder="ihre@email.de" required autocomplete="email">
             </div>
-            <div class="kontakt-info-item">
-              <div class="k-icon">✉️</div>
-              <div>
-                <strong>E-Mail</strong>
-                <p><a href="mailto:info@meisterwerk-ingolstadt.de">info@meisterwerk-ingolstadt.de</a></p>
-              </div>
-            </div>
-            <div class="kontakt-info-item">
-              <div class="k-icon">📍</div>
-              <div>
-                <strong>Standort</strong>
-                <p>Ingolstadt und Region<br>(Eichstätt, Neuburg, Pfaffenhofen)</p>
-              </div>
+            <div class="form-group">
+              <label for="telefon">Telefonnummer</label>
+              <input type="tel" id="telefon" name="telefon" placeholder="0151 000 000" autocomplete="tel">
             </div>
           </div>
 
-          <div>
-            <!--#include virtual="/includes/lead-form.shtml" -->
-          </div>
+          <button type="submit" class="submit-btn" id="submit-btn">Anfrage kostenlos absenden</button>
 
-        </div>
+          <p class="form-hint">Ihre Daten werden vertraulich behandelt und nicht weitergegeben.</p>
+          <p id="kontakt-message" role="status" aria-live="polite"></p>
+
+        </form>
+
       </div>
     </section>
 
@@ -69,6 +303,75 @@
   <!--#include virtual="/includes/footer.shtml" -->
 
   <script src="/assets/js/main.js"></script>
-  <script src="/assets/js/form.js"></script>
+  <script>
+    document.getElementById('kontakt-form').addEventListener('submit', async function (e) {
+      e.preventDefault();
+
+      const form = e.target;
+      const btn  = document.getElementById('submit-btn');
+      const msg  = document.getElementById('kontakt-message');
+
+      msg.textContent = '';
+      msg.className = '';
+
+      const leistung = form.querySelector('input[name="leistung"]:checked');
+      if (!leistung) {
+        msg.textContent = 'Bitte wählen Sie eine Leistung aus.';
+        msg.className = 'error';
+        return;
+      }
+
+      const name    = form.name.value.trim();
+      const email   = form.email.value.trim();
+      const telefon = form.telefon.value.trim();
+      const betreff = form.betreff.value.trim();
+
+      if (!name || !email || !betreff) {
+        msg.textContent = 'Bitte füllen Sie alle Pflichtfelder aus.';
+        msg.className = 'error';
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet…';
+
+      try {
+        const res = await fetch('/api/send-contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            leistung:  leistung.value,
+            betreff:   betreff,
+            nachricht: form.nachricht.value.trim(),
+            name:      name,
+            email:     email,
+            telefon:   telefon,
+          }),
+        });
+
+        if (res.ok) {
+          form.innerHTML = `
+            <div class="success-box">
+              <div class="check">✅</div>
+              <h2>Vielen Dank, ${name.split(' ')[0]}!</h2>
+              <p>Wir haben Ihre Anfrage erhalten und melden uns innerhalb von 24 Stunden bei Ihnen.</p>
+            </div>
+          `;
+        } else {
+          const data = await res.json();
+          msg.textContent = data.error || 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.';
+          msg.className = 'error';
+          btn.disabled = false;
+          btn.textContent = 'Anfrage kostenlos absenden';
+        }
+      } catch {
+        msg.textContent = 'Keine Verbindung möglich. Bitte rufen Sie uns an.';
+        msg.className = 'error';
+        btn.disabled = false;
+        btn.textContent = 'Anfrage kostenlos absenden';
+      }
+    });
+  </script>
+
 </body>
 </html>
