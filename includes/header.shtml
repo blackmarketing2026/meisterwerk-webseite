@@ -3,7 +3,7 @@
   <div class="header-topbar">
     <div class="container topbar-inner">
       <span class="topbar-info">📍 Ingolstadt & Region &nbsp;·&nbsp; Schnelle Termine &nbsp;·&nbsp; Kostenlose Besichtigung</span>
-      <a href="tel:+49841000000" class="topbar-phone">📞 0841 / 000 000</a>
+      <a href="tel:+4915165184976" class="topbar-phone">📞 0151 651 849 76</a>
     </div>
   </div>
 
@@ -24,7 +24,7 @@
       </nav>
 
       <div class="header-actions">
-        <a href="tel:+49841000000" class="header-cta">Jetzt anrufen</a>
+        <a href="tel:+4915165184976" class="header-cta">Jetzt anrufen</a>
         <button class="nav-toggle" aria-label="Navigation öffnen" onclick="this.classList.toggle('open'); document.querySelector('.main-nav').classList.toggle('open')">
           <span></span>
           <span></span>
