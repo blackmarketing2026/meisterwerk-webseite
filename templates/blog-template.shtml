@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEITEN-SPEZIFISCH ANPASSEN -->
+  <title>Blogartikel Titel | Meisterwerk Ingolstadt</title>
+  <meta name="description" content="Kurze Meta Description für den Blogartikel (max. 160 Zeichen).">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/blog/artikel-slug.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+  <link rel="stylesheet" href="/assets/css/blog.css">
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main class="blog-article">
+
+    <!-- BLOG HERO -->
+    <header class="blog-hero">
+      <div class="container">
+        <p class="blog-category">Ratgeber</p>
+        <h1>Blogartikel Überschrift (H1 – nur einmal verwenden)</h1>
+        <p class="blog-meta">Veröffentlicht am TT.MM.JJJJ · 5 Min. Lesezeit</p>
+      </div>
+    </header>
+
+    <!-- BLOG INHALT -->
+    <section class="blog-content">
+      <div class="container">
+
+        <p>Einleitungstext. Kurz erklären, worum es geht und warum der Leser weiterlesen sollte.</p>
+
+        <h2>Erster Abschnitt</h2>
+        <p>Textinhalt. Interne Links zu passenden Leistungsseiten einbauen.</p>
+
+        <h2>Zweiter Abschnitt</h2>
+        <p>Textinhalt.</p>
+
+        <!-- CTA IN DER MITTE -->
+        <!--#include virtual="/includes/cta-box.shtml" -->
+
+        <h2>Dritter Abschnitt</h2>
+        <p>Textinhalt.</p>
+
+        <h2>Häufige Fragen</h2>
+        <div class="faq-list">
+          <details>
+            <summary>Frage 1?</summary>
+            <p>Antwort 1.</p>
+          </details>
+          <details>
+            <summary>Frage 2?</summary>
+            <p>Antwort 2.</p>
+          </details>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ANFRAGEFORMULAR -->
+    <!--#include virtual="/includes/lead-form.shtml" -->
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

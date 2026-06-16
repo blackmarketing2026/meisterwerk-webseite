@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+
+Disallow: /templates/
+Disallow: /content/
+
+Sitemap: https://www.meisterwerk-ingolstadt.de/sitemap.xml

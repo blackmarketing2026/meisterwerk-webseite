@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Haushaltsauflösung Ingolstadt – Meisterwerk | Diskret & Zuverlässig</title>
+  <meta name="description" content="Haushaltsauflösung in Ingolstadt: Komplett-Service, Festpreis, diskrete Abwicklung. Meisterwerk übernimmt alles – jetzt kostenlos anfragen!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/haushaltsaufloesung.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Haushaltsauflösung in Ingolstadt</h1>
+        <p>Komplette Auflösung von Haushalten – diskret, zuverlässig und zum Festpreis. Wir kümmern uns um alles.</p>
+        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/trust-section.shtml" -->
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Kompletter Haushaltsauflösungs-Service</h2>
+        <p>Eine Haushaltsauflösung ist oft mit viel Aufwand und emotionalem Stress verbunden – ob nach einem Umzug ins Pflegeheim, nach einem Erbfall oder beim Hausverkauf. Meisterwerk nimmt Ihnen diese Last ab.</p>
+        <ul>
+          <li>Komplette Auflösung von Wohnungen und Häusern</li>
+          <li>Demontage und Abtransport von Möbeln</li>
+          <li>Sortierung: Was kann gespendet, was muss entsorgt werden?</li>
+          <li>Fachgerechte Entsorgung aller Gegenstände</li>
+          <li>Besenreine Übergabe der Immobilie</li>
+          <li>Diskrete und respektvolle Vorgehensweise</li>
+        </ul>
+
+        <h2>Für welche Situationen eignet sich unser Service?</h2>
+        <ul>
+          <li>Auflösung nach Todesfall oder Erbschaft</li>
+          <li>Umzug ins Pflegeheim oder zu Angehörigen</li>
+          <li>Vorbereitung eines Hausverkaufs</li>
+          <li>Trennung oder Scheidung</li>
+          <li>Auflösung einer Mietwohnung nach Mietende</li>
+        </ul>
+
+        <h2>Wertanrechnung spart Kosten</h2>
+        <p>Gut erhaltene Möbel, Elektrogeräte oder Antiquitäten können den Preis für Ihre Haushaltsauflösung deutlich senken. Wir prüfen kostenlos, welche Gegenstände einen Restwert haben, und rechnen diesen direkt an.</p>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/cta-box.shtml" -->
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Häufige Fragen zur Haushaltsauflösung</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Was kostet eine Haushaltsauflösung?</summary>
+            <p>Die Kosten hängen vom Umfang und der Menge ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreisangebot.</p>
+          </details>
+          <details>
+            <summary>Wie lange dauert eine Haushaltsauflösung?</summary>
+            <p>Eine durchschnittliche Wohnung ist an einem Tag fertig. Größere Objekte können 2–3 Tage in Anspruch nehmen.</p>
+          </details>
+          <details>
+            <summary>Müssen wir die Wohnung vorher räumen?</summary>
+            <p>Nein, Sie müssen gar nichts vorbereiten. Wir nehmen alles so, wie es ist.</p>
+          </details>
+          <details>
+            <summary>Können persönliche Dokumente gesichert werden?</summary>
+            <p>Selbstverständlich. Wir sichern alle persönlichen Dokumente und Wertgegenstände und übergeben diese an Sie.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/lead-form.shtml" -->
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

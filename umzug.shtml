@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Umzug Ingolstadt – Meisterwerk | Professioneller Umzugsservice</title>
+  <meta name="description" content="Umzug in Ingolstadt: Privat und gewerblich, sicher und pünktlich. Meisterwerk übernimmt Ihren Umzug komplett. Jetzt kostenlos anfragen!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/umzug.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Umzug in Ingolstadt</h1>
+        <p>Privat oder gewerblich – wir transportieren Ihr Hab und Gut sicher, pünktlich und zum fairen Festpreis ans Ziel.</p>
+        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/trust-section.shtml" -->
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Unser Umzugsservice im Überblick</h2>
+        <p>Ob Sie eine kleine Wohnung oder ein ganzes Haus umziehen – Meisterwerk begleitet Sie von A bis Z. Wir kümmern uns um den gesamten Ablauf, damit Sie stressfrei in Ihr neues Zuhause einziehen können.</p>
+        <ul>
+          <li>Privatumzüge und Firmenumzüge</li>
+          <li>Möbeltransport sicher und versichert</li>
+          <li>Demontage und Montage von Möbeln</li>
+          <li>Professionelles Einpacken mit Umzugskartons</li>
+          <li>Einlagerung bei Bedarf</li>
+          <li>Entsorgung von nicht mehr benötigten Gegenständen</li>
+        </ul>
+
+        <h2>Warum Meisterwerk für Ihren Umzug?</h2>
+        <ul>
+          <li><strong>Festpreisgarantie:</strong> Sie wissen vorher, was der Umzug kostet.</li>
+          <li><strong>Erfahrenes Team:</strong> Unsere Mitarbeiter gehen sorgsam mit Ihren Möbeln um.</li>
+          <li><strong>Vollversicherung:</strong> Ihr Eigentum ist während des Transports versichert.</li>
+          <li><strong>Flexibel:</strong> Auch kurzfristige Termine sind möglich.</li>
+        </ul>
+
+        <h2>Auch Firmenumzüge</h2>
+        <p>Wir ziehen nicht nur Privathaushalte um, sondern unterstützen auch Unternehmen bei Büroumzügen und Betriebsverlagerungen – schnell und mit minimalem Betriebsausfall.</p>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/cta-box.shtml" -->
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Häufige Fragen zum Umzug</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Wie weit im Voraus muss ich buchen?</summary>
+            <p>Wir empfehlen, mindestens 2–3 Wochen im Voraus zu buchen. Kurzfristige Termine sind jedoch auf Anfrage möglich.</p>
+          </details>
+          <details>
+            <summary>Stellt ihr auch Umzugskartons?</summary>
+            <p>Ja, auf Wunsch stellen wir Kartons und Verpackungsmaterial bereit. Sprechen Sie uns einfach an.</p>
+          </details>
+          <details>
+            <summary>Sind meine Möbel versichert?</summary>
+            <p>Ja, alle Gegenstände sind während des Transports durch unsere Haftpflichtversicherung abgedeckt.</p>
+          </details>
+          <details>
+            <summary>Zieht ihr auch in andere Städte?</summary>
+            <p>Ja, wir sind nicht nur in Ingolstadt aktiv. Sprechen Sie uns bei Fernumzügen bitte direkt an.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/lead-form.shtml" -->
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

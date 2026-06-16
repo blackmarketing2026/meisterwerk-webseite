@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Kontakt – Meisterwerk Ingolstadt</title>
+  <meta name="description" content="Kontaktieren Sie Meisterwerk Ingolstadt: Kostenlose Anfrage für Entrümpelung, Haushaltsauflösung und Umzug. Wir antworten innerhalb von 24 Stunden.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/kontakt.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Kontakt & Anfrage</h1>
+        <p>Wir freuen uns auf Ihre Anfrage – kostenlos, unverbindlich und schnell.</p>
+      </div>
+    </section>
+
+    <section class="content-section">
+      <div class="container">
+        <div class="kontakt-grid">
+
+          <div class="kontakt-info-block">
+            <h2>So erreichen Sie uns</h2>
+            <div class="kontakt-info-item">
+              <div class="k-icon">📞</div>
+              <div>
+                <strong>Telefon</strong>
+                <p><a href="tel:+49841000000">0841 / 000 000</a></p>
+                <p>Mo–Fr 8–18 Uhr, Sa 9–14 Uhr</p>
+              </div>
+            </div>
+            <div class="kontakt-info-item">
+              <div class="k-icon">✉️</div>
+              <div>
+                <strong>E-Mail</strong>
+                <p><a href="mailto:info@meisterwerk-ingolstadt.de">info@meisterwerk-ingolstadt.de</a></p>
+              </div>
+            </div>
+            <div class="kontakt-info-item">
+              <div class="k-icon">📍</div>
+              <div>
+                <strong>Standort</strong>
+                <p>Ingolstadt und Region<br>(Eichstätt, Neuburg, Pfaffenhofen)</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!--#include virtual="/includes/lead-form.shtml" -->
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/form.js"></script>
+</body>
+</html>

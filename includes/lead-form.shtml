@@ -1,0 +1,26 @@
+<section class="lead-form-section">
+  <div class="container">
+    <div class="section-title">
+      <h2>Kostenlose Anfrage stellen</h2>
+      <p>Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden.</p>
+    </div>
+    <form class="lead-form" action="/kontakt.shtml" method="post" id="lead-form">
+      <input type="text"  name="vorname"  placeholder="Vorname"       required>
+      <input type="text"  name="nachname" placeholder="Nachname"      required>
+      <input type="tel"   name="telefon"  placeholder="Telefonnummer" class="full" required>
+      <input type="email" name="email"    placeholder="E-Mail-Adresse" class="full" required>
+      <select name="leistung" class="full" required>
+        <option value="" disabled selected>Welche Leistung benötigen Sie?</option>
+        <option value="entruempelung">Entrümpelung</option>
+        <option value="haushaltsaufloesung">Haushaltsauflösung</option>
+        <option value="umzug">Umzug</option>
+        <option value="sonstiges">Sonstiges</option>
+      </select>
+      <textarea name="nachricht" placeholder="Kurze Beschreibung (optional)" class="full"></textarea>
+      <div class="full">
+        <button type="submit" class="btn-primary" style="width:100%">Jetzt kostenlos anfragen</button>
+      </div>
+      <p class="form-hint full">Ihre Daten werden vertraulich behandelt und nicht weitergegeben.</p>
+    </form>
+  </div>
+</section>

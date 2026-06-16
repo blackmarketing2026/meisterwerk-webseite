@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meisterwerk Ingolstadt – Haushaltsauflösung, Entrümpelung, Umzug & Garten</title>
+  <meta name="description" content="Meisterwerk Ingolstadt: Professionelle Haushaltsauflösung, Entrümpelung, Umzüge und Gartenservice. Festpreis, schnelle Termine, kostenlose Anfrage!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    /* ── LANDINGPAGE-SPEZIFISCH ── */
+    :root {
+      --orange: #f26b00;
+      --green:  #1a9e1a;
+      --blue:   #1a35b5;
+    }
+
+    /* Hero */
+    .lp-hero {
+      background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
+      color: #fff;
+      padding: 80px 0 70px;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .lp-hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: url('/assets/img/hero/haushaltsaufloesung-hero.webp') center/cover no-repeat;
+      opacity: .18;
+    }
+    .lp-hero .container { position: relative; }
+
+    .lp-hero .badge {
+      display: inline-block;
+      background: var(--orange);
+      color: #fff;
+      font-size: .8rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: .1em;
+      padding: 5px 16px;
+      border-radius: 20px;
+      margin-bottom: 20px;
+    }
+
+    .lp-hero h1 {
+      font-size: clamp(2rem, 4.5vw, 3.2rem);
+      font-weight: 800;
+      line-height: 1.15;
+      margin-bottom: 20px;
+    }
+    .lp-hero h1 .hl-orange { color: var(--orange); }
+    .lp-hero h1 .hl-green  { color: #4dd44d; }
+
+    .lp-hero .lead {
+      font-size: 1.15rem;
+      max-width: 640px;
+      margin: 0 auto 36px;
+      opacity: .88;
+      line-height: 1.7;
+    }
+
+    .lp-hero .hero-btns {
+      display: flex;
+      gap: 16px;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-bottom: 48px;
+    }
+
+    .lp-hero .trust-bar {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 28px;
+      font-size: .9rem;
+      opacity: .7;
+    }
+    .lp-hero .trust-bar span::before { content: '✓ '; color: #4dd44d; }
+
+    /* ── SERVICE KARTEN MIT BEREICHSFARBEN ── */
+    .services-section {
+      padding: 80px 0;
+      background: #f7f7f7;
+    }
+
+    .service-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 3px 16px rgba(0,0,0,.09);
+      text-decoration: none;
+      color: #333;
+      display: flex;
+      flex-direction: column;
+      transition: transform .25s, box-shadow .25s;
+    }
+    .service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 32px rgba(0,0,0,.15);
+    }
+
+    .service-card-top {
+      padding: 32px 28px 24px;
+      color: #fff;
+      position: relative;
+    }
+    .service-card-top .s-icon {
+      font-size: 2.6rem;
+      margin-bottom: 14px;
+      display: block;
+    }
+    .service-card-top h3 {
+      font-size: 1.25rem;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .service-card-top p {
+      font-size: .92rem;
+      opacity: .9;
+      line-height: 1.5;
+    }
+
+    .sc-orange .service-card-top { background: var(--orange); }
+    .sc-blue   .service-card-top { background: var(--blue); }
+    .sc-green  .service-card-top { background: var(--green); }
+    .sc-dark   .service-card-top { background: #2a2a2a; }
+
+    .service-card-body {
+      padding: 22px 28px 28px;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+    .service-card-body ul {
+      list-style: none;
+      padding: 0;
+      margin-bottom: 22px;
+      flex: 1;
+    }
+    .service-card-body ul li {
+      padding: 6px 0;
+      font-size: .92rem;
+      color: #555;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+      border-bottom: 1px solid #f0f0f0;
+    }
+    .service-card-body ul li:last-child { border: none; }
+    .service-card-body ul li::before {
+      content: '✓';
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .sc-orange .service-card-body ul li::before { color: var(--orange); }
+    .sc-blue   .service-card-body ul li::before { color: var(--blue); }
+    .sc-green  .service-card-body ul li::before { color: var(--green); }
+    .sc-dark   .service-card-body ul li::before { color: #666; }
+
+    .service-card-body .card-cta {
+      display: block;
+      text-align: center;
+      padding: 12px;
+      border-radius: 6px;
+      font-weight: 700;
+      font-size: .95rem;
+      text-decoration: none;
+      color: #fff;
+      transition: opacity .2s;
+    }
+    .service-card-body .card-cta:hover { opacity: .85; }
+
+    .sc-orange .card-cta { background: var(--orange); }
+    .sc-blue   .card-cta { background: var(--blue); }
+    .sc-green  .card-cta { background: var(--green); }
+    .sc-dark   .card-cta { background: #2a2a2a; }
+
+    /* ── WARUM MEISTERWERK ── */
+    .warum-lp {
+      background: #fff;
+      padding: 80px 0;
+    }
+
+    .warum-lp .facts-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      border: 1px solid #e8e8e8;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 48px;
+    }
+
+    .fact-item {
+      padding: 32px 24px;
+      text-align: center;
+      border-right: 1px solid #e8e8e8;
+    }
+    .fact-item:last-child { border-right: none; }
+
+    .fact-number {
+      font-size: 2.8rem;
+      font-weight: 800;
+      color: var(--orange);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .fact-label { color: #555; font-size: .92rem; line-height: 1.4; }
+
+    .warum-lp .vorteile {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 28px;
+      margin-top: 48px;
+    }
+
+    .vorteil {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+    }
+    .vorteil .v-icon {
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: var(--orange);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      flex-shrink: 0;
+    }
+    .vorteil h4 { color: #1a1a1a; font-size: 1rem; margin-bottom: 4px; }
+    .vorteil p  { color: #666; font-size: .9rem; line-height: 1.5; }
+
+    /* ── ABLAUF ── */
+    .ablauf-lp {
+      background: linear-gradient(135deg, #1a35b5 0%, #0d1f70 100%);
+      color: #fff;
+      padding: 80px 0;
+    }
+    .ablauf-lp .section-title h2 { color: #fff; }
+    .ablauf-lp .section-title p  { color: rgba(255,255,255,.72); }
+
+    .ablauf-lp .steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 0;
+      margin-top: 48px;
+      position: relative;
+    }
+
+    .step {
+      text-align: center;
+      padding: 0 20px;
+      position: relative;
+    }
+    .step:not(:last-child)::after {
+      content: '→';
+      position: absolute;
+      right: -10px;
+      top: 28px;
+      font-size: 1.4rem;
+      color: var(--orange);
+    }
+
+    .step-num {
+      width: 60px;
+      height: 60px;
+      background: var(--orange);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.5rem;
+      font-weight: 800;
+      margin: 0 auto 18px;
+      color: #fff;
+    }
+    .step h3 { font-size: 1rem; margin-bottom: 8px; }
+    .step p  { font-size: .88rem; opacity: .78; line-height: 1.5; }
+
+    /* ── REGIONEN ── */
+    .regionen-section {
+      background: #f7f7f7;
+      padding: 56px 0;
+      text-align: center;
+    }
+    .regionen-section h2 { color: #1a1a1a; font-size: 1.5rem; margin-bottom: 20px; }
+    .region-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+      justify-content: center;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+    .region-tag {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 6px 18px;
+      font-size: .9rem;
+      color: #444;
+    }
+
+    /* ── FAQ ── */
+    .faq-lp { padding: 80px 0; background: #fff; }
+
+    /* ── FORM SECTION ── */
+    .form-lp {
+      background: linear-gradient(135deg, #111 0%, #222 100%);
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 700px) {
+      .step:not(:last-child)::after { display: none; }
+      .fact-item { border-right: none; border-bottom: 1px solid #e8e8e8; }
+      .fact-item:last-child { border-bottom: none; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <!-- ══ HERO ══ -->
+    <section class="lp-hero">
+      <div class="container">
+        <span class="badge">Ingolstadt & Region</span>
+        <h1>
+          <span class="hl-orange">Haushaltsauflösung</span>,<br>
+          Entrümpelung, Umzug<br>
+          & <span class="hl-green">Gartenservice</span>
+        </h1>
+        <p class="lead">
+          Meisterwerk erledigt das für Sie – professionell, termingerecht und zu einem fairen Festpreis. Kein Stress, keine versteckten Kosten.
+        </p>
+        <div class="hero-btns">
+          <a href="#anfrage" class="btn-primary">Kostenlose Anfrage stellen</a>
+          <a href="tel:+49841000000" class="btn-white">📞 0841 / 000 000</a>
+        </div>
+        <div class="trust-bar">
+          <span>Festpreisgarantie</span>
+          <span>Termine in 24–48h</span>
+          <span>Kostenlose Besichtigung</span>
+          <span>Seit 15+ Jahren regional tätig</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ LEISTUNGEN ══ -->
+    <section class="services-section" id="leistungen">
+      <div class="container">
+        <div class="section-title">
+          <h2>Unsere Leistungen</h2>
+          <p>Alles aus einer Hand – egal ob Wohnung, Haus, Garten oder Umzug.</p>
+        </div>
+
+        <div class="service-cards">
+
+          <!-- HAUSHALTSAUFLÖSUNG -->
+          <div class="service-card sc-blue">
+            <div class="service-card-top">
+              <span class="s-icon">📦</span>
+              <h3>Haushaltsauflösung</h3>
+              <p>Komplett-Service für die Auflösung von Wohnungen und Häusern – diskret und stressfrei.</p>
+            </div>
+            <div class="service-card-body">
+              <ul>
+                <li>Komplette Wohnungsauflösungen</li>
+                <li>Nach Todesfall oder Erbschaft</li>
+                <li>Umzug ins Pflegeheim</li>
+                <li>Wertanrechnung für brauchbare Gegenstände</li>
+                <li>Besenreine Übergabe</li>
+              </ul>
+              <a href="/haushaltsaufloesung.shtml" class="card-cta">Mehr erfahren →</a>
+            </div>
+          </div>
+
+          <!-- ENTRÜMPELUNG -->
+          <div class="service-card sc-orange">
+            <div class="service-card-top">
+              <span class="s-icon">🏚️</span>
+              <h3>Entrümpelung</h3>
+              <p>Keller, Dachboden, Garage oder ganzes Haus – wir räumen schnell und gründlich.</p>
+            </div>
+            <div class="service-card-body">
+              <ul>
+                <li>Keller- & Dachbodenentrümpelung</li>
+                <li>Garagen & Schuppen beräumen</li>
+                <li>Gewerbliche Entrümpelungen</li>
+                <li>Fachgerechte Entsorgung</li>
+                <li>Oft in 1 Tag erledigt</li>
+              </ul>
+              <a href="/entruempelung.shtml" class="card-cta">Mehr erfahren →</a>
+            </div>
+          </div>
+
+          <!-- UMZÜGE -->
+          <div class="service-card sc-dark">
+            <div class="service-card-top">
+              <span class="s-icon">🚚</span>
+              <h3>Umzüge</h3>
+              <p>Privat oder gewerblich – wir transportieren Ihr Hab und Gut sicher ans Ziel.</p>
+            </div>
+            <div class="service-card-body">
+              <ul>
+                <li>Privatumzüge & Firmenumzüge</li>
+                <li>Möbelmontage & -demontage</li>
+                <li>Verpackungsservice</li>
+                <li>Versicherter Transport</li>
+                <li>Einlagerung auf Anfrage</li>
+              </ul>
+              <a href="/umzug.shtml" class="card-cta">Mehr erfahren →</a>
+            </div>
+          </div>
+
+          <!-- GARTENBEREICH -->
+          <div class="service-card sc-green">
+            <div class="service-card-top">
+              <span class="s-icon">🌿</span>
+              <h3>Gartenservice</h3>
+              <p>Pflege, Gestaltung und Entrümpelung von Außenanlagen – gepflegt und zuverlässig.</p>
+            </div>
+            <div class="service-card-body">
+              <ul>
+                <li>Rasenmähen & Heckenschnitt</li>
+                <li>Baumschnitt & Fällungen</li>
+                <li>Gartenentrümpelung</li>
+                <li>Pflasterreinigung & Unkraut</li>
+                <li>Winterdienst auf Anfrage</li>
+              </ul>
+              <a href="/kontakt.shtml" class="card-cta">Anfrage stellen →</a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ WARUM MEISTERWERK ══ -->
+    <section class="warum-lp">
+      <div class="container">
+        <div class="section-title">
+          <h2>Warum Meisterwerk?</h2>
+          <p>Mehr als 500 zufriedene Kunden in Ingolstadt und der Region.</p>
+        </div>
+
+        <div class="facts-grid">
+          <div class="fact-item">
+            <div class="fact-number">500+</div>
+            <div class="fact-label">Aufträge erfolgreich abgeschlossen</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-number">15+</div>
+            <div class="fact-label">Jahre Erfahrung in der Region</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-number">24h</div>
+            <div class="fact-label">Antwortzeit auf Anfragen</div>
+          </div>
+          <div class="fact-item">
+            <div class="fact-number">4,9★</div>
+            <div class="fact-label">Durchschnittliche Kundenbewertung</div>
+          </div>
+        </div>
+
+        <div class="vorteile">
+          <div class="vorteil">
+            <div class="v-icon">💰</div>
+            <div>
+              <h4>Fairer Festpreis</h4>
+              <p>Kein Stundenlohn, keine Überraschungen. Sie erhalten vorab ein verbindliches Angebot.</p>
+            </div>
+          </div>
+          <div class="vorteil">
+            <div class="v-icon">⚡</div>
+            <div>
+              <h4>Schnelle Termine</h4>
+              <p>In vielen Fällen innerhalb von 24–48 Stunden einsatzbereit. Auch kurzfristig buchbar.</p>
+            </div>
+          </div>
+          <div class="vorteil">
+            <div class="v-icon">♻️</div>
+            <div>
+              <h4>Nachhaltige Entsorgung</h4>
+              <p>Brauchbares wird weitergegeben oder verkauft – das spart Ihnen oft bares Geld.</p>
+            </div>
+          </div>
+          <div class="vorteil">
+            <div class="v-icon">🤝</div>
+            <div>
+              <h4>Diskret & zuverlässig</h4>
+              <p>Wir gehen respektvoll vor – besonders bei sensiblen Situationen wie Erbfällen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ ABLAUF ══ -->
+    <section class="ablauf-lp">
+      <div class="container">
+        <div class="section-title">
+          <h2>So einfach geht es</h2>
+          <p>In 3 Schritten zum fertigen Auftrag – ohne Stress für Sie.</p>
+        </div>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-num">1</div>
+            <h3>Anfrage stellen</h3>
+            <p>Anruf oder Formular – kostenlos und unverbindlich. Wir melden uns innerhalb von 24 Stunden.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">2</div>
+            <h3>Besichtigung & Angebot</h3>
+            <p>Wir kommen kostenlos vor Ort und erstellen ein verbindliches Festpreisangebot.</p>
+          </div>
+          <div class="step">
+            <div class="step-num">3</div>
+            <h3>Wir erledigen alles</h3>
+            <p>Termingerecht, sauber und professionell – Sie müssen nichts tun.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ REGIONEN ══ -->
+    <section class="regionen-section">
+      <div class="container">
+        <h2>📍 Unser Einsatzgebiet</h2>
+        <p style="color:#666;margin-bottom:24px;">Wir sind für Sie in Ingolstadt und der gesamten Region im Einsatz.</p>
+        <div class="region-tags">
+          <span class="region-tag">Ingolstadt</span>
+          <span class="region-tag">Eichstätt</span>
+          <span class="region-tag">Neuburg a.d. Donau</span>
+          <span class="region-tag">Pfaffenhofen a.d. Ilm</span>
+          <span class="region-tag">Schrobenhausen</span>
+          <span class="region-tag">Beilngries</span>
+          <span class="region-tag">Manching</span>
+          <span class="region-tag">Gaimersheim</span>
+          <span class="region-tag">Vohburg</span>
+          <span class="region-tag">& Umgebung</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FAQ ══ -->
+    <section class="faq-lp">
+      <div class="container">
+        <div class="section-title">
+          <h2>Häufige Fragen</h2>
+          <p>Die wichtigsten Antworten auf einen Blick.</p>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Was kostet eine Haushaltsauflösung oder Entrümpelung?</summary>
+            <p>Die Kosten hängen vom Umfang und der Menge ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreisangebot – ohne Überraschungen. Brauchbare Gegenstände können den Preis deutlich reduzieren.</p>
+          </details>
+          <details>
+            <summary>Wie schnell können Sie einen Termin machen?</summary>
+            <p>In der Regel sind wir innerhalb von 2–5 Werktagen bei Ihnen. In dringenden Fällen oft auch früher – rufen Sie uns einfach an.</p>
+          </details>
+          <details>
+            <summary>Müssen wir bei der Haushaltsauflösung anwesend sein?</summary>
+            <p>Nein. Viele Kunden übergeben uns einfach den Schlüssel. Wir erledigen alles und übergeben die Räume besenrein.</p>
+          </details>
+          <details>
+            <summary>Was passiert mit noch brauchbaren Möbeln und Geräten?</summary>
+            <p>Gut erhaltene Gegenstände werden gespendet, an soziale Einrichtungen weitergegeben oder weiterverkauft. Der Restwert wird direkt bei der Preisgestaltung berücksichtigt.</p>
+          </details>
+          <details>
+            <summary>Arbeiten Sie auch am Wochenende?</summary>
+            <p>Ja, auf Anfrage sind auch Samstags-Termine möglich. Sprechen Sie uns einfach an.</p>
+          </details>
+          <details>
+            <summary>Bieten Sie auch Gartenarbeit als Einzelleistung an?</summary>
+            <p>Ja, unser Gartenservice ist auch separat buchbar. Vom Rasenmähen bis zur kompletten Gartenentrümpelung – einfach anfragen.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FORMULAR ══ -->
+    <div id="anfrage">
+      <!--#include virtual="/includes/lead-form.shtml" -->
+    </div>
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/form.js"></script>
+</body>
+</html>

@@ -1,0 +1,22 @@
+<section class="trust-section">
+  <div class="container">
+    <div class="trust-grid">
+      <div class="trust-item">
+        <div class="trust-number">500+</div>
+        <p>Erfolgreich abgeschlossene Aufträge</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">15+</div>
+        <p>Jahre Erfahrung in der Region</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">24h</div>
+        <p>Antwortzeit auf Anfragen</p>
+      </div>
+      <div class="trust-item">
+        <div class="trust-number">4,9★</div>
+        <p>Durchschnittliche Kundenbewertung</p>
+      </div>
+    </div>
+  </div>
+</section>

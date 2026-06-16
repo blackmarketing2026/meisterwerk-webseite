@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- SEITEN-SPEZIFISCH ANPASSEN -->
+  <title>Seitentitel | Meisterwerk Ingolstadt</title>
+  <meta name="description" content="Meta Description für diese Seite (max. 160 Zeichen).">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/SEITE.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <!-- HERO -->
+    <section class="page-hero">
+      <div class="container">
+        <h1>Seitenüberschrift (H1)</h1>
+        <p>Kurze Einleitung mit klarem Nutzenversprechen für den Besucher.</p>
+        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
+      </div>
+    </section>
+
+    <!-- VERTRAUENSELEMENTE -->
+    <!--#include virtual="/includes/trust-section.shtml" -->
+
+    <!-- HAUPTINHALT -->
+    <section class="content-section">
+      <div class="container">
+        <h2>Erster H2-Abschnitt</h2>
+        <p>Textinhalt. Interne Links zu Leistungsseiten einbauen.</p>
+
+        <h2>Zweiter H2-Abschnitt</h2>
+        <p>Textinhalt.</p>
+
+        <h2>Dritter H2-Abschnitt</h2>
+        <ul>
+          <li>Listenpunkt 1</li>
+          <li>Listenpunkt 2</li>
+          <li>Listenpunkt 3</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- CTA MITTE -->
+    <!--#include virtual="/includes/cta-box.shtml" -->
+
+    <!-- FAQ -->
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Häufige Fragen</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Frage 1?</summary>
+            <p>Antwort 1.</p>
+          </details>
+          <details>
+            <summary>Frage 2?</summary>
+            <p>Antwort 2.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ANFRAGEFORMULAR -->
+    <!--#include virtual="/includes/lead-form.shtml" -->
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

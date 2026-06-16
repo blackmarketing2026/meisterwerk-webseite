@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Entrümpelung Ingolstadt – Meisterwerk | Schnell & Fair</title>
+  <meta name="description" content="Professionelle Entrümpelung in Ingolstadt: Keller, Dachboden, Wohnung & Haus. Festpreisangebot, schnelle Termine. Jetzt kostenlos anfragen!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/entruempelung.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Entrümpelung in Ingolstadt</h1>
+        <p>Schnell, gründlich und zu fairen Festpreisen – wir entrümpeln Keller, Dachboden, Wohnung oder ganzes Haus.</p>
+        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/trust-section.shtml" -->
+
+    <section class="content-section">
+      <div class="container">
+        <h2>Was wir für Sie übernehmen</h2>
+        <p>Egal ob voller Keller, überfüllter Dachboden oder eine komplette Wohnung – Meisterwerk übernimmt die gesamte Entrümpelung für Sie. Sie müssen sich um nichts kümmern.</p>
+        <ul>
+          <li>Entrümpelung von Wohnungen, Häusern und Gewerberäumen</li>
+          <li>Keller- und Dachbodenentrümpelung</li>
+          <li>Garage und Schuppen beräumen</li>
+          <li>Abtransport und fachgerechte Entsorgung aller Gegenstände</li>
+          <li>Besenreine Übergabe nach Abschluss</li>
+          <li>Wertanrechnung für brauchbare Gegenstände</li>
+        </ul>
+
+        <h2>Ablauf einer Entrümpelung mit Meisterwerk</h2>
+        <p>Wir machen den Ablauf so einfach wie möglich für Sie:</p>
+        <ul>
+          <li><strong>1. Anfrage:</strong> Rufen Sie uns an oder schreiben Sie uns – kostenlos und unverbindlich.</li>
+          <li><strong>2. Besichtigung:</strong> Wir kommen vor Ort und erstellen ein verbindliches Festpreisangebot.</li>
+          <li><strong>3. Durchführung:</strong> Wir entrümpeln termingerecht und hinterlassen alles besenrein.</li>
+        </ul>
+
+        <h2>Faire Preise – keine Überraschungen</h2>
+        <p>Sie erhalten vorab ein klares Angebot. Beim Festpreis bleibt es – egal wie lange die Arbeit dauert. Brauchbare Gegenstände können den Preis für Sie reduzieren.</p>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/cta-box.shtml" -->
+
+    <section class="faq-section">
+      <div class="container">
+        <div class="section-title">
+          <h2>Häufige Fragen zur Entrümpelung</h2>
+        </div>
+        <div class="faq-list">
+          <details>
+            <summary>Muss ich beim Termin anwesend sein?</summary>
+            <p>Nein, das ist nicht notwendig. Viele Kunden übergeben uns einfach den Schlüssel – wir erledigen alles und melden uns nach Abschluss.</p>
+          </details>
+          <details>
+            <summary>Was passiert mit noch brauchbaren Möbeln?</summary>
+            <p>Brauchbare Gegenstände spenden wir oder verwerten sie weiter. Das wird bei der Preisgestaltung berücksichtigt.</p>
+          </details>
+          <details>
+            <summary>Wie schnell können Sie kommen?</summary>
+            <p>In der Regel innerhalb von 2–5 Werktagen. Auch kurzfristige Termine sind auf Anfrage möglich.</p>
+          </details>
+          <details>
+            <summary>Entrümpeln Sie auch nach einem Todesfall?</summary>
+            <p>Ja, wir gehen diskret und respektvoll vor. Wertgegenstände werden selbstverständlich gesichert und übergeben.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!--#include virtual="/includes/lead-form.shtml" -->
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

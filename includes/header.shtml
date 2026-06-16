@@ -1,0 +1,26 @@
+<header class="site-header">
+  <div class="container header-inner">
+
+    <a href="/index.shtml" class="logo" aria-label="Meisterwerk Startseite">
+      <img src="/assets/img/logo/meisterwerk-logo.png" alt="Meisterwerk – Ihr Gebäudeservice mit System">
+    </a>
+
+    <button class="nav-toggle" aria-label="Navigation öffnen" onclick="document.querySelector('.main-nav').classList.toggle('open')">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <nav class="main-nav" aria-label="Hauptnavigation">
+      <a href="/index.shtml">Start</a>
+      <a href="/entruempelung.shtml">Entrümpelung</a>
+      <a href="/haushaltsaufloesung.shtml">Haushaltsauflösung</a>
+      <a href="/umzug.shtml">Umzug</a>
+      <a href="/blog/index.shtml">Ratgeber</a>
+      <a href="/kontakt.shtml">Kontakt</a>
+    </nav>
+
+    <a href="tel:+49841000000" class="header-phone">📞 0841 / 000 000</a>
+
+  </div>
+</header>
