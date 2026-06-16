@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Meisterwerk Ingolstadt – Haushaltsauflösung, Entrümpelung, Umzug & Garten</title>
-  <meta name="description" content="Meisterwerk Ingolstadt: Professionelle Haushaltsauflösung, Entrümpelung, Umzüge und Gartenservice. Festpreis, schnelle Termine, kostenlose Anfrage!">
+  <title>Meisterwerk Ingolstadt – Entrümpelung, Umzüge & Gartenservice</title>
+  <meta name="description" content="Meisterwerk Ingolstadt: Professionelle Entrümpelung, Umzüge und Gartenservice. Festpreis, schnelle Termine, kostenlose Anfrage!">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/">
 
@@ -139,7 +139,6 @@
     .sc-orange .service-card-top { background: var(--orange); }
     .sc-blue   .service-card-top { background: var(--blue); }
     .sc-green  .service-card-top { background: var(--green); }
-    .sc-dark   .service-card-top { background: #2a2a2a; }
 
     .service-card-body {
       padding: 22px 28px 28px;
@@ -171,7 +170,6 @@
     .sc-orange .service-card-body ul li::before { color: var(--orange); }
     .sc-blue   .service-card-body ul li::before { color: var(--blue); }
     .sc-green  .service-card-body ul li::before { color: var(--green); }
-    .sc-dark   .service-card-body ul li::before { color: #666; }
 
     .service-card-body .card-cta {
       display: block;
@@ -189,7 +187,6 @@
     .sc-orange .card-cta { background: var(--orange); }
     .sc-blue   .card-cta { background: var(--blue); }
     .sc-green  .card-cta { background: var(--green); }
-    .sc-dark   .card-cta { background: #2a2a2a; }
 
     /* ── WARUM MEISTERWERK ── */
     .warum-lp {
@@ -349,8 +346,8 @@
       <div class="container">
         <span class="badge">Ingolstadt & Region</span>
         <h1>
-          <span class="hl-orange">Haushaltsauflösung</span>,<br>
-          Entrümpelung, Umzug<br>
+          <span class="hl-orange">Entrümpelung</span>,<br>
+          Umzüge<br>
           & <span class="hl-green">Gartenservice</span>
         </h1>
         <p class="lead">
@@ -374,29 +371,10 @@
       <div class="container">
         <div class="section-title">
           <h2>Unsere Leistungen</h2>
-          <p>Alles aus einer Hand – egal ob Wohnung, Haus, Garten oder Umzug.</p>
+          <p>Alles aus einer Hand – egal ob Keller, Garten oder Umzug.</p>
         </div>
 
         <div class="service-cards">
-
-          <!-- HAUSHALTSAUFLÖSUNG -->
-          <div class="service-card sc-blue">
-            <div class="service-card-top">
-              <span class="s-icon">📦</span>
-              <h3>Haushaltsauflösung</h3>
-              <p>Komplett-Service für die Auflösung von Wohnungen und Häusern – diskret und stressfrei.</p>
-            </div>
-            <div class="service-card-body">
-              <ul>
-                <li>Komplette Wohnungsauflösungen</li>
-                <li>Nach Todesfall oder Erbschaft</li>
-                <li>Umzug ins Pflegeheim</li>
-                <li>Wertanrechnung für brauchbare Gegenstände</li>
-                <li>Besenreine Übergabe</li>
-              </ul>
-              <a href="/haushaltsaufloesung.shtml" class="card-cta">Mehr erfahren →</a>
-            </div>
-          </div>
 
           <!-- ENTRÜMPELUNG -->
           <div class="service-card sc-orange">
@@ -418,7 +396,7 @@
           </div>
 
           <!-- UMZÜGE -->
-          <div class="service-card sc-dark">
+          <div class="service-card sc-blue">
             <div class="service-card-top">
               <span class="s-icon">🚚</span>
               <h3>Umzüge</h3>
@@ -576,7 +554,7 @@
         </div>
         <div class="faq-list">
           <details>
-            <summary>Was kostet eine Haushaltsauflösung oder Entrümpelung?</summary>
+            <summary>Was kostet eine Entrümpelung?</summary>
             <p>Die Kosten hängen vom Umfang und der Menge ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreisangebot – ohne Überraschungen. Brauchbare Gegenstände können den Preis deutlich reduzieren.</p>
           </details>
           <details>
