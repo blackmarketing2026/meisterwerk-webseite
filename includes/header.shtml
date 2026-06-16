@@ -11,7 +11,7 @@
     <div class="container header-inner">
 
       <a href="/index.shtml" class="logo" aria-label="Meisterwerk Startseite">
-        <img src="/assets/img/logo/meisterwerk-logo.png" alt="Meisterwerk Ingolstadt">
+        <img src="/assets/img/logo/logo-general.png" alt="Meisterwerk Ingolstadt">
       </a>
 
       <nav class="main-nav" aria-label="Hauptnavigation">
