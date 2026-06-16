@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Meisterwerk Ingolstadt - Entrümpelung, Umzüge & Gartenservice (V2)</title>
+  <meta name="description" content="Meisterwerk Ingolstadt: Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice aus einer Hand. Kostenlose Besichtigung, faire Festpreise und schnelle Termine.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/index2.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    :root {
+      --lp-ink: #10131a;
+      --lp-ink-soft: #2c3340;
+      --lp-muted: #667085;
+      --lp-line: #e8ebf0;
+      --lp-paper: #ffffff;
+      --lp-soft: #f6f7f9;
+      --lp-orange: #f26b00;
+      --lp-orange-dark: #c95600;
+      --lp-blue: #1a2e6e;
+      --lp-blue-deep: #0b1638;
+      --lp-green: #15803d;
+      --lp-radius: 12px;
+      --lp-shadow: 0 20px 40px rgba(16, 19, 26, .08);
+      --lp-shadow-hover: 0 24px 50px rgba(16, 19, 26, .14);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .lp-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 12px;
+      color: var(--lp-orange);
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .15em;
+      text-transform: uppercase;
+    }
+    .lp-eyebrow::before {
+      content: "";
+      width: 32px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 999px;
+    }
+
+    .lp-hero {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(7, 13, 32, .96) 0%, rgba(15, 30, 74, .92) 52%, rgba(242, 107, 0, .88) 100%),
+        radial-gradient(circle at 80% 15%, rgba(255, 255, 255, .15), transparent 30%),
+        #0b1638;
+      padding: 92px 0 46px;
+    }
+    .lp-hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 120px;
+      background: linear-gradient(180deg, transparent, rgba(255,255,255,.05));
+      pointer-events: none;
+    }
+    .lp-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(360px, .9fr);
+      gap: 64px;
+      align-items: center;
+    }
+    .lp-hero-copy .lp-eyebrow { color: #ffb36b; margin-bottom: 20px; }
+    .lp-hero h1 {
+      max-width: 780px;
+      font-size: clamp(2.35rem, 5.8vw, 4.8rem);
+      line-height: .98;
+      letter-spacing: -0.01em;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+    .lp-hero h1 span {
+      color: #ffd0a3;
+      display: block;
+    }
+    .lp-hero .lead {
+      max-width: 640px;
+      color: rgba(255,255,255,.85);
+      font-size: clamp(1.05rem, 1.8vw, 1.25rem);
+      line-height: 1.75;
+      margin-bottom: 36px;
+    }
+    .lp-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      margin-bottom: 32px;
+    }
+    .lp-hero .btn-primary,
+    .lp-hero .btn-white {
+      border-radius: var(--lp-radius);
+      box-shadow: 0 16px 34px rgba(0,0,0,.2);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .lp-hero .btn-primary:hover,
+    .lp-hero .btn-white:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 20px 40px rgba(0,0,0,.3);
+    }
+    .lp-hero .btn-white {
+      color: var(--lp-blue);
+    }
+    .lp-proofline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 16px;
+      color: rgba(255,255,255,.75);
+      font-size: .95rem;
+    }
+    .lp-proofline span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lp-proofline span::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7ee787;
+      box-shadow: 0 0 0 4px rgba(126,231,135,.15);
+    }
+
+    .lp-hero-panel {
+      background: rgba(255,255,255,.1);
+      border: 1px solid rgba(255,255,255,.2);
+      border-radius: var(--lp-radius);
+      padding: 24px;
+      box-shadow: 0 30px 80px rgba(0,0,0,.3);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+    }
+    .lp-service-preview {
+      display: grid;
+      gap: 14px;
+    }
+    .lp-preview-card {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 16px;
+      align-items: center;
+      background: rgba(255,255,255,.96);
+      color: var(--lp-ink);
+      border-radius: 10px;
+      padding: 16px;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(0,0,0,.15);
+      transition: transform .25s ease, box-shadow .25s ease;
+    }
+    .lp-preview-card:hover {
+      transform: translateY(-4px) scale(1.02);
+      box-shadow: 0 20px 40px rgba(0,0,0,.25);
+    }
+    .lp-preview-card img {
+      width: 82px;
+      height: 82px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: var(--lp-orange);
+      padding: 10px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.2);
+    }
+    .lp-preview-card.orange img { background: linear-gradient(135deg, #ff8c2b, #e65600); }
+    .lp-preview-card.blue img { background: linear-gradient(135deg, #244ccc, #0c2060); }
+    .lp-preview-card.green img { background: linear-gradient(135deg, #26b353, #0e5e29); }
+    .lp-preview-card strong {
+      display: block;
+      color: var(--lp-blue);
+      font-size: 1.05rem;
+      margin-bottom: 4px;
+    }
+    .lp-preview-card span {
+      display: block;
+      color: var(--lp-muted);
+      font-size: .9rem;
+      line-height: 1.4;
+    }
+
+    .lp-hero-metrics {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-top: 64px;
+    }
+    .lp-metric {
+      background: rgba(255,255,255,.08);
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--lp-radius);
+      padding: 24px 20px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      transition: background 0.3s;
+    }
+    .lp-metric:hover {
+      background: rgba(255,255,255,.12);
+    }
+    .lp-metric strong {
+      display: block;
+      color: #fff;
+      font-size: clamp(1.8rem, 3.2vw, 2.5rem);
+      line-height: 1;
+      margin-bottom: 10px;
+    }
+    .lp-metric span {
+      display: block;
+      color: rgba(255,255,255,.8);
+      font-size: .95rem;
+      line-height: 1.4;
+    }
+
+    .lp-section {
+      padding: 96px 0;
+      background: #fff;
+    }
+    .lp-section-soft {
+      background: linear-gradient(180deg, #fff 0%, var(--lp-soft) 100%);
+    }
+    .lp-section-head {
+      max-width: 740px;
+      margin: 0 auto 52px;
+      text-align: center;
+    }
+    .lp-section-head .lp-eyebrow {
+      justify-content: center;
+      margin-bottom: 16px;
+    }
+    .lp-section-head h2 {
+      color: var(--lp-blue);
+      font-size: clamp(1.8rem, 3.8vw, 2.8rem);
+      line-height: 1.15;
+      margin-bottom: 16px;
+      letter-spacing: -0.01em;
+    }
+    .lp-section-head p {
+      color: var(--lp-muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    .lp-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+    .lp-service-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--lp-paper);
+      border: 1px solid var(--lp-line);
+      border-radius: var(--lp-radius);
+      min-height: 100%;
+      text-decoration: none;
+      color: var(--lp-ink);
+      box-shadow: var(--lp-shadow);
+      transition: transform .3s ease, box-shadow .3s ease, border-color .3s ease;
+    }
+    .lp-service-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--lp-shadow-hover);
+      border-color: rgba(242,107,0,.4);
+    }
+    .lp-service-media {
+      min-height: 180px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 32px;
+      background: var(--lp-orange);
+      position: relative;
+      overflow: hidden;
+    }
+    .lp-service-media::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.25), transparent 45%),
+        radial-gradient(circle at 85% 20%, rgba(255,255,255,.25), transparent 40%);
+      pointer-events: none;
+    }
+    .lp-service-card.orange .lp-service-media { background: linear-gradient(135deg, #ff8c2b 0%, #e65600 100%); }
+    .lp-service-card.blue .lp-service-media { background: linear-gradient(135deg, #244ccc 0%, #0c2060 100%); }
+    .lp-service-card.green .lp-service-media { background: linear-gradient(135deg, #26b353 0%, #0e5e29 100%); }
+    .lp-service-media img {
+      position: relative;
+      z-index: 1;
+      width: min(85%, 280px);
+      height: auto;
+      max-height: 125px;
+      object-fit: contain;
+      border-radius: 8px;
+      filter: drop-shadow(0 16px 24px rgba(16,19,26,.3));
+      transition: transform 0.4s ease;
+    }
+    .lp-service-card:hover .lp-service-media img {
+      transform: scale(1.08);
+    }
+    .lp-service-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 32px;
+    }
+    .lp-service-content h3 {
+      color: var(--lp-blue);
+      font-size: 1.3rem;
+      margin-bottom: 12px;
+    }
+    .lp-service-content p {
+      color: var(--lp-muted);
+      font-size: .98rem;
+      line-height: 1.65;
+      margin-bottom: 24px;
+    }
+    .lp-service-content ul {
+      list-style: none;
+      display: grid;
+      gap: 10px;
+      margin: 0 0 28px;
+      padding: 0;
+    }
+    .lp-service-content li {
+      position: relative;
+      padding-left: 28px;
+      color: var(--lp-ink-soft);
+      font-size: .95rem;
+      line-height: 1.45;
+    }
+    .lp-service-content li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .45em;
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--lp-orange);
+    }
+    .lp-service-card.blue li::before { background: #2f55d4; }
+    .lp-service-card.green li::before { background: var(--lp-green); }
+    .lp-card-link {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 48px;
+      padding: 12px 20px;
+      border-radius: 8px;
+      background: var(--lp-blue);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background .2s, transform .2s;
+    }
+    .lp-service-card.orange .lp-card-link { background: var(--lp-orange); }
+    .lp-service-card.green .lp-card-link { background: var(--lp-green); }
+    .lp-card-link:hover { 
+      background: var(--lp-blue-deep); 
+      color: #fff; 
+    }
+
+    .lp-split {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 64px;
+      align-items: center;
+    }
+    .lp-copy h2 {
+      color: var(--lp-blue);
+      font-size: clamp(1.9rem, 3.5vw, 2.8rem);
+      line-height: 1.15;
+      margin: 14px 0 20px;
+      letter-spacing: -0.01em;
+    }
+    .lp-copy p {
+      color: var(--lp-muted);
+      font-size: 1.05rem;
+      line-height: 1.75;
+      margin-bottom: 28px;
+    }
+    .lp-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .lp-benefit {
+      border: 1px solid var(--lp-line);
+      border-radius: var(--lp-radius);
+      background: #fff;
+      padding: 24px;
+      box-shadow: 0 10px 30px rgba(16,19,26,.04);
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .lp-benefit:hover {
+      box-shadow: 0 15px 35px rgba(16,19,26,.08);
+      transform: translateY(-2px);
+    }
+    .lp-benefit-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 48px;
+      height: 48px;
+      background: rgba(242, 107, 0, 0.1);
+      color: var(--lp-orange);
+      border-radius: 8px;
+      margin-bottom: 16px;
+    }
+    .lp-benefit b {
+      display: block;
+      color: var(--lp-ink);
+      margin-bottom: 8px;
+      font-size: 1.05rem;
+    }
+    .lp-benefit span {
+      color: var(--lp-muted);
+      font-size: .95rem;
+      line-height: 1.6;
+    }
+    .lp-quote-box {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(11,22,56,.96), rgba(26,46,110,.94)),
+        var(--lp-blue);
+      border-radius: var(--lp-radius);
+      padding: 40px;
+      box-shadow: var(--lp-shadow);
+    }
+    .lp-quote-box p {
+      font-size: 1.45rem;
+      line-height: 1.45;
+      font-weight: 800;
+      margin-bottom: 30px;
+    }
+    .lp-quote-list {
+      display: grid;
+      gap: 16px;
+      color: rgba(255,255,255,.8);
+      font-size: 1rem;
+    }
+    .lp-quote-list span {
+      display: flex;
+      gap: 12px;
+      align-items: flex-start;
+    }
+    .lp-quote-list span::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-top: .6em;
+      border-radius: 50%;
+      background: var(--lp-orange);
+      flex: 0 0 auto;
+    }
+
+    .lp-process {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(10,16,34,.98), rgba(15,30,74,.95)),
+        var(--lp-blue-deep);
+      padding: 96px 0;
+    }
+    .lp-process .lp-section-head h2,
+    .lp-process .lp-section-head p {
+      color: #fff;
+    }
+    .lp-process .lp-section-head p {
+      color: rgba(255,255,255,.75);
+    }
+    .lp-process-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .lp-step {
+      position: relative;
+      padding: 36px 32px;
+      min-height: 248px;
+      border: 1px solid rgba(255,255,255,.15);
+      border-radius: var(--lp-radius);
+      background: rgba(255,255,255,.05);
+      transition: background 0.3s;
+    }
+    .lp-step:hover {
+      background: rgba(255,255,255,.08);
+    }
+    @media (min-width: 981px) {
+      .lp-step:not(:last-child)::after {
+        content: "";
+        position: absolute;
+        top: 64px; /* Align with center of the number box */
+        right: -12px; /* Half of gap */
+        width: 24px;
+        height: 2px;
+        background: rgba(255,255,255,.2);
+        transform: translateX(50%);
+      }
+    }
+    .lp-step-number {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 56px;
+      height: 56px;
+      border-radius: 10px;
+      background: var(--lp-orange);
+      color: #fff;
+      font-size: 1.45rem;
+      font-weight: 900;
+      margin-bottom: 28px;
+      box-shadow: 0 8px 24px rgba(242, 107, 0, 0.4);
+    }
+    .lp-step h3 {
+      color: #fff;
+      font-size: 1.25rem;
+      margin-bottom: 12px;
+    }
+    .lp-step p {
+      color: rgba(255,255,255,.75);
+      font-size: .98rem;
+      line-height: 1.65;
+    }
+
+    .lp-region {
+      display: grid;
+      grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+      gap: 52px;
+      align-items: center;
+    }
+    .lp-region-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+    .lp-region-tags span {
+      background: #fff;
+      border: 1px solid var(--lp-line);
+      border-radius: 999px;
+      padding: 10px 18px;
+      color: var(--lp-ink-soft);
+      font-size: .95rem;
+      box-shadow: 0 8px 20px rgba(16,19,26,.04);
+      transition: transform 0.2s, box-shadow 0.2s;
+      cursor: default;
+    }
+    .lp-region-tags span:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 24px rgba(16,19,26,.08);
+      border-color: rgba(242,107,0,.3);
+    }
+
+    .lp-faq {
+      max-width: 880px;
+      margin: 0 auto;
+      border: 1px solid var(--lp-line);
+      border-radius: var(--lp-radius);
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 16px 48px rgba(16,19,26,.05);
+    }
+    .lp-faq details {
+      padding: 0;
+      border-bottom: 1px solid var(--lp-line);
+    }
+    .lp-faq details:last-child {
+      border-bottom: none;
+    }
+    .lp-faq summary {
+      padding: 24px 28px;
+      color: var(--lp-blue);
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none; /* Hide default arrow */
+      position: relative;
+      transition: background 0.2s;
+    }
+    .lp-faq summary::-webkit-details-marker {
+      display: none;
+    }
+    .lp-faq summary:hover {
+      background: var(--lp-soft);
+    }
+    .lp-faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 28px;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 1.6rem;
+      color: var(--lp-orange);
+      font-weight: 400;
+      transition: transform 0.3s ease;
+    }
+    .lp-faq details[open] summary::after {
+      content: "−";
+      transform: translateY(-50%) rotate(90deg);
+    }
+    .lp-faq details p {
+      margin: 0;
+      padding: 0 28px 26px;
+      color: var(--lp-muted);
+      line-height: 1.65;
+    }
+
+    .lp-final-cta {
+      background: linear-gradient(135deg, var(--lp-orange), #ff8d2d);
+      color: #fff;
+      padding: 64px 0;
+    }
+    .lp-final-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 32px;
+    }
+    .lp-final-cta h2 {
+      color: #fff;
+      font-size: clamp(1.65rem, 3.2vw, 2.4rem);
+      line-height: 1.15;
+      margin-bottom: 12px;
+      letter-spacing: -0.01em;
+    }
+    .lp-final-cta p {
+      color: rgba(255,255,255,.9);
+      max-width: 680px;
+      font-size: 1.05rem;
+      line-height: 1.6;
+    }
+    .lp-final-cta .btn-white {
+      color: var(--lp-orange-dark);
+      flex: 0 0 auto;
+      border-radius: var(--lp-radius);
+      padding: 14px 28px;
+      font-size: 1.05rem;
+    }
+
+    #anfrage .lead-form-section {
+      background:
+        linear-gradient(135deg, rgba(11,22,56,.98), rgba(26,46,110,.95)),
+        var(--lp-blue);
+    }
+
+    @media (max-width: 980px) {
+      .lp-hero-grid,
+      .lp-split,
+      .lp-region {
+        grid-template-columns: 1fr;
+      }
+      .lp-hero-grid {
+        gap: 40px;
+      }
+      .lp-services-grid,
+      .lp-process-grid {
+        grid-template-columns: 1fr;
+      }
+      .lp-hero-metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .lp-hero {
+        padding: 64px 0 32px;
+      }
+      .lp-hero h1 {
+        font-size: clamp(2.1rem, 12vw, 3.1rem);
+      }
+      .lp-hero-actions,
+      .lp-final-cta-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .lp-hero .btn-primary,
+      .lp-hero .btn-white,
+      .lp-final-cta .btn-white {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+      }
+      .lp-hero-panel {
+        padding: 16px;
+      }
+      .lp-preview-card {
+        grid-template-columns: 64px 1fr;
+        padding: 12px;
+      }
+      .lp-preview-card img {
+        width: 64px;
+        height: 64px;
+      }
+      .lp-hero-metrics {
+        grid-template-columns: 1fr;
+      }
+      .lp-benefits {
+        grid-template-columns: 1fr;
+      }
+      .lp-section,
+      .lp-process {
+        padding: 64px 0;
+      }
+      .lp-service-content,
+      .lp-step,
+      .lp-quote-box {
+        padding: 28px 24px;
+      }
+      .lp-faq summary {
+        padding: 20px 24px;
+      }
+      .lp-faq summary::after {
+        right: 24px;
+      }
+      .lp-faq details p {
+        padding: 0 24px 24px;
+      }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Meisterwerk Ingolstadt",
+    "url": "https://www.meisterwerk-ingolstadt.de/",
+    "telephone": "+4915165184976",
+    "areaServed": ["Ingolstadt", "Eichstätt", "Neuburg an der Donau", "Pfaffenhofen an der Ilm", "Manching", "Gaimersheim"],
+    "description": "Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice in Ingolstadt und Umgebung."
+  }
+  </script>
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <section class="lp-hero">
+      <div class="container">
+        <div class="lp-hero-grid">
+          <div class="lp-hero-copy">
+            <span class="lp-eyebrow">Ingolstadt & Region</span>
+            <h1>Platz schaffen. Umziehen. Garten pflegen. <span>Alles mit einem Team.</span></h1>
+            <p class="lead">
+              Meisterwerk übernimmt Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice zuverlässig aus einer Hand: mit klarer Absprache, sauberer Ausführung und fair kalkuliertem Festpreis.
+            </p>
+            <div class="lp-hero-actions">
+              <a href="#anfrage" class="btn-primary">Kostenlose Anfrage stellen</a>
+              <a href="tel:+4915165184976" class="btn-white">0151 651 849 76 anrufen</a>
+            </div>
+            <div class="lp-proofline" aria-label="Vorteile">
+              <span>Kostenlose Besichtigung</span>
+              <span>Festpreis vor Start</span>
+              <span>Termine oft kurzfristig möglich</span>
+            </div>
+          </div>
+
+          <div class="lp-hero-panel" aria-label="Leistungsübersicht">
+            <div class="lp-service-preview">
+              <a class="lp-preview-card orange" href="/entruempelung.shtml">
+                <img src="/assets/img/logo/Meisterwerk-entruemplung.png" alt="Meisterwerk Entrümpelung">
+                <span><strong>Entrümpelung</strong>Keller, Wohnung, Haus, Gewerbe und fachgerechte Entsorgung.</span>
+              </a>
+              <a class="lp-preview-card blue" href="/umzug.shtml">
+                <img src="/assets/img/logo/Meisterwerk-umzug.png" alt="Meisterwerk Umzug">
+                <span><strong>Umzüge</strong>Transport, Möbelmontage und Planung für private und gewerbliche Umzüge.</span>
+              </a>
+              <a class="lp-preview-card green" href="/kontakt.shtml">
+                <img src="/assets/img/logo/Meisterwerk-garten.png" alt="Meisterwerk Gartenservice">
+                <span><strong>Gartenservice</strong>Pflege, Rückschnitt, Außenflächen und Gartenentrümpelung.</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="lp-hero-metrics" aria-label="Kennzahlen">
+          <div class="lp-metric">
+            <strong>500+</strong>
+            <span>abgeschlossene Aufträge in der Region</span>
+          </div>
+          <div class="lp-metric">
+            <strong>15+</strong>
+            <span>Jahre praktische Erfahrung</span>
+          </div>
+          <div class="lp-metric">
+            <strong>24h</strong>
+            <span>Antwortzeit auf Ihre Anfrage</span>
+          </div>
+          <div class="lp-metric">
+            <strong>4,9</strong>
+            <span>durchschnittliche Kundenbewertung</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-section-soft" id="leistungen">
+      <div class="container">
+        <div class="lp-section-head">
+          <span class="lp-eyebrow">Leistungen</span>
+          <h2>Ein Ansprechpartner für alles, was schnell und sauber erledigt werden muss.</h2>
+          <p>Ob einzelne Räume, kompletter Haushalt, Firmenumzug oder verwilderter Garten: Sie bekommen eine klare Lösung statt Koordinationsstress.</p>
+        </div>
+
+        <div class="lp-services-grid">
+          <a class="lp-service-card orange" href="/entruempelung.shtml">
+            <div class="lp-service-media">
+              <img src="/assets/img/logo/Meisterwerk-entruemplung.png" alt="Entrümpelung in Ingolstadt">
+            </div>
+            <div class="lp-service-content">
+              <h3>Entrümpelung</h3>
+              <p>Für Keller, Dachboden, Garage, Wohnung, Haus und Gewerbeflächen. Wir räumen strukturiert, sortieren sinnvoll und entsorgen fachgerecht.</p>
+              <ul>
+                <li>Keller, Dachboden und Garage</li>
+                <li>Wohnungs- und Hausentrümpelung</li>
+                <li>Gewerbliche Räumungen</li>
+                <li>Besenreine Übergabe</li>
+              </ul>
+              <span class="lp-card-link">Entrümpelung ansehen</span>
+            </div>
+          </a>
+
+          <a class="lp-service-card blue" href="/umzug.shtml">
+            <div class="lp-service-media">
+              <img src="/assets/img/logo/Meisterwerk-umzug.png" alt="Umzugsservice in Ingolstadt">
+            </div>
+            <div class="lp-service-content">
+              <h3>Umzüge</h3>
+              <p>Privat oder gewerblich: Wir planen den Ablauf, schützen Möbel und transportieren Ihr Eigentum sicher an den neuen Ort.</p>
+              <ul>
+                <li>Privatumzüge und Firmenumzüge</li>
+                <li>Möbelmontage und Demontage</li>
+                <li>Verpackungsservice auf Anfrage</li>
+                <li>Versicherter Transport</li>
+              </ul>
+              <span class="lp-card-link">Umzugsservice ansehen</span>
+            </div>
+          </a>
+
+          <a class="lp-service-card green" href="/kontakt.shtml">
+            <div class="lp-service-media">
+              <img src="/assets/img/logo/Meisterwerk-garten.png" alt="Gartenservice in Ingolstadt">
+            </div>
+            <div class="lp-service-content">
+              <h3>Gartenservice</h3>
+              <p>Vom regelmäßigen Schnitt bis zur kompletten Außenflächenpflege: Wir bringen Garten, Hof und Grundstück zuverlässig in Ordnung.</p>
+              <ul>
+                <li>Rasenmähen und Heckenschnitt</li>
+                <li>Baumschnitt und Gartenpflege</li>
+                <li>Gartenentrümpelung</li>
+                <li>Pflasterreinigung und Unkraut</li>
+              </ul>
+              <span class="lp-card-link">Gartenservice anfragen</span>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="container">
+        <div class="lp-split">
+          <div class="lp-copy">
+            <span class="lp-eyebrow">Warum Meisterwerk</span>
+            <h2>Professionell genug für komplexe Aufträge, persönlich genug für sensible Situationen.</h2>
+            <p>
+              Gerade bei Haushaltsauflösungen, Umzügen oder kurzfristigen Räumungen zählt nicht nur Tempo. Entscheidend sind klare Kommunikation, ein respektvoller Umgang mit Eigentum und ein Ergebnis, das wirklich fertig ist.
+            </p>
+            <br>
+            <a href="#anfrage" class="btn-primary">Unverbindliches Angebot erhalten</a>
+          </div>
+
+          <div class="lp-benefits">
+            <div class="lp-benefit">
+              <div class="lp-benefit-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <b>Faire Festpreise</b>
+              <span>Sie wissen vor Beginn, was der Auftrag kostet. Keine versteckten Überraschungen.</span>
+            </div>
+            <div class="lp-benefit">
+              <div class="lp-benefit-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+              </div>
+              <b>Schnelle Termine</b>
+              <span>In vielen Fällen sind kurzfristige Besichtigungen und Einsätze möglich.</span>
+            </div>
+            <div class="lp-benefit">
+              <div class="lp-benefit-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z"></path></svg>
+              </div>
+              <b>Saubere Übergabe</b>
+              <span>Wir verlassen Räume, Flächen und Wege ordentlich und besenrein.</span>
+            </div>
+            <div class="lp-benefit">
+              <div class="lp-benefit-icon">
+                <svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15"></path></svg>
+              </div>
+              <b>Nachhaltige Entsorgung</b>
+              <span>Brauchbares wird berücksichtigt, verwertbare Stoffe werden sauber getrennt.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-process">
+      <div class="container">
+        <div class="lp-section-head">
+          <span class="lp-eyebrow">Ablauf</span>
+          <h2>Von der Anfrage bis zur fertigen Übergabe bleibt der Weg klar.</h2>
+          <p>Drei Schritte, klare Zuständigkeiten und ein Team, das den Auftrag bis zum Ende durchzieht.</p>
+        </div>
+
+        <div class="lp-process-grid">
+          <div class="lp-step">
+            <div class="lp-step-number">1</div>
+            <h3>Anfrage stellen</h3>
+            <p>Sie beschreiben kurz Ihr Anliegen per Formular oder Telefon. Wir melden uns schnell zurück und klären die wichtigsten Eckdaten.</p>
+          </div>
+          <div class="lp-step">
+            <div class="lp-step-number">2</div>
+            <h3>Besichtigung & Angebot</h3>
+            <p>Wenn nötig, kommen wir kostenlos vor Ort. Danach erhalten Sie ein verbindliches Angebot mit transparentem Leistungsumfang.</p>
+          </div>
+          <div class="lp-step">
+            <div class="lp-step-number">3</div>
+            <h3>Ausführung & Übergabe</h3>
+            <p>Wir erledigen den Auftrag termingerecht, sauber und vollständig. Am Ende steht eine klare, besenreine Übergabe.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-section-soft">
+      <div class="container">
+        <div class="lp-region">
+          <div class="lp-copy">
+            <span class="lp-eyebrow">Einsatzgebiet</span>
+            <h2>Regional unterwegs rund um Ingolstadt.</h2>
+            <p>Kurze Wege, flexible Termine und echte Ortskenntnis: Meisterwerk ist in Ingolstadt und den umliegenden Landkreisen für Sie im Einsatz.</p>
+          </div>
+          <div class="lp-region-tags" aria-label="Einsatzorte">
+            <span>Ingolstadt</span>
+            <span>Eichstätt</span>
+            <span>Neuburg a.d. Donau</span>
+            <span>Pfaffenhofen a.d. Ilm</span>
+            <span>Schrobenhausen</span>
+            <span>Beilngries</span>
+            <span>Manching</span>
+            <span>Gaimersheim</span>
+            <span>Vohburg</span>
+            <span>und Umgebung</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section">
+      <div class="container">
+        <div class="lp-split">
+          <div class="lp-quote-box">
+            <p>Gute Arbeit merkt man daran, dass am Ende nicht noch zehn Dinge offen sind.</p>
+            <div class="lp-quote-list">
+              <span>Persönliche Abstimmung statt anonymer Massenabwicklung</span>
+              <span>Feste Termine und ein klarer Ansprechpartner</span>
+              <span>Ordentliche Ausführung mit Blick für Details</span>
+            </div>
+          </div>
+          <div class="lp-copy">
+            <span class="lp-eyebrow">Qualität</span>
+            <h2>Für private Haushalte, Vermieter, Angehörige und Unternehmen.</h2>
+            <p>Wir arbeiten diskret bei sensiblen Haushaltsauflösungen, planbar bei Umzügen und pragmatisch bei Außenflächen. Das Ziel ist immer gleich: Sie bekommen eine erledigte Sache zurück, nicht ein neues Projekt.</p>
+            <br>
+            <a href="/kontakt.shtml" class="btn-secondary">Kontaktseite öffnen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-section lp-section-soft">
+      <div class="container">
+        <div class="lp-section-head">
+          <span class="lp-eyebrow">FAQ</span>
+          <h2>Häufige Fragen vor der Anfrage.</h2>
+          <p>Die wichtigsten Antworten, bevor wir gemeinsam in die Details gehen.</p>
+        </div>
+
+        <div class="lp-faq">
+          <details>
+            <summary>Was kostet eine Entrümpelung?</summary>
+            <p>Das hängt vom Umfang, der Zugänglichkeit, dem Volumen und der Entsorgung ab. Nach einer Besichtigung erhalten Sie ein verbindliches Festpreisangebot.</p>
+          </details>
+          <details>
+            <summary>Wie schnell ist ein Termin möglich?</summary>
+            <p>In vielen Fällen können wir innerhalb weniger Werktage besichtigen oder starten. Bei dringenden Fällen lohnt sich ein direkter Anruf.</p>
+          </details>
+          <details>
+            <summary>Muss ich bei der Haushaltsauflösung anwesend sein?</summary>
+            <p>Nein. Wenn alles abgestimmt ist, können wir auch mit Schlüsselübergabe arbeiten und die Räume anschließend besenrein übergeben.</p>
+          </details>
+          <details>
+            <summary>Was passiert mit brauchbaren Möbeln und Gegenständen?</summary>
+            <p>Gut erhaltene Gegenstände werden nach Möglichkeit weitergegeben, verkauft oder verwertet. Das berücksichtigen wir transparent bei der Planung.</p>
+          </details>
+          <details>
+            <summary>Bieten Sie auch einzelne Gartenarbeiten an?</summary>
+            <p>Ja. Der Gartenservice ist auch unabhängig von Entrümpelung oder Umzug buchbar, zum Beispiel für Rückschnitt, Pflege oder Außenflächen.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section class="lp-final-cta">
+      <div class="container lp-final-cta-inner">
+        <div>
+          <h2>Bereit für eine saubere Lösung?</h2>
+          <p>Schicken Sie uns kurz die Eckdaten per Anfrageformular. Wir melden uns innerhalb von 24 Stunden und sagen Ihnen, wie der nächste Schritt aussieht.</p>
+        </div>
+        <a href="#anfrage" class="btn-white">Kostenlose Anfrage starten</a>
+      </div>
+    </section>
+
+    <div id="anfrage">
+      <!--#include virtual="/includes/lead-form.shtml" -->
+    </div>
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+  <script src="/assets/js/form.js"></script>
+</body>
+</html>

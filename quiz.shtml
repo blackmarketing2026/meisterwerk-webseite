@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Anfrage-Quiz – Meisterwerk Ingolstadt</title>
+  <meta name="description" content="Stellen Sie Ihre Anfrage für Entrümpelung, Umzug oder Gartenservice in unter 60 Sekunden mit unserem einfachen Anfrage-Quiz.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/quiz.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    body {
+      background: var(--light);
+    }
+    
+    .quiz-section {
+      padding: 60px 20px 100px;
+    }
+
+    .quiz-wrapper {
+      background: #fff;
+      max-width: 640px;
+      margin: 0 auto;
+      border-radius: 16px;
+      box-shadow: 0 20px 50px rgba(16, 19, 26, 0.08);
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .quiz-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .quiz-header h1 {
+      color: var(--blue);
+      font-size: clamp(1.8rem, 4vw, 2.4rem);
+      margin-bottom: 12px;
+      line-height: 1.2;
+    }
+
+    .quiz-header p {
+      color: var(--text-light);
+      font-size: 1.05rem;
+    }
+
+    /* Progress Bar */
+    .step-indicator {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 40px;
+    }
+    .step-dot {
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: #e0e0e0;
+      transition: background 0.3s, transform 0.3s;
+    }
+    .step-dot.active {
+      background: var(--orange);
+      transform: scale(1.2);
+    }
+    .step-line {
+      width: 40px;
+      height: 2px;
+      background: #e0e0e0;
+    }
+    .step-line.active {
+      background: var(--orange);
+    }
+
+    /* Quiz Steps */
+    .quiz-step {
+      display: none;
+      animation: fadeUp 0.4s ease forwards;
+    }
+    .quiz-step.active {
+      display: block;
+    }
+    @keyframes fadeUp {
+      from { opacity: 0; transform: translateY(15px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .step-title {
+      font-size: 1.4rem;
+      color: var(--blue);
+      margin-bottom: 24px;
+      text-align: center;
+    }
+
+    /* Selection Cards (Step 1) */
+    .option-grid {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+    @media(min-width: 480px) {
+      .option-grid { grid-template-columns: repeat(3, 1fr); }
+    }
+    .option-card {
+      border: 2px solid var(--border);
+      border-radius: 12px;
+      padding: 32px 16px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      background: #fff;
+    }
+    .option-card:hover {
+      border-color: var(--orange);
+      background: #fff8f3;
+      transform: translateY(-2px);
+    }
+    .option-card.selected {
+      border-color: var(--orange);
+      background: var(--orange);
+      color: #fff;
+      box-shadow: 0 8px 24px rgba(242, 107, 0, 0.2);
+    }
+    .option-icon {
+      font-size: 2.5rem;
+      margin-bottom: 12px;
+      display: block;
+    }
+    .option-card.selected .option-icon {
+      filter: brightness(0) invert(1);
+    }
+    .option-title {
+      font-weight: 700;
+      font-size: 1.1rem;
+    }
+
+    /* Form Inputs (Step 2) */
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-weight: 600; margin-bottom: 8px; color: var(--text); }
+    .quiz-input {
+      width: 100%;
+      padding: 14px 16px;
+      border: 2px solid var(--border);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    .quiz-input:focus {
+      outline: none;
+      border-color: var(--orange);
+    }
+
+    /* Buttons */
+    .quiz-btn {
+      width: 100%;
+      background: var(--orange);
+      color: #fff;
+      border: none;
+      padding: 16px;
+      border-radius: 8px;
+      font-size: 1.1rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: background 0.2s, transform 0.2s;
+      margin-top: 12px;
+    }
+    .quiz-btn:hover { background: var(--orange-dark); transform: translateY(-1px); }
+    .quiz-btn:disabled { background: #ccc; cursor: not-allowed; transform: none; }
+    
+    .quiz-btn-back {
+      background: transparent;
+      color: var(--text-light);
+      border: none;
+      padding: 16px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 1rem;
+      margin-top: 4px;
+      transition: color 0.2s;
+    }
+    .quiz-btn-back:hover { color: var(--text); text-decoration: underline; }
+
+    /* Success Message */
+    .success-message { text-align: center; display: none; }
+    .success-message.active { display: block; }
+    .success-icon { font-size: 4rem; color: #15803d; margin-bottom: 20px; }
+
+    #error-message { color: #d32f2f; text-align: center; margin-top: 16px; font-weight: 600; display: none; }
+
+    @media (max-width: 600px) {
+      .quiz-wrapper { padding: 32px 20px; border-radius: 12px; margin-top: -20px; }
+      .quiz-section { padding-top: 40px; }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+    <section class="quiz-section">
+      <div class="quiz-wrapper">
+        
+        <div class="quiz-header" id="quiz-header">
+          <h1>Ihre Anfrage</h1>
+          <p>Beantworten Sie 2 kurze Fragen für Ihr Angebot.</p>
+        </div>
+
+        <!-- Step Indicator -->
+        <div class="step-indicator" id="step-indicator">
+          <div class="step-dot active" id="dot-1"></div>
+          <div class="step-line" id="line-1"></div>
+          <div class="step-dot" id="dot-2"></div>
+        </div>
+
+        <!-- Step 1: Dienstleistung -->
+        <div class="quiz-step active" id="step-1">
+          <h2 class="step-title">Um was geht es?</h2>
+          <div class="option-grid">
+            <div class="option-card" onclick="selectService('Entrümpelung', this)">
+              <span class="option-icon">🏠</span>
+              <span class="option-title">Entrümpelung</span>
+            </div>
+            <div class="option-card" onclick="selectService('Umzüge', this)">
+              <span class="option-icon">🚚</span>
+              <span class="option-title">Umzüge</span>
+            </div>
+            <div class="option-card" onclick="selectService('Garten', this)">
+              <span class="option-icon">🌿</span>
+              <span class="option-title">Garten</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 2: Kontaktdaten -->
+        <div class="quiz-step" id="step-2">
+          <h2 class="step-title">Wie können wir Sie erreichen?</h2>
+          
+          <div class="form-group">
+            <label for="q-name">Vor- & Nachname</label>
+            <input type="text" id="q-name" class="quiz-input" placeholder="Max Mustermann" required>
+          </div>
+          <div class="form-group">
+            <label for="q-email">E-Mail-Adresse</label>
+            <input type="email" id="q-email" class="quiz-input" placeholder="max@beispiel.de" required>
+          </div>
+          <div class="form-group">
+            <label for="q-telefon">Telefonnummer</label>
+            <input type="tel" id="q-telefon" class="quiz-input" placeholder="0151 123 456 78" required>
+          </div>
+
+          <button class="quiz-btn" id="submit-btn" onclick="submitQuiz()">Anfrage kostenfrei absenden</button>
+          <button class="quiz-btn-back" onclick="prevStep()">Zurück zur Auswahl</button>
+          
+          <div id="error-message">Bitte füllen Sie alle Felder aus.</div>
+        </div>
+
+        <!-- Step 3: Erfolg -->
+        <div class="success-message" id="step-success">
+          <div class="success-icon">✅</div>
+          <h2 class="step-title">Vielen Dank!</h2>
+          <p style="color: var(--text-light); line-height: 1.6;">
+            Wir haben Ihre Anfrage erhalten. Unser Team wird sich innerhalb der nächsten 24 Stunden bei Ihnen melden, um die Details zu besprechen.
+          </p>
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <script src="/assets/js/main.js"></script>
+  <script>
+    let quizData = {
+      leistung: '',
+      name: '',
+      email: '',
+      telefon: ''
+    };
+
+    function selectService(service, element) {
+      quizData.leistung = service;
+      
+      // Optisches Feedback an den Karten
+      document.querySelectorAll('.option-card').forEach(card => card.classList.remove('selected'));
+      element.classList.add('selected');
+
+      // Nach kurzer Verzögerung automatisch zu Schritt 2 wechseln (fühlt sich flüssiger an)
+      setTimeout(() => {
+        nextStep();
+      }, 350);
+    }
+
+    function nextStep() {
+      if(!quizData.leistung) return;
+      
+      document.getElementById('step-1').classList.remove('active');
+      document.getElementById('step-2').classList.add('active');
+      
+      document.getElementById('line-1').classList.add('active');
+      document.getElementById('dot-2').classList.add('active');
+    }
+
+    function prevStep() {
+      document.getElementById('step-2').classList.remove('active');
+      document.getElementById('step-1').classList.add('active');
+      
+      document.getElementById('line-1').classList.remove('active');
+      document.getElementById('dot-2').classList.remove('active');
+      document.getElementById('error-message').style.display = 'none';
+    }
+
+    async function submitQuiz() {
+      const nameVal = document.getElementById('q-name').value.trim();
+      const emailVal = document.getElementById('q-email').value.trim();
+      const telVal = document.getElementById('q-telefon').value.trim();
+      const errorMsg = document.getElementById('error-message');
+
+      if (!nameVal || !emailVal || !telVal) {
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'Bitte füllen Sie alle Felder aus.';
+        return;
+      }
+
+      quizData.name = nameVal;
+      quizData.email = emailVal;
+      quizData.telefon = telVal;
+
+      const btn = document.getElementById('submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet...';
+      errorMsg.style.display = 'none';
+
+      // --- SIMULATION FÜR LOKALE TESTS ---
+      // Wenn du das Design lokal testen willst (ohne Backend), kommentiere die nächsten 8 Zeilen ein (die /* und */ entfernen):
+      /*
+      setTimeout(() => {
+        document.getElementById('step-indicator').style.display = 'none';
+        document.getElementById('quiz-header').style.display = 'none';
+        document.getElementById('step-2').classList.remove('active');
+        document.getElementById('step-success').classList.add('active');
+      }, 1000);
+      return; // Bricht hier ab und führt den echten fetch() unten nicht mehr aus
+      */
+
+      try {
+        // Post an die bestehende API-Route - hier ist Resend dann im Backend integriert!
+        const response = await fetch('/api/send-contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            leistung: quizData.leistung,
+            name: quizData.name,
+            email: quizData.email,
+            telefon: quizData.telefon,
+            // Optional: damit das Backend weiß, dass es aus dem Quiz kommt
+            quelle: 'Anfrage-Quiz' 
+          }),
+        });
+
+        if (response.ok) {
+          // Erfolg: Blende Quiz aus, zeige Erfolgsmeldung
+          document.getElementById('step-indicator').style.display = 'none';
+          document.getElementById('quiz-header').style.display = 'none';
+          document.getElementById('step-2').classList.remove('active');
+          document.getElementById('step-success').classList.add('active');
+        } else {
+          throw new Error('Server returned ' + response.status);
+        }
+      } catch (error) {
+        console.error('Sende-Fehler:', error);
+        errorMsg.style.display = 'block';
+        errorMsg.textContent = 'Fehler beim Senden. Bitte versuchen Sie es später erneut oder rufen Sie uns an.';
+        btn.disabled = false;
+        btn.textContent = 'Anfrage kostenfrei absenden';
+      }
+    }
+  </script>
+</body>
+</html>
