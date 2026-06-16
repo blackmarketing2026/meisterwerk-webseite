@@ -4,7 +4,7 @@
       <h2>Kostenlose Anfrage stellen</h2>
       <p>Füllen Sie das Formular aus – wir melden uns innerhalb von 24 Stunden.</p>
     </div>
-    <form class="lead-form" action="/kontakt.shtml" method="post" id="lead-form">
+    <form class="lead-form" action="/api/send-contact" method="post" id="lead-form">
       <input type="text"  name="vorname"  placeholder="Vorname"       required>
       <input type="text"  name="nachname" placeholder="Nachname"      required>
       <input type="tel"   name="telefon"  placeholder="Telefonnummer" class="full" required>
