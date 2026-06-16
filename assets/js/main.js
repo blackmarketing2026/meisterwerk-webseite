@@ -1,3 +1,27 @@
+// SSI-Fallback: lädt Header/Footer per fetch wenn Live Server kein SSI verarbeitet
+(function () {
+  function loadInclude(url, insertFn) {
+    fetch(url)
+      .then(function (r) { return r.text(); })
+      .then(function (html) { insertFn(html); })
+      .catch(function () {});
+  }
+
+  if (!document.querySelector('.site-header')) {
+    loadInclude('/includes/header.shtml', function (html) {
+      document.body.insertAdjacentHTML('afterbegin', html);
+    });
+  }
+
+  if (!document.querySelector('.site-footer')) {
+    loadInclude('/includes/footer.shtml', function (html) {
+      var scripts = document.querySelectorAll('body script');
+      var lastScript = scripts[scripts.length - 1];
+      lastScript.insertAdjacentHTML('beforebegin', html);
+    });
+  }
+})();
+
 document.addEventListener('DOMContentLoaded', function () {
 
   // Aktiven Nav-Link markieren
