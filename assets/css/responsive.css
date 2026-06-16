@@ -2,28 +2,48 @@
    Meisterwerk – Responsive Styles
    ============================================================ */
 
-/* ── TABLET (max 900px) ── */
-@media (max-width: 900px) {
+/* ── TABLET (max 960px) ── */
+@media (max-width: 960px) {
 
-  .header-inner { flex-wrap: wrap; gap: 12px; }
+  .header-topbar { display: none; }
+
+  .header-inner { gap: 16px; }
 
   .main-nav {
     display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     flex-direction: column;
-    width: 100%;
-    background: rgba(0,0,0,.12);
-    border-radius: 6px;
-    padding: 8px 0;
+    background: #161616;
+    border-top: 2px solid var(--orange);
+    padding: 12px 0 20px;
     gap: 0;
+    box-shadow: 0 12px 32px rgba(0,0,0,.5);
   }
   .main-nav.open { display: flex; }
-  .main-nav a { border-radius: 0; padding: 10px 18px; }
+
+  .main-nav a {
+    border-radius: 0;
+    padding: 12px 24px;
+    justify-content: flex-start;
+    width: 100%;
+    font-size: 1rem;
+  }
+  .main-nav a::after { display: none; }
+  .main-nav a:hover { background: rgba(255,255,255,.05); }
+
+  .site-header { position: sticky; }
+  .header-main { position: relative; }
 
   .nav-toggle { display: flex; }
 
-  .header-phone { order: 3; }
-
   .kontakt-grid { grid-template-columns: 1fr; }
+
+  .footer-grid { grid-template-columns: 1fr 1fr; gap: 32px; }
+  .footer-brand { grid-column: 1 / -1; }
+  .footer-brand > p { max-width: 100%; }
 }
 
 /* ── MOBILE (max 600px) ── */
@@ -46,17 +66,21 @@
   .lead-form { grid-template-columns: 1fr; }
   .lead-form .full { grid-column: 1; }
 
-  .footer-inner { grid-template-columns: 1fr 1fr; }
+  .footer-grid { grid-template-columns: 1fr; }
+  .footer-top { padding: 44px 0 36px; }
 
-  .site-header .logo img { height: 48px; }
+  .footer-bottom-inner { flex-direction: column; text-align: center; }
+  .footer-bottom-links { justify-content: center; }
+
+  .site-header .logo img { height: 46px; }
+  .header-cta { padding: 9px 16px; font-size: .85rem; }
 
   .cta-box h2 { font-size: 1.5rem; }
-
   .page-hero { padding: 44px 0; }
   .page-hero h1 { font-size: 1.5rem; }
 }
 
 /* ── KLEIN-MOBIL (max 400px) ── */
 @media (max-width: 400px) {
-  .footer-inner { grid-template-columns: 1fr; }
+  .header-cta { display: none; }
 }
