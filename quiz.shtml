@@ -286,6 +286,12 @@
       telefon: ''
     };
 
+    const leistungKeyMap = {
+      'Entrümpelung': 'entruempelung',
+      'Umzüge':       'umzug',
+      'Garten':       'gartenservice',
+    };
+
     function selectService(service, element) {
       quizData.leistung = service;
       
@@ -357,12 +363,11 @@
           method: 'POST',
           headers: { 'Content-Type': 'application/json' },
           body: JSON.stringify({
-            leistung: quizData.leistung,
-            name: quizData.name,
-            email: quizData.email,
-            telefon: quizData.telefon,
-            // Optional: damit das Backend weiß, dass es aus dem Quiz kommt
-            quelle: 'Anfrage-Quiz' 
+            leistung: leistungKeyMap[quizData.leistung] ?? quizData.leistung,
+            betreff:  'Anfrage über Quiz',
+            name:     quizData.name,
+            email:    quizData.email,
+            telefon:  quizData.telefon,
           }),
         });
 
