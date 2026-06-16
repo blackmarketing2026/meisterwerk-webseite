@@ -16,23 +16,31 @@
     left: 0;
     right: 0;
     flex-direction: column;
-    background: #161616;
-    border-top: 2px solid var(--orange);
-    padding: 12px 0 20px;
-    gap: 0;
-    box-shadow: 0 12px 32px rgba(0,0,0,.5);
+    background: linear-gradient(180deg, #111 0%, #0d0d0d 100%);
+    border-top: 1px solid rgba(242,107,0,.5);
+    padding: 8px 0 16px;
+    gap: 2px;
+    box-shadow: 0 16px 40px rgba(0,0,0,.6);
   }
   .main-nav.open { display: flex; }
 
   .main-nav a {
     border-radius: 0;
-    padding: 12px 24px;
-    justify-content: flex-start;
+    padding: 11px 24px;
     width: 100%;
-    font-size: 1rem;
+    font-size: .97rem;
+    color: rgba(255,255,255,.62);
+    border-left: 2px solid transparent;
+    transition: color .18s, background .18s, border-color .18s;
   }
-  .main-nav a::after { display: none; }
-  .main-nav a:hover { background: rgba(255,255,255,.05); }
+  .main-nav a:hover {
+    background: rgba(255,255,255,.04);
+    color: #fff;
+    border-left-color: var(--orange);
+  }
+  .main-nav a.active {
+    border-left-color: var(--orange);
+  }
 
   .site-header { position: sticky; }
   .header-main { position: relative; }
