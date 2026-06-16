@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Meisterwerk Ingolstadt – Entrümpelung, Umzüge & Gartenservice</title>
-  <meta name="description" content="Meisterwerk Ingolstadt: Professionelle Entrümpelung, Umzüge und Gartenservice. Festpreis, schnelle Termine, kostenlose Anfrage!">
+  <title>Meisterwerk Ingolstadt - Entrümpelung, Umzüge & Gartenservice</title>
+  <meta name="description" content="Meisterwerk Ingolstadt: Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice aus einer Hand. Kostenlose Besichtigung, faire Festpreise und schnelle Termine.">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/">
 
@@ -13,326 +13,644 @@
   <link rel="stylesheet" href="/assets/css/responsive.css">
 
   <style>
-    /* ── LANDINGPAGE-SPEZIFISCH ── */
     :root {
-      --orange: #f26b00;
-      --green:  #1a9e1a;
-      --blue:   #1a35b5;
+      --lp-ink: #10131a;
+      --lp-ink-soft: #2c3340;
+      --lp-muted: #667085;
+      --lp-line: #e8ebf0;
+      --lp-paper: #ffffff;
+      --lp-soft: #f6f7f9;
+      --lp-orange: #f26b00;
+      --lp-orange-dark: #c95600;
+      --lp-blue: #1a2e6e;
+      --lp-blue-deep: #0b1638;
+      --lp-green: #15803d;
+      --lp-radius: 8px;
+      --lp-shadow: 0 18px 55px rgba(16, 19, 26, .12);
     }
 
-    /* Hero */
-    .lp-hero {
-      background: linear-gradient(135deg, #111 0%, #1c1c1c 100%);
-      color: #fff;
-      padding: 80px 0 70px;
-      text-align: center;
-      position: relative;
-      overflow: hidden;
-    }
-    .lp-hero::before {
-      content: '';
-      position: absolute;
-      inset: 0;
-      background: url('/assets/img/hero/haushaltsaufloesung-hero.webp') center/cover no-repeat;
-      opacity: .18;
-    }
-    .lp-hero .container { position: relative; }
-
-    .lp-hero .badge {
-      display: inline-block;
-      background: var(--orange);
-      color: #fff;
-      font-size: .8rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      letter-spacing: .1em;
-      padding: 5px 16px;
-      border-radius: 20px;
-      margin-bottom: 20px;
-    }
-
-    .lp-hero h1 {
-      font-size: clamp(2rem, 4.5vw, 3.2rem);
-      font-weight: 800;
-      line-height: 1.15;
-      margin-bottom: 20px;
-    }
-    .lp-hero h1 .hl-orange { color: var(--orange); }
-    .lp-hero h1 .hl-green  { color: #4dd44d; }
-
-    .lp-hero .lead {
-      font-size: 1.15rem;
-      max-width: 640px;
-      margin: 0 auto 36px;
-      opacity: .88;
-      line-height: 1.7;
-    }
-
-    .lp-hero .hero-btns {
-      display: flex;
-      gap: 16px;
-      justify-content: center;
-      flex-wrap: wrap;
-      margin-bottom: 48px;
-    }
-
-    .lp-hero .trust-bar {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 28px;
-      font-size: .9rem;
-      opacity: .7;
-    }
-    .lp-hero .trust-bar span::before { content: '✓ '; color: #4dd44d; }
-
-    /* ── SERVICE KARTEN MIT BEREICHSFARBEN ── */
-    .services-section {
-      padding: 80px 0;
-      background: #f7f7f7;
-    }
-
-    .service-cards {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-      gap: 24px;
-      margin-top: 48px;
-    }
-
-    .service-card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: 0 3px 16px rgba(0,0,0,.09);
-      text-decoration: none;
-      color: #333;
-      display: flex;
-      flex-direction: column;
-      transition: transform .25s, box-shadow .25s;
-    }
-    .service-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 10px 32px rgba(0,0,0,.15);
-    }
-
-    .service-card-top {
-      padding: 32px 28px 24px;
-      color: #fff;
-      position: relative;
-    }
-    .service-card-top .s-icon {
-      font-size: 2.6rem;
-      margin-bottom: 14px;
-      display: block;
-    }
-    .service-card-top h3 {
-      font-size: 1.25rem;
-      font-weight: 800;
-      margin-bottom: 8px;
-    }
-    .service-card-top p {
-      font-size: .92rem;
-      opacity: .9;
-      line-height: 1.5;
-    }
-
-    .sc-orange .service-card-top { background: var(--orange); }
-    .sc-blue   .service-card-top { background: var(--blue); }
-    .sc-green  .service-card-top { background: var(--green); }
-
-    .service-card-body {
-      padding: 22px 28px 28px;
-      flex: 1;
-      display: flex;
-      flex-direction: column;
-    }
-    .service-card-body ul {
-      list-style: none;
-      padding: 0;
-      margin-bottom: 22px;
-      flex: 1;
-    }
-    .service-card-body ul li {
-      padding: 6px 0;
-      font-size: .92rem;
-      color: #555;
-      display: flex;
+    .lp-eyebrow {
+      display: inline-flex;
+      align-items: center;
       gap: 10px;
-      align-items: flex-start;
-      border-bottom: 1px solid #f0f0f0;
-    }
-    .service-card-body ul li:last-child { border: none; }
-    .service-card-body ul li::before {
-      content: '✓';
-      font-weight: 700;
-      flex-shrink: 0;
-    }
-    .sc-orange .service-card-body ul li::before { color: var(--orange); }
-    .sc-blue   .service-card-body ul li::before { color: var(--blue); }
-    .sc-green  .service-card-body ul li::before { color: var(--green); }
-
-    .service-card-body .card-cta {
-      display: block;
-      text-align: center;
-      padding: 12px;
-      border-radius: 6px;
-      font-weight: 700;
-      font-size: .95rem;
-      text-decoration: none;
-      color: #fff;
-      transition: opacity .2s;
-    }
-    .service-card-body .card-cta:hover { opacity: .85; }
-
-    .sc-orange .card-cta { background: var(--orange); }
-    .sc-blue   .card-cta { background: var(--blue); }
-    .sc-green  .card-cta { background: var(--green); }
-
-    /* ── WARUM MEISTERWERK ── */
-    .warum-lp {
-      background: #fff;
-      padding: 80px 0;
-    }
-
-    .warum-lp .facts-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0;
-      border: 1px solid #e8e8e8;
-      border-radius: 10px;
-      overflow: hidden;
-      margin-top: 48px;
-    }
-
-    .fact-item {
-      padding: 32px 24px;
-      text-align: center;
-      border-right: 1px solid #e8e8e8;
-    }
-    .fact-item:last-child { border-right: none; }
-
-    .fact-number {
-      font-size: 2.8rem;
+      color: var(--lp-orange);
+      font-size: .78rem;
       font-weight: 800;
-      color: var(--orange);
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .lp-eyebrow::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background: currentColor;
+      border-radius: 999px;
+    }
+
+    .lp-hero {
+      position: relative;
+      overflow: hidden;
+      color: #fff;
+      background:
+        linear-gradient(115deg, rgba(7, 13, 32, .96) 0%, rgba(15, 30, 74, .92) 52%, rgba(242, 107, 0, .88) 100%),
+        radial-gradient(circle at 80% 15%, rgba(255, 255, 255, .18), transparent 28%),
+        #0b1638;
+      padding: 82px 0 36px;
+    }
+    .lp-hero::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      height: 96px;
+      background: linear-gradient(180deg, transparent, rgba(255,255,255,.08));
+      pointer-events: none;
+    }
+    .lp-hero-grid {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: minmax(0, 1.08fr) minmax(360px, .92fr);
+      gap: 52px;
+      align-items: center;
+    }
+    .lp-hero-copy .lp-eyebrow { color: #ffb36b; margin-bottom: 18px; }
+    .lp-hero h1 {
+      max-width: 760px;
+      font-size: clamp(2.25rem, 5.7vw, 4.8rem);
+      line-height: .98;
+      letter-spacing: 0;
+      margin-bottom: 24px;
+      color: #fff;
+    }
+    .lp-hero h1 span {
+      color: #ffd0a3;
+      display: block;
+    }
+    .lp-hero .lead {
+      max-width: 620px;
+      color: rgba(255,255,255,.82);
+      font-size: clamp(1.03rem, 1.8vw, 1.22rem);
+      line-height: 1.75;
+      margin-bottom: 30px;
+    }
+    .lp-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+      margin-bottom: 28px;
+    }
+    .lp-hero .btn-primary,
+    .lp-hero .btn-white {
+      border-radius: 8px;
+      box-shadow: 0 16px 34px rgba(0,0,0,.2);
+    }
+    .lp-hero .btn-white {
+      color: var(--lp-blue);
+    }
+    .lp-proofline {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      color: rgba(255,255,255,.72);
+      font-size: .92rem;
+    }
+    .lp-proofline span {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+    }
+    .lp-proofline span::before {
+      content: "";
+      width: 7px;
+      height: 7px;
+      border-radius: 50%;
+      background: #7ee787;
+      box-shadow: 0 0 0 4px rgba(126,231,135,.14);
+    }
+
+    .lp-hero-panel {
+      background: rgba(255,255,255,.12);
+      border: 1px solid rgba(255,255,255,.22);
+      border-radius: 8px;
+      padding: 18px;
+      box-shadow: 0 24px 70px rgba(0,0,0,.26);
+      backdrop-filter: blur(14px);
+    }
+    .lp-service-preview {
+      display: grid;
+      gap: 12px;
+    }
+    .lp-preview-card {
+      display: grid;
+      grid-template-columns: 82px 1fr;
+      gap: 16px;
+      align-items: center;
+      background: rgba(255,255,255,.94);
+      color: var(--lp-ink);
+      border-radius: 8px;
+      padding: 14px;
+      text-decoration: none;
+      box-shadow: 0 12px 28px rgba(0,0,0,.12);
+      transition: transform .2s, box-shadow .2s;
+    }
+    .lp-preview-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 18px 34px rgba(0,0,0,.18);
+    }
+    .lp-preview-card img {
+      width: 82px;
+      height: 82px;
+      object-fit: contain;
+      border-radius: 8px;
+      background: var(--lp-orange);
+      padding: 9px;
+      box-shadow: inset 0 0 0 1px rgba(255,255,255,.16);
+    }
+    .lp-preview-card.orange img { background: linear-gradient(135deg, #ff7900, #ef5f00); }
+    .lp-preview-card.blue img { background: linear-gradient(135deg, #173cb6, #0f256a); }
+    .lp-preview-card.green img { background: linear-gradient(135deg, #1f9d46, #106b31); }
+    .lp-preview-card strong {
+      display: block;
+      color: var(--lp-blue);
+      font-size: 1.02rem;
+      margin-bottom: 3px;
+    }
+    .lp-preview-card span {
+      display: block;
+      color: var(--lp-muted);
+      font-size: .88rem;
+      line-height: 1.45;
+    }
+
+    .lp-hero-metrics {
+      position: relative;
+      z-index: 1;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      margin-top: 58px;
+      background: rgba(255,255,255,.18);
+      border: 1px solid rgba(255,255,255,.16);
+      border-radius: 8px;
+      overflow: hidden;
+    }
+    .lp-metric {
+      background: rgba(255,255,255,.1);
+      padding: 22px 20px;
+      min-height: 118px;
+    }
+    .lp-metric strong {
+      display: block;
+      color: #fff;
+      font-size: clamp(1.7rem, 3vw, 2.35rem);
       line-height: 1;
       margin-bottom: 8px;
     }
-    .fact-label { color: #555; font-size: .92rem; line-height: 1.4; }
-
-    .warum-lp .vorteile {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 28px;
-      margin-top: 48px;
+    .lp-metric span {
+      display: block;
+      color: rgba(255,255,255,.72);
+      font-size: .9rem;
+      line-height: 1.45;
     }
 
-    .vorteil {
+    .lp-section {
+      padding: 86px 0;
+      background: #fff;
+    }
+    .lp-section-soft {
+      background:
+        linear-gradient(180deg, #fff 0%, var(--lp-soft) 100%);
+    }
+    .lp-section-head {
+      max-width: 720px;
+      margin: 0 auto 42px;
+      text-align: center;
+    }
+    .lp-section-head .lp-eyebrow {
+      justify-content: center;
+      margin-bottom: 12px;
+    }
+    .lp-section-head h2 {
+      color: var(--lp-blue);
+      font-size: clamp(1.75rem, 3.5vw, 2.65rem);
+      line-height: 1.14;
+      margin-bottom: 12px;
+    }
+    .lp-section-head p {
+      color: var(--lp-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    .lp-services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+    .lp-service-card {
+      position: relative;
       display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      background: var(--lp-paper);
+      border: 1px solid var(--lp-line);
+      border-radius: 8px;
+      min-height: 100%;
+      text-decoration: none;
+      color: var(--lp-ink);
+      box-shadow: 0 10px 34px rgba(16,19,26,.06);
+      transition: transform .22s, box-shadow .22s, border-color .22s;
+    }
+    .lp-service-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--lp-shadow);
+      border-color: rgba(242,107,0,.34);
+    }
+    .lp-service-media {
+      min-height: 174px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 26px;
+      background: var(--lp-orange);
+      position: relative;
+      overflow: hidden;
+    }
+    .lp-service-media::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        linear-gradient(135deg, rgba(255,255,255,.18), transparent 38%),
+        radial-gradient(circle at 82% 20%, rgba(255,255,255,.2), transparent 32%);
+      pointer-events: none;
+    }
+    .lp-service-card.orange .lp-service-media { background: linear-gradient(135deg, #ff7900 0%, #ef5f00 100%); }
+    .lp-service-card.blue .lp-service-media { background: linear-gradient(135deg, #173cb6 0%, #0f256a 100%); }
+    .lp-service-card.green .lp-service-media { background: linear-gradient(135deg, #1f9d46 0%, #106b31 100%); }
+    .lp-service-media img {
+      position: relative;
+      z-index: 1;
+      width: min(88%, 286px);
+      height: auto;
+      max-height: 118px;
+      object-fit: contain;
+      border-radius: 5px;
+      filter: drop-shadow(0 16px 22px rgba(16,19,26,.22));
+    }
+    .lp-service-content {
+      display: flex;
+      flex: 1;
+      flex-direction: column;
+      padding: 28px;
+    }
+    .lp-service-content h3 {
+      color: var(--lp-blue);
+      font-size: 1.22rem;
+      margin-bottom: 8px;
+    }
+    .lp-service-content p {
+      color: var(--lp-muted);
+      font-size: .95rem;
+      line-height: 1.65;
+      margin-bottom: 20px;
+    }
+    .lp-service-content ul {
+      list-style: none;
+      display: grid;
+      gap: 9px;
+      margin: 0 0 24px;
+      padding: 0;
+    }
+    .lp-service-content li {
+      position: relative;
+      padding-left: 24px;
+      color: var(--lp-ink-soft);
+      font-size: .92rem;
+      line-height: 1.45;
+    }
+    .lp-service-content li::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: .55em;
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: var(--lp-orange);
+    }
+    .lp-service-card.blue li::before { background: #2f55d4; }
+    .lp-service-card.green li::before { background: var(--lp-green); }
+    .lp-card-link {
+      margin-top: auto;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+      padding: 11px 16px;
+      border-radius: 8px;
+      background: var(--lp-blue);
+      color: #fff;
+      font-weight: 800;
+      text-decoration: none;
+      transition: background .2s;
+    }
+    .lp-service-card.orange .lp-card-link { background: var(--lp-orange); }
+    .lp-service-card.green .lp-card-link { background: var(--lp-green); }
+    .lp-card-link:hover { background: var(--lp-blue-deep); color: #fff; }
+
+    .lp-split {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 58px;
+      align-items: center;
+    }
+    .lp-copy h2 {
+      color: var(--lp-blue);
+      font-size: clamp(1.8rem, 3.4vw, 2.65rem);
+      line-height: 1.14;
+      margin: 12px 0 18px;
+    }
+    .lp-copy p {
+      color: var(--lp-muted);
+      font-size: 1.03rem;
+      line-height: 1.75;
+      margin-bottom: 22px;
+    }
+    .lp-benefits {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
       gap: 16px;
+    }
+    .lp-benefit {
+      border: 1px solid var(--lp-line);
+      border-radius: 8px;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 8px 26px rgba(16,19,26,.05);
+    }
+    .lp-benefit b {
+      display: block;
+      color: var(--lp-ink);
+      margin-bottom: 6px;
+      font-size: .98rem;
+    }
+    .lp-benefit span {
+      color: var(--lp-muted);
+      font-size: .9rem;
+      line-height: 1.55;
+    }
+    .lp-quote-box {
+      color: #fff;
+      background:
+        linear-gradient(135deg, rgba(11,22,56,.96), rgba(26,46,110,.94)),
+        var(--lp-blue);
+      border-radius: 8px;
+      padding: 34px;
+      box-shadow: var(--lp-shadow);
+    }
+    .lp-quote-box p {
+      font-size: 1.35rem;
+      line-height: 1.45;
+      font-weight: 800;
+      margin-bottom: 24px;
+    }
+    .lp-quote-list {
+      display: grid;
+      gap: 14px;
+      color: rgba(255,255,255,.78);
+      font-size: .95rem;
+    }
+    .lp-quote-list span {
+      display: flex;
+      gap: 10px;
       align-items: flex-start;
     }
-    .vorteil .v-icon {
-      width: 48px;
-      height: 48px;
+    .lp-quote-list span::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      margin-top: .55em;
       border-radius: 50%;
-      background: var(--orange);
-      color: #fff;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 1.3rem;
-      flex-shrink: 0;
+      background: var(--lp-orange);
+      flex: 0 0 auto;
     }
-    .vorteil h4 { color: #1a1a1a; font-size: 1rem; margin-bottom: 4px; }
-    .vorteil p  { color: #666; font-size: .9rem; line-height: 1.5; }
 
-    /* ── ABLAUF ── */
-    .ablauf-lp {
-      background: linear-gradient(135deg, #1a35b5 0%, #0d1f70 100%);
+    .lp-process {
       color: #fff;
-      padding: 80px 0;
+      background:
+        linear-gradient(135deg, rgba(10,16,34,.97), rgba(15,30,74,.94)),
+        var(--lp-blue-deep);
+      padding: 86px 0;
     }
-    .ablauf-lp .section-title h2 { color: #fff; }
-    .ablauf-lp .section-title p  { color: rgba(255,255,255,.72); }
-
-    .ablauf-lp .steps {
+    .lp-process .lp-section-head h2,
+    .lp-process .lp-section-head p {
+      color: #fff;
+    }
+    .lp-process .lp-section-head p {
+      color: rgba(255,255,255,.72);
+    }
+    .lp-process-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 0;
-      margin-top: 48px;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+    .lp-step {
       position: relative;
+      padding: 30px;
+      min-height: 248px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: 8px;
+      background: rgba(255,255,255,.07);
     }
-
-    .step {
-      text-align: center;
-      padding: 0 20px;
-      position: relative;
-    }
-    .step:not(:last-child)::after {
-      content: '→';
-      position: absolute;
-      right: -10px;
-      top: 28px;
-      font-size: 1.4rem;
-      color: var(--orange);
-    }
-
-    .step-num {
-      width: 60px;
-      height: 60px;
-      background: var(--orange);
-      border-radius: 50%;
-      display: flex;
+    .lp-step-number {
+      display: inline-flex;
       align-items: center;
       justify-content: center;
-      font-size: 1.5rem;
-      font-weight: 800;
-      margin: 0 auto 18px;
+      width: 52px;
+      height: 52px;
+      border-radius: 8px;
+      background: var(--lp-orange);
       color: #fff;
+      font-size: 1.35rem;
+      font-weight: 900;
+      margin-bottom: 24px;
     }
-    .step h3 { font-size: 1rem; margin-bottom: 8px; }
-    .step p  { font-size: .88rem; opacity: .78; line-height: 1.5; }
+    .lp-step h3 {
+      color: #fff;
+      font-size: 1.18rem;
+      margin-bottom: 10px;
+    }
+    .lp-step p {
+      color: rgba(255,255,255,.72);
+      font-size: .95rem;
+      line-height: 1.65;
+    }
 
-    /* ── REGIONEN ── */
-    .regionen-section {
-      background: #f7f7f7;
-      padding: 56px 0;
-      text-align: center;
+    .lp-region {
+      display: grid;
+      grid-template-columns: minmax(0, .82fr) minmax(0, 1.18fr);
+      gap: 44px;
+      align-items: center;
     }
-    .regionen-section h2 { color: #1a1a1a; font-size: 1.5rem; margin-bottom: 20px; }
-    .region-tags {
+    .lp-region-tags {
       display: flex;
       flex-wrap: wrap;
       gap: 10px;
-      justify-content: center;
-      max-width: 700px;
-      margin: 0 auto;
     }
-    .region-tag {
+    .lp-region-tags span {
       background: #fff;
-      border: 1px solid #ddd;
-      border-radius: 20px;
-      padding: 6px 18px;
-      font-size: .9rem;
-      color: #444;
+      border: 1px solid var(--lp-line);
+      border-radius: 999px;
+      padding: 8px 16px;
+      color: var(--lp-ink-soft);
+      font-size: .92rem;
+      box-shadow: 0 6px 18px rgba(16,19,26,.05);
     }
 
-    /* ── FAQ ── */
-    .faq-lp { padding: 80px 0; background: #fff; }
-
-    /* ── FORM SECTION ── */
-    .form-lp {
-      background: linear-gradient(135deg, #111 0%, #222 100%);
+    .lp-faq {
+      max-width: 860px;
+      margin: 0 auto;
+      border: 1px solid var(--lp-line);
+      border-radius: 8px;
+      background: #fff;
+      overflow: hidden;
+      box-shadow: 0 14px 42px rgba(16,19,26,.06);
+    }
+    .lp-faq details {
+      padding: 0;
+      border-bottom: 1px solid var(--lp-line);
+    }
+    .lp-faq details:last-child {
+      border-bottom: none;
+    }
+    .lp-faq summary {
+      padding: 22px 26px;
+      color: var(--lp-blue);
+      font-size: 1.02rem;
+    }
+    .lp-faq details p {
+      margin: 0;
+      padding: 0 26px 24px;
+      color: var(--lp-muted);
     }
 
-    /* RESPONSIVE */
-    @media (max-width: 700px) {
-      .step:not(:last-child)::after { display: none; }
-      .fact-item { border-right: none; border-bottom: 1px solid #e8e8e8; }
-      .fact-item:last-child { border-bottom: none; }
+    .lp-final-cta {
+      background: linear-gradient(135deg, var(--lp-orange), #ff8d2d);
+      color: #fff;
+      padding: 52px 0;
+    }
+    .lp-final-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 28px;
+    }
+    .lp-final-cta h2 {
+      color: #fff;
+      font-size: clamp(1.55rem, 3vw, 2.25rem);
+      line-height: 1.16;
+      margin-bottom: 8px;
+    }
+    .lp-final-cta p {
+      color: rgba(255,255,255,.84);
+      max-width: 650px;
+    }
+    .lp-final-cta .btn-white {
+      color: var(--lp-orange-dark);
+      flex: 0 0 auto;
+      border-radius: 8px;
+    }
+
+    #anfrage .lead-form-section {
+      background:
+        linear-gradient(135deg, rgba(11,22,56,.98), rgba(26,46,110,.95)),
+        var(--lp-blue);
+    }
+
+    @media (max-width: 980px) {
+      .lp-hero-grid,
+      .lp-split,
+      .lp-region {
+        grid-template-columns: 1fr;
+      }
+      .lp-hero-grid {
+        gap: 34px;
+      }
+      .lp-services-grid,
+      .lp-process-grid {
+        grid-template-columns: 1fr;
+      }
+      .lp-hero-metrics {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+
+    @media (max-width: 640px) {
+      .lp-hero {
+        padding: 58px 0 24px;
+      }
+      .lp-hero h1 {
+        font-size: clamp(2rem, 14vw, 3.1rem);
+      }
+      .lp-hero-actions,
+      .lp-final-cta-inner {
+        flex-direction: column;
+        align-items: stretch;
+      }
+      .lp-hero .btn-primary,
+      .lp-hero .btn-white,
+      .lp-final-cta .btn-white {
+        width: 100%;
+        max-width: none;
+        text-align: center;
+      }
+      .lp-hero-panel {
+        padding: 12px;
+      }
+      .lp-preview-card {
+        grid-template-columns: 64px 1fr;
+        padding: 12px;
+      }
+      .lp-preview-card img {
+        width: 64px;
+        height: 64px;
+      }
+      .lp-hero-metrics,
+      .lp-benefits {
+        grid-template-columns: 1fr;
+      }
+      .lp-section,
+      .lp-process {
+        padding: 58px 0;
+      }
+      .lp-service-content,
+      .lp-step,
+      .lp-quote-box {
+        padding: 24px;
+      }
+      .lp-faq summary {
+        padding: 20px;
+      }
+      .lp-faq details p {
+        padding: 0 20px 22px;
+      }
     }
   </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Meisterwerk Ingolstadt",
+    "url": "https://www.meisterwerk-ingolstadt.de/",
+    "telephone": "+4915165184976",
+    "areaServed": ["Ingolstadt", "Eichstätt", "Neuburg an der Donau", "Pfaffenhofen an der Ilm", "Manching", "Gaimersheim"],
+    "description": "Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice in Ingolstadt und Umgebung."
+  }
+  </script>
 </head>
 
 <body>
@@ -341,247 +659,278 @@
 
   <main>
 
-    <!-- ══ HERO ══ -->
     <section class="lp-hero">
       <div class="container">
-        <span class="badge">Ingolstadt & Region</span>
-        <h1>
-          <span class="hl-orange">Entrümpelung</span>,<br>
-          Umzüge<br>
-          & <span class="hl-green">Gartenservice</span>
-        </h1>
-        <p class="lead">
-          Meisterwerk erledigt das für Sie – professionell, termingerecht und zu einem fairen Festpreis. Kein Stress, keine versteckten Kosten.
-        </p>
-        <div class="hero-btns">
-          <a href="#anfrage" class="btn-primary">Kostenlose Anfrage stellen</a>
-          <a href="tel:+4915165184976" class="btn-white">📞 0151 651 849 76</a>
+        <div class="lp-hero-grid">
+          <div class="lp-hero-copy">
+            <span class="lp-eyebrow">Ingolstadt & Region</span>
+            <h1>Platz schaffen. Umziehen. Garten pflegen. <span>Alles mit einem Team.</span></h1>
+            <p class="lead">
+              Meisterwerk übernimmt Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice zuverlässig aus einer Hand: mit klarer Absprache, sauberer Ausführung und fair kalkuliertem Festpreis.
+            </p>
+            <div class="lp-hero-actions">
+              <a href="#anfrage" class="btn-primary">Kostenlose Anfrage stellen</a>
+              <a href="tel:+4915165184976" class="btn-white">0151 651 849 76 anrufen</a>
+            </div>
+            <div class="lp-proofline" aria-label="Vorteile">
+              <span>Kostenlose Besichtigung</span>
+              <span>Festpreis vor Start</span>
+              <span>Termine oft kurzfristig möglich</span>
+            </div>
+          </div>
+
+          <div class="lp-hero-panel" aria-label="Leistungsübersicht">
+            <div class="lp-service-preview">
+              <a class="lp-preview-card orange" href="/entruempelung.shtml">
+                <img src="/assets/img/logo/Meisterwerk-entruemplung.png" alt="Meisterwerk Entrümpelung">
+                <span><strong>Entrümpelung</strong>Keller, Wohnung, Haus, Gewerbe und fachgerechte Entsorgung.</span>
+              </a>
+              <a class="lp-preview-card blue" href="/umzug.shtml">
+                <img src="/assets/img/logo/Meisterwerk-umzug.png" alt="Meisterwerk Umzug">
+                <span><strong>Umzüge</strong>Transport, Möbelmontage und Planung für private und gewerbliche Umzüge.</span>
+              </a>
+              <a class="lp-preview-card green" href="/kontakt.shtml">
+                <img src="/assets/img/logo/Meisterwerk-garten.png" alt="Meisterwerk Gartenservice">
+                <span><strong>Gartenservice</strong>Pflege, Rückschnitt, Außenflächen und Gartenentrümpelung.</span>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="trust-bar">
-          <span>Festpreisgarantie</span>
-          <span>Termine in 24–48h</span>
-          <span>Kostenlose Besichtigung</span>
-          <span>Seit 15+ Jahren regional tätig</span>
+
+        <div class="lp-hero-metrics" aria-label="Kennzahlen">
+          <div class="lp-metric">
+            <strong>500+</strong>
+            <span>abgeschlossene Aufträge in der Region</span>
+          </div>
+          <div class="lp-metric">
+            <strong>15+</strong>
+            <span>Jahre praktische Erfahrung</span>
+          </div>
+          <div class="lp-metric">
+            <strong>24h</strong>
+            <span>Antwortzeit auf Ihre Anfrage</span>
+          </div>
+          <div class="lp-metric">
+            <strong>4,9</strong>
+            <span>durchschnittliche Kundenbewertung</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ══ LEISTUNGEN ══ -->
-    <section class="services-section" id="leistungen">
+    <section class="lp-section lp-section-soft" id="leistungen">
       <div class="container">
-        <div class="section-title">
-          <h2>Unsere Leistungen</h2>
-          <p>Alles aus einer Hand – egal ob Keller, Garten oder Umzug.</p>
+        <div class="lp-section-head">
+          <span class="lp-eyebrow">Leistungen</span>
+          <h2>Ein Ansprechpartner für alles, was schnell und sauber erledigt werden muss.</h2>
+          <p>Ob einzelne Räume, kompletter Haushalt, Firmenumzug oder verwilderter Garten: Sie bekommen eine klare Lösung statt Koordinationsstress.</p>
         </div>
 
-        <div class="service-cards">
-
-          <!-- ENTRÜMPELUNG -->
-          <div class="service-card sc-orange">
-            <div class="service-card-top">
-              <span class="s-icon">🏚️</span>
+        <div class="lp-services-grid">
+          <a class="lp-service-card orange" href="/entruempelung.shtml">
+            <div class="lp-service-media">
+              <img src="/assets/img/logo/Meisterwerk-entruemplung.png" alt="Entrümpelung in Ingolstadt">
+            </div>
+            <div class="lp-service-content">
               <h3>Entrümpelung</h3>
-              <p>Keller, Dachboden, Garage oder ganzes Haus – wir räumen schnell und gründlich.</p>
-            </div>
-            <div class="service-card-body">
+              <p>Für Keller, Dachboden, Garage, Wohnung, Haus und Gewerbeflächen. Wir räumen strukturiert, sortieren sinnvoll und entsorgen fachgerecht.</p>
               <ul>
-                <li>Keller- & Dachbodenentrümpelung</li>
-                <li>Garagen & Schuppen beräumen</li>
-                <li>Gewerbliche Entrümpelungen</li>
-                <li>Fachgerechte Entsorgung</li>
-                <li>Oft in 1 Tag erledigt</li>
+                <li>Keller, Dachboden und Garage</li>
+                <li>Wohnungs- und Hausentrümpelung</li>
+                <li>Gewerbliche Räumungen</li>
+                <li>Besenreine Übergabe</li>
               </ul>
-              <a href="/entruempelung.shtml" class="card-cta">Mehr erfahren →</a>
+              <span class="lp-card-link">Entrümpelung ansehen</span>
             </div>
-          </div>
+          </a>
 
-          <!-- UMZÜGE -->
-          <div class="service-card sc-blue">
-            <div class="service-card-top">
-              <span class="s-icon">🚚</span>
+          <a class="lp-service-card blue" href="/umzug.shtml">
+            <div class="lp-service-media">
+              <img src="/assets/img/logo/Meisterwerk-umzug.png" alt="Umzugsservice in Ingolstadt">
+            </div>
+            <div class="lp-service-content">
               <h3>Umzüge</h3>
-              <p>Privat oder gewerblich – wir transportieren Ihr Hab und Gut sicher ans Ziel.</p>
-            </div>
-            <div class="service-card-body">
+              <p>Privat oder gewerblich: Wir planen den Ablauf, schützen Möbel und transportieren Ihr Eigentum sicher an den neuen Ort.</p>
               <ul>
-                <li>Privatumzüge & Firmenumzüge</li>
-                <li>Möbelmontage & -demontage</li>
-                <li>Verpackungsservice</li>
+                <li>Privatumzüge und Firmenumzüge</li>
+                <li>Möbelmontage und Demontage</li>
+                <li>Verpackungsservice auf Anfrage</li>
                 <li>Versicherter Transport</li>
-                <li>Einlagerung auf Anfrage</li>
               </ul>
-              <a href="/umzug.shtml" class="card-cta">Mehr erfahren →</a>
+              <span class="lp-card-link">Umzugsservice ansehen</span>
             </div>
-          </div>
+          </a>
 
-          <!-- GARTENBEREICH -->
-          <div class="service-card sc-green">
-            <div class="service-card-top">
-              <span class="s-icon">🌿</span>
+          <a class="lp-service-card green" href="/kontakt.shtml">
+            <div class="lp-service-media">
+              <img src="/assets/img/logo/Meisterwerk-garten.png" alt="Gartenservice in Ingolstadt">
+            </div>
+            <div class="lp-service-content">
               <h3>Gartenservice</h3>
-              <p>Pflege, Gestaltung und Entrümpelung von Außenanlagen – gepflegt und zuverlässig.</p>
-            </div>
-            <div class="service-card-body">
+              <p>Vom regelmäßigen Schnitt bis zur kompletten Außenflächenpflege: Wir bringen Garten, Hof und Grundstück zuverlässig in Ordnung.</p>
               <ul>
-                <li>Rasenmähen & Heckenschnitt</li>
-                <li>Baumschnitt & Fällungen</li>
+                <li>Rasenmähen und Heckenschnitt</li>
+                <li>Baumschnitt und Gartenpflege</li>
                 <li>Gartenentrümpelung</li>
-                <li>Pflasterreinigung & Unkraut</li>
-                <li>Winterdienst auf Anfrage</li>
+                <li>Pflasterreinigung und Unkraut</li>
               </ul>
-              <a href="/kontakt.shtml" class="card-cta">Anfrage stellen →</a>
+              <span class="lp-card-link">Gartenservice anfragen</span>
             </div>
-          </div>
-
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- ══ WARUM MEISTERWERK ══ -->
-    <section class="warum-lp">
+    <section class="lp-section">
       <div class="container">
-        <div class="section-title">
-          <h2>Warum Meisterwerk?</h2>
-          <p>Mehr als 500 zufriedene Kunden in Ingolstadt und der Region.</p>
-        </div>
+        <div class="lp-split">
+          <div class="lp-copy">
+            <span class="lp-eyebrow">Warum Meisterwerk</span>
+            <h2>Professionell genug für komplexe Aufträge, persönlich genug für sensible Situationen.</h2>
+            <p>
+              Gerade bei Haushaltsauflösungen, Umzügen oder kurzfristigen Räumungen zählt nicht nur Tempo. Entscheidend sind klare Kommunikation, ein respektvoller Umgang mit Eigentum und ein Ergebnis, das wirklich fertig ist.
+            </p>
+            <a href="#anfrage" class="btn-primary">Unverbindliches Angebot erhalten</a>
+          </div>
 
-        <div class="facts-grid">
-          <div class="fact-item">
-            <div class="fact-number">500+</div>
-            <div class="fact-label">Aufträge erfolgreich abgeschlossen</div>
-          </div>
-          <div class="fact-item">
-            <div class="fact-number">15+</div>
-            <div class="fact-label">Jahre Erfahrung in der Region</div>
-          </div>
-          <div class="fact-item">
-            <div class="fact-number">24h</div>
-            <div class="fact-label">Antwortzeit auf Anfragen</div>
-          </div>
-          <div class="fact-item">
-            <div class="fact-number">4,9★</div>
-            <div class="fact-label">Durchschnittliche Kundenbewertung</div>
-          </div>
-        </div>
-
-        <div class="vorteile">
-          <div class="vorteil">
-            <div class="v-icon">💰</div>
-            <div>
-              <h4>Fairer Festpreis</h4>
-              <p>Kein Stundenlohn, keine Überraschungen. Sie erhalten vorab ein verbindliches Angebot.</p>
+          <div class="lp-benefits">
+            <div class="lp-benefit">
+              <b>Faire Festpreise</b>
+              <span>Sie wissen vor Beginn, was der Auftrag kostet. Keine versteckten Überraschungen.</span>
             </div>
-          </div>
-          <div class="vorteil">
-            <div class="v-icon">⚡</div>
-            <div>
-              <h4>Schnelle Termine</h4>
-              <p>In vielen Fällen innerhalb von 24–48 Stunden einsatzbereit. Auch kurzfristig buchbar.</p>
+            <div class="lp-benefit">
+              <b>Schnelle Termine</b>
+              <span>In vielen Fällen sind kurzfristige Besichtigungen und Einsätze möglich.</span>
             </div>
-          </div>
-          <div class="vorteil">
-            <div class="v-icon">♻️</div>
-            <div>
-              <h4>Nachhaltige Entsorgung</h4>
-              <p>Brauchbares wird weitergegeben oder verkauft – das spart Ihnen oft bares Geld.</p>
+            <div class="lp-benefit">
+              <b>Saubere Übergabe</b>
+              <span>Wir verlassen Räume, Flächen und Wege ordentlich und nachvollziehbar.</span>
             </div>
-          </div>
-          <div class="vorteil">
-            <div class="v-icon">🤝</div>
-            <div>
-              <h4>Diskret & zuverlässig</h4>
-              <p>Wir gehen respektvoll vor – besonders bei sensiblen Situationen wie Erbfällen.</p>
+            <div class="lp-benefit">
+              <b>Nachhaltige Entsorgung</b>
+              <span>Brauchbares wird berücksichtigt, verwertbare Stoffe werden sauber getrennt.</span>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══ ABLAUF ══ -->
-    <section class="ablauf-lp">
+    <section class="lp-process">
       <div class="container">
-        <div class="section-title">
-          <h2>So einfach geht es</h2>
-          <p>In 3 Schritten zum fertigen Auftrag – ohne Stress für Sie.</p>
+        <div class="lp-section-head">
+          <span class="lp-eyebrow">Ablauf</span>
+          <h2>Von der Anfrage bis zur fertigen Übergabe bleibt der Weg klar.</h2>
+          <p>Drei Schritte, klare Zuständigkeiten und ein Team, das den Auftrag bis zum Ende durchzieht.</p>
         </div>
 
-        <div class="steps">
-          <div class="step">
-            <div class="step-num">1</div>
+        <div class="lp-process-grid">
+          <div class="lp-step">
+            <div class="lp-step-number">1</div>
             <h3>Anfrage stellen</h3>
-            <p>Anruf oder Formular – kostenlos und unverbindlich. Wir melden uns innerhalb von 24 Stunden.</p>
+            <p>Sie beschreiben kurz Ihr Anliegen per Formular oder Telefon. Wir melden uns schnell zurück und klären die wichtigsten Eckdaten.</p>
           </div>
-          <div class="step">
-            <div class="step-num">2</div>
+          <div class="lp-step">
+            <div class="lp-step-number">2</div>
             <h3>Besichtigung & Angebot</h3>
-            <p>Wir kommen kostenlos vor Ort und erstellen ein verbindliches Festpreisangebot.</p>
+            <p>Wenn nötig, kommen wir kostenlos vor Ort. Danach erhalten Sie ein verbindliches Angebot mit transparentem Leistungsumfang.</p>
           </div>
-          <div class="step">
-            <div class="step-num">3</div>
-            <h3>Wir erledigen alles</h3>
-            <p>Termingerecht, sauber und professionell – Sie müssen nichts tun.</p>
+          <div class="lp-step">
+            <div class="lp-step-number">3</div>
+            <h3>Ausführung & Übergabe</h3>
+            <p>Wir erledigen den Auftrag termingerecht, sauber und vollständig. Am Ende steht eine klare, besenreine Übergabe.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ══ REGIONEN ══ -->
-    <section class="regionen-section">
+    <section class="lp-section lp-section-soft">
       <div class="container">
-        <h2>📍 Unser Einsatzgebiet</h2>
-        <p style="color:#666;margin-bottom:24px;">Wir sind für Sie in Ingolstadt und der gesamten Region im Einsatz.</p>
-        <div class="region-tags">
-          <span class="region-tag">Ingolstadt</span>
-          <span class="region-tag">Eichstätt</span>
-          <span class="region-tag">Neuburg a.d. Donau</span>
-          <span class="region-tag">Pfaffenhofen a.d. Ilm</span>
-          <span class="region-tag">Schrobenhausen</span>
-          <span class="region-tag">Beilngries</span>
-          <span class="region-tag">Manching</span>
-          <span class="region-tag">Gaimersheim</span>
-          <span class="region-tag">Vohburg</span>
-          <span class="region-tag">& Umgebung</span>
+        <div class="lp-region">
+          <div class="lp-copy">
+            <span class="lp-eyebrow">Einsatzgebiet</span>
+            <h2>Regional unterwegs rund um Ingolstadt.</h2>
+            <p>Kurze Wege, flexible Termine und echte Ortskenntnis: Meisterwerk ist in Ingolstadt und den umliegenden Landkreisen für Sie im Einsatz.</p>
+          </div>
+          <div class="lp-region-tags" aria-label="Einsatzorte">
+            <span>Ingolstadt</span>
+            <span>Eichstätt</span>
+            <span>Neuburg a.d. Donau</span>
+            <span>Pfaffenhofen a.d. Ilm</span>
+            <span>Schrobenhausen</span>
+            <span>Beilngries</span>
+            <span>Manching</span>
+            <span>Gaimersheim</span>
+            <span>Vohburg</span>
+            <span>und Umgebung</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- ══ FAQ ══ -->
-    <section class="faq-lp">
+    <section class="lp-section">
       <div class="container">
-        <div class="section-title">
-          <h2>Häufige Fragen</h2>
-          <p>Die wichtigsten Antworten auf einen Blick.</p>
+        <div class="lp-split">
+          <div class="lp-quote-box">
+            <p>Gute Arbeit merkt man daran, dass am Ende nicht noch zehn Dinge offen sind.</p>
+            <div class="lp-quote-list">
+              <span>Persönliche Abstimmung statt anonymer Massenabwicklung</span>
+              <span>Feste Termine und ein klarer Ansprechpartner</span>
+              <span>Ordentliche Ausführung mit Blick für Details</span>
+            </div>
+          </div>
+          <div class="lp-copy">
+            <span class="lp-eyebrow">Qualität</span>
+            <h2>Für private Haushalte, Vermieter, Angehörige und Unternehmen.</h2>
+            <p>Wir arbeiten diskret bei sensiblen Haushaltsauflösungen, planbar bei Umzügen und pragmatisch bei Außenflächen. Das Ziel ist immer gleich: Sie bekommen eine erledigte Sache zurück, nicht ein neues Projekt.</p>
+            <a href="/kontakt.shtml" class="btn-secondary">Kontaktseite öffnen</a>
+          </div>
         </div>
-        <div class="faq-list">
+      </div>
+    </section>
+
+    <section class="lp-section lp-section-soft">
+      <div class="container">
+        <div class="lp-section-head">
+          <span class="lp-eyebrow">FAQ</span>
+          <h2>Häufige Fragen vor der Anfrage.</h2>
+          <p>Die wichtigsten Antworten, bevor wir gemeinsam in die Details gehen.</p>
+        </div>
+
+        <div class="lp-faq">
           <details>
             <summary>Was kostet eine Entrümpelung?</summary>
-            <p>Die Kosten hängen vom Umfang und der Menge ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreisangebot – ohne Überraschungen. Brauchbare Gegenstände können den Preis deutlich reduzieren.</p>
+            <p>Das hängt vom Umfang, der Zugänglichkeit, dem Volumen und der Entsorgung ab. Nach einer Besichtigung erhalten Sie ein verbindliches Festpreisangebot.</p>
           </details>
           <details>
-            <summary>Wie schnell können Sie einen Termin machen?</summary>
-            <p>In der Regel sind wir innerhalb von 2–5 Werktagen bei Ihnen. In dringenden Fällen oft auch früher – rufen Sie uns einfach an.</p>
+            <summary>Wie schnell ist ein Termin möglich?</summary>
+            <p>In vielen Fällen können wir innerhalb weniger Werktage besichtigen oder starten. Bei dringenden Fällen lohnt sich ein direkter Anruf.</p>
           </details>
           <details>
-            <summary>Müssen wir bei der Haushaltsauflösung anwesend sein?</summary>
-            <p>Nein. Viele Kunden übergeben uns einfach den Schlüssel. Wir erledigen alles und übergeben die Räume besenrein.</p>
+            <summary>Muss ich bei der Haushaltsauflösung anwesend sein?</summary>
+            <p>Nein. Wenn alles abgestimmt ist, können wir auch mit Schlüsselübergabe arbeiten und die Räume anschließend besenrein übergeben.</p>
           </details>
           <details>
-            <summary>Was passiert mit noch brauchbaren Möbeln und Geräten?</summary>
-            <p>Gut erhaltene Gegenstände werden gespendet, an soziale Einrichtungen weitergegeben oder weiterverkauft. Der Restwert wird direkt bei der Preisgestaltung berücksichtigt.</p>
+            <summary>Was passiert mit brauchbaren Möbeln und Gegenständen?</summary>
+            <p>Gut erhaltene Gegenstände werden nach Möglichkeit weitergegeben, verkauft oder verwertet. Das berücksichtigen wir transparent bei der Planung.</p>
           </details>
           <details>
-            <summary>Arbeiten Sie auch am Wochenende?</summary>
-            <p>Ja, auf Anfrage sind auch Samstags-Termine möglich. Sprechen Sie uns einfach an.</p>
-          </details>
-          <details>
-            <summary>Bieten Sie auch Gartenarbeit als Einzelleistung an?</summary>
-            <p>Ja, unser Gartenservice ist auch separat buchbar. Vom Rasenmähen bis zur kompletten Gartenentrümpelung – einfach anfragen.</p>
+            <summary>Bieten Sie auch einzelne Gartenarbeiten an?</summary>
+            <p>Ja. Der Gartenservice ist auch unabhängig von Entrümpelung oder Umzug buchbar, zum Beispiel für Rückschnitt, Pflege oder Außenflächen.</p>
           </details>
         </div>
       </div>
     </section>
 
-    <!-- ══ FORMULAR ══ -->
+    <section class="lp-final-cta">
+      <div class="container lp-final-cta-inner">
+        <div>
+          <h2>Bereit für eine saubere Lösung?</h2>
+          <p>Schicken Sie uns kurz die Eckdaten. Wir melden uns innerhalb von 24 Stunden und sagen Ihnen, wie der nächste Schritt aussieht.</p>
+        </div>
+        <a href="#anfrage" class="btn-white">Kostenlose Anfrage starten</a>
+      </div>
+    </section>
+
     <div id="anfrage">
       <!--#include virtual="/includes/lead-form.shtml" -->
     </div>
