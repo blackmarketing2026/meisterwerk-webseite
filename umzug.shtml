@@ -4,13 +4,1027 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Umzug Ingolstadt – Meisterwerk | Professioneller Umzugsservice</title>
-  <meta name="description" content="Umzug in Ingolstadt: Privat und gewerblich, sicher und pünktlich. Meisterwerk übernimmt Ihren Umzug komplett. Jetzt kostenlos anfragen!">
+  <title>Umzug Ingolstadt – Stressfrei umziehen | Meisterwerk</title>
+  <meta name="description" content="Professioneller Umzugsservice in Ingolstadt und Umgebung. Privatumzug, Firmenumzug oder Seniorenumzug – kostenlose Besichtigung, Festpreisgarantie. Jetzt Angebot sichern!">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/umzug.shtml">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    :root {
+      --uz-blue: #1a35b5;
+      --uz-blue-dark: #0f2080;
+      --uz-blue-deep: #0a1554;
+      --uz-blue-light: #e8ecff;
+      --uz-blue-glow: rgba(26, 53, 181, 0.15);
+      --uz-accent: #4f6df5;
+      --uz-ink: #10131a;
+      --uz-ink-soft: #2c3340;
+      --uz-muted: #667085;
+      --uz-line: #e2e6f0;
+      --uz-paper: #ffffff;
+      --uz-soft: #f4f6fc;
+      --uz-radius: 16px;
+      --uz-radius-sm: 10px;
+      --uz-shadow: 0 20px 50px rgba(26, 53, 181, 0.08);
+      --uz-shadow-hover: 0 28px 60px rgba(26, 53, 181, 0.16);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.92); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .uz-reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .uz-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .uz-reveal.delay-100 { transition-delay: 0.1s; }
+    .uz-reveal.delay-200 { transition-delay: 0.2s; }
+    .uz-reveal.delay-300 { transition-delay: 0.3s; }
+    .uz-reveal.delay-400 { transition-delay: 0.4s; }
+    .uz-reveal.delay-500 { transition-delay: 0.5s; }
+
+    /* ── HERO ── */
+    .uz-hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--uz-blue-deep) 0%, var(--uz-blue) 50%, #2d4de0 100%);
+      background-size: 200% 200%;
+      animation: gradientShift 12s ease infinite;
+      color: #fff;
+      padding: 100px 0 80px;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+    .uz-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 80%, rgba(79, 109, 245, 0.3), transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.08), transparent 40%);
+      pointer-events: none;
+    }
+    .uz-hero::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(to top, #fff, transparent);
+      pointer-events: none;
+    }
+    .uz-hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .uz-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      backdrop-filter: blur(10px);
+      animation: fadeInScale 0.8s ease forwards;
+    }
+    .uz-hero-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7ee787;
+      box-shadow: 0 0 0 4px rgba(126, 231, 135, 0.2);
+      animation: pulse 2s infinite;
+    }
+    .uz-hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
+    .uz-hero h1 span {
+      display: block;
+      background: linear-gradient(90deg, #a8c0ff, #dfe9ff, #a8c0ff);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+    .uz-hero-lead {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.7;
+      color: rgba(255,255,255,0.85);
+      max-width: 620px;
+      margin: 0 auto 40px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.4s;
+      opacity: 0;
+    }
+    .uz-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.6s;
+      opacity: 0;
+    }
+    .uz-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: var(--uz-blue);
+      padding: 18px 36px;
+      border-radius: var(--uz-radius);
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .uz-btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(26, 53, 181, 0.05), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.6s;
+    }
+    .uz-btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 24px 50px rgba(0,0,0,0.3);
+      color: var(--uz-blue);
+    }
+    .uz-btn-primary:hover::after {
+      transform: translateX(100%);
+    }
+    .uz-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: #fff;
+      padding: 18px 36px;
+      border-radius: var(--uz-radius);
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.35);
+      transition: all 0.3s ease;
+    }
+    .uz-btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .uz-trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.8s;
+      opacity: 0;
+    }
+    .uz-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .uz-trust-item svg { flex-shrink: 0; }
+
+    /* ── METRICS BAR ── */
+    .uz-metrics {
+      position: relative;
+      z-index: 2;
+      margin-top: -50px;
+      padding: 0 20px;
+    }
+    .uz-metrics-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--uz-line);
+      border-radius: var(--uz-radius);
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(26, 53, 181, 0.12);
+    }
+    .uz-metric {
+      background: #fff;
+      padding: 32px 24px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .uz-metric:hover { background: var(--uz-blue-light); }
+    .uz-metric strong {
+      display: block;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--uz-blue);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .uz-metric span {
+      color: var(--uz-muted);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* ── SECTION BASE ── */
+    .uz-section { padding: 100px 0; }
+    .uz-section-soft { background: var(--uz-soft); }
+    .uz-section-head {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+    .uz-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--uz-blue);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .uz-eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: var(--uz-blue);
+      border-radius: 999px;
+    }
+    .uz-section-head h2 {
+      color: var(--uz-ink);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .uz-section-head p {
+      color: var(--uz-muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* ── SERVICE TYPES ── */
+    .uz-types-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .uz-type-card {
+      background: #fff;
+      border: 1px solid var(--uz-line);
+      border-radius: var(--uz-radius);
+      padding: 40px 28px;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .uz-type-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--uz-blue), var(--uz-accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .uz-type-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--uz-shadow-hover);
+      border-color: transparent;
+    }
+    .uz-type-card:hover::before { transform: scaleX(1); }
+    .uz-type-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--uz-blue-light);
+      color: var(--uz-blue);
+      margin-bottom: 20px;
+      font-size: 2rem;
+      transition: all 0.4s ease;
+    }
+    .uz-type-card:hover .uz-type-icon {
+      background: var(--uz-blue);
+      color: #fff;
+      transform: scale(1.1) rotate(-5deg);
+    }
+    .uz-type-card h3 {
+      color: var(--uz-ink);
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .uz-type-card p {
+      color: var(--uz-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ── INCLUDED SERVICES ── */
+    .uz-included-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .uz-included-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #fff;
+      border: 1px solid var(--uz-line);
+      border-radius: var(--uz-radius-sm);
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+    .uz-included-item:hover {
+      border-color: var(--uz-blue);
+      box-shadow: var(--uz-shadow);
+      transform: translateX(4px);
+    }
+    .uz-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--uz-blue-light);
+      color: var(--uz-blue);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .uz-included-item:hover .uz-check {
+      background: var(--uz-blue);
+      color: #fff;
+    }
+    .uz-included-item h4 {
+      color: var(--uz-ink);
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .uz-included-item p {
+      color: var(--uz-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── PROCESS SECTION ── */
+    .uz-process {
+      background: linear-gradient(135deg, var(--uz-blue-deep) 0%, var(--uz-blue) 100%);
+      color: #fff;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .uz-process::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(79, 109, 245, 0.25), transparent 60%);
+      pointer-events: none;
+    }
+    .uz-process .uz-section-head h2 { color: #fff; }
+    .uz-process .uz-section-head p { color: rgba(255,255,255,0.7); }
+    .uz-process .uz-eyebrow { color: rgba(255,255,255,0.7); }
+    .uz-process .uz-eyebrow::before { background: rgba(255,255,255,0.5); }
+
+    .uz-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .uz-step {
+      position: relative;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--uz-radius);
+      padding: 36px 28px;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(10px);
+    }
+    .uz-step:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.25);
+      transform: translateY(-6px);
+    }
+    .uz-step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--uz-accent), var(--uz-blue));
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(79, 109, 245, 0.4);
+    }
+    .uz-step h3 {
+      color: #fff;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+    .uz-step p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .uz-testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .uz-testimonial {
+      background: #fff;
+      border: 1px solid var(--uz-line);
+      border-radius: var(--uz-radius);
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+    .uz-testimonial:hover {
+      box-shadow: var(--uz-shadow-hover);
+      transform: translateY(-4px);
+    }
+    .uz-testimonial-stars {
+      color: #fbbf24;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    .uz-testimonial p {
+      color: var(--uz-ink-soft);
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .uz-testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .uz-testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--uz-blue-light);
+      color: var(--uz-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+    .uz-testimonial-name {
+      font-weight: 700;
+      color: var(--uz-ink);
+      font-size: 0.95rem;
+    }
+    .uz-testimonial-detail {
+      color: var(--uz-muted);
+      font-size: 0.85rem;
+    }
+
+    /* ── FAQ ── */
+    .uz-faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .uz-faq details {
+      background: #fff;
+      border: 1px solid var(--uz-line);
+      border-radius: var(--uz-radius-sm);
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .uz-faq details:hover { border-color: var(--uz-blue); }
+    .uz-faq details[open] {
+      border-color: var(--uz-blue);
+      box-shadow: 0 8px 30px var(--uz-blue-glow);
+    }
+    .uz-faq summary {
+      padding: 22px 56px 22px 24px;
+      color: var(--uz-ink);
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      transition: color 0.2s;
+    }
+    .uz-faq summary::-webkit-details-marker { display: none; }
+    .uz-faq summary:hover { color: var(--uz-blue); }
+    .uz-faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--uz-blue-light);
+      color: var(--uz-blue);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 400;
+      transition: all 0.3s ease;
+    }
+    .uz-faq details[open] summary::after {
+      content: "\2212";
+      background: var(--uz-blue);
+      color: #fff;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .uz-faq details p {
+      padding: 0 24px 22px;
+      color: var(--uz-muted);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    /* ── CTA BANNER ── */
+    .uz-cta-banner {
+      background: linear-gradient(135deg, var(--uz-blue) 0%, var(--uz-accent) 100%);
+      color: #fff;
+      padding: 72px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .uz-cta-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 120%, rgba(255,255,255,0.1), transparent 60%);
+      pointer-events: none;
+    }
+    .uz-cta-banner h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .uz-cta-banner p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      position: relative;
+    }
+    .uz-cta-banner .uz-btn-primary {
+      font-size: 1.15rem;
+      padding: 20px 42px;
+      animation: pulse 3s infinite;
+      position: relative;
+    }
+
+    /* ── QUIZ SECTION ── */
+    .uz-quiz-section {
+      padding: 100px 0;
+      background: linear-gradient(180deg, var(--uz-soft) 0%, #fff 100%);
+    }
+    .uz-quiz-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 30px 80px rgba(26, 53, 181, 0.1);
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--uz-line);
+    }
+    .uz-quiz-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--uz-blue), var(--uz-accent), var(--uz-blue));
+      background-size: 200% auto;
+      animation: shimmer 3s linear infinite;
+    }
+
+    .uz-quiz-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .uz-quiz-header h2 {
+      color: var(--uz-blue);
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      margin-bottom: 8px;
+    }
+    .uz-quiz-header p {
+      color: var(--uz-muted);
+      font-size: 1rem;
+    }
+
+    /* Progress bar */
+    .uz-progress { margin-bottom: 40px; }
+    .uz-progress-bar {
+      height: 6px;
+      background: var(--uz-line);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .uz-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--uz-blue), var(--uz-accent));
+      border-radius: 999px;
+      transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .uz-progress-fill::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--uz-blue);
+      box-shadow: 0 0 0 4px rgba(26, 53, 181, 0.2);
+    }
+    .uz-progress-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--uz-muted);
+    }
+    .uz-progress-text strong { color: var(--uz-blue); }
+
+    /* Quiz Steps */
+    .uz-quiz-step {
+      display: none;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+    .uz-quiz-step.active { display: block; }
+    .uz-step-question {
+      font-size: 1.3rem;
+      color: var(--uz-ink);
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .uz-step-subtitle {
+      color: var(--uz-muted);
+      font-size: 0.95rem;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    /* Option cards */
+    .uz-options {
+      display: grid;
+      gap: 12px;
+    }
+    .uz-options.grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .uz-options.grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .uz-option {
+      border: 2px solid var(--uz-line);
+      border-radius: var(--uz-radius-sm);
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .uz-option:hover {
+      border-color: var(--uz-blue);
+      background: var(--uz-blue-light);
+      transform: translateY(-2px);
+    }
+    .uz-option.selected {
+      border-color: var(--uz-blue);
+      background: var(--uz-blue);
+      color: #fff;
+      box-shadow: 0 8px 30px var(--uz-blue-glow);
+      transform: scale(1.02);
+    }
+    .uz-option.selected .uz-option-icon { transform: scale(1.15); }
+    .uz-option-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .uz-option-title {
+      font-weight: 700;
+      font-size: 1rem;
+      display: block;
+    }
+    .uz-option-desc {
+      font-size: 0.82rem;
+      margin-top: 4px;
+      display: block;
+      opacity: 0.7;
+    }
+
+    /* Form fields */
+    .uz-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .uz-form-group { margin-bottom: 20px; }
+    .uz-form-group label {
+      display: block;
+      font-weight: 700;
+      color: var(--uz-ink);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .uz-input {
+      width: 100%;
+      padding: 16px 18px;
+      border: 2px solid var(--uz-line);
+      border-radius: var(--uz-radius-sm);
+      font-size: 1rem;
+      font-family: inherit;
+      transition: all 0.3s ease;
+      background: #fff;
+    }
+    .uz-input:focus {
+      outline: none;
+      border-color: var(--uz-blue);
+      box-shadow: 0 0 0 4px var(--uz-blue-glow);
+    }
+    .uz-input::placeholder { color: #b0b8c9; }
+    .uz-textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    /* Quiz buttons */
+    .uz-quiz-nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .uz-quiz-back {
+      flex: 0 0 auto;
+      background: transparent;
+      color: var(--uz-muted);
+      border: 2px solid var(--uz-line);
+      border-radius: var(--uz-radius-sm);
+      padding: 16px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .uz-quiz-back:hover {
+      border-color: var(--uz-blue);
+      color: var(--uz-blue);
+    }
+    .uz-quiz-next {
+      flex: 1;
+      background: var(--uz-blue);
+      color: #fff;
+      border: none;
+      border-radius: var(--uz-radius-sm);
+      padding: 16px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+    .uz-quiz-next:hover {
+      background: var(--uz-blue-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px var(--uz-blue-glow);
+    }
+    .uz-quiz-next:disabled {
+      background: #c5cde0;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* Success */
+    .uz-quiz-success {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .uz-quiz-success.active {
+      display: block;
+      animation: fadeInScale 0.6s ease forwards;
+    }
+    .uz-success-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 2.2rem;
+      box-shadow: 0 12px 40px rgba(34, 197, 94, 0.3);
+    }
+    .uz-quiz-success h3 {
+      color: var(--uz-ink);
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    .uz-quiz-success p {
+      color: var(--uz-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    #uz-error {
+      color: #dc2626;
+      text-align: center;
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: none;
+    }
+
+    /* ── FLOATING CTA (MOBILE) ── */
+    .uz-floating-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: #fff;
+      border-top: 1px solid var(--uz-line);
+      padding: 12px 16px;
+      box-shadow: 0 -8px 30px rgba(0,0,0,0.1);
+    }
+    .uz-floating-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--uz-blue);
+      color: #fff;
+      padding: 16px;
+      border-radius: var(--uz-radius-sm);
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      animation: pulse 3s infinite;
+    }
+
+    /* ── REGION TAGS ── */
+    .uz-region-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .uz-region-tag {
+      background: #fff;
+      border: 1px solid var(--uz-line);
+      border-radius: 999px;
+      padding: 10px 20px;
+      color: var(--uz-ink-soft);
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      cursor: default;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .uz-region-tag:hover {
+      border-color: var(--uz-blue);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(26, 53, 181, 0.1);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 980px) {
+      .uz-types-grid, .uz-testimonials { grid-template-columns: 1fr; }
+      .uz-steps { grid-template-columns: repeat(2, 1fr); }
+      .uz-included-grid { grid-template-columns: 1fr; }
+      .uz-metrics-inner { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .uz-hero { padding: 80px 0 60px; min-height: auto; }
+      .uz-hero h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
+      .uz-hero-actions { flex-direction: column; align-items: stretch; }
+      .uz-btn-primary, .uz-btn-outline { justify-content: center; text-align: center; }
+      .uz-trust-bar { flex-direction: column; align-items: center; gap: 12px; }
+      .uz-metrics-inner { grid-template-columns: 1fr 1fr; }
+      .uz-section, .uz-process { padding: 64px 0; }
+      .uz-steps { grid-template-columns: 1fr; }
+      .uz-options.grid-2, .uz-options.grid-3 { grid-template-columns: 1fr; }
+      .uz-quiz-wrapper { padding: 32px 20px; border-radius: 16px; margin: 0 4px; }
+      .uz-form-row { grid-template-columns: 1fr; }
+      .uz-quiz-nav { flex-direction: column-reverse; }
+      .uz-floating-cta { display: block; }
+      body { padding-bottom: 72px; }
+      .uz-cta-banner { padding: 48px 0; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "Meisterwerk Ingolstadt – Umzugsservice",
+    "url": "https://www.meisterwerk-ingolstadt.de/umzug.shtml",
+    "telephone": "+4915165184976",
+    "email": "meisterwerk.in@web.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Beilngrieserstr. 108",
+      "addressLocality": "Ingolstadt",
+      "postalCode": "85055",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Ingolstadt", "Eichstätt", "Neuburg an der Donau", "Pfaffenhofen", "Manching", "Gaimersheim", "Schrobenhausen", "Beilngries"],
+    "description": "Professioneller Umzugsservice in Ingolstadt: Privatumzug, Firmenumzug und Seniorenumzug mit Festpreisgarantie.",
+    "priceRange": "$$"
+  }
+  </script>
 </head>
 
 <body>
@@ -19,76 +1033,715 @@
 
   <main>
 
-    <section class="page-hero">
+    <!-- HERO -->
+    <section class="uz-hero">
       <div class="container">
-        <h1>Umzug in Ingolstadt</h1>
-        <p>Privat oder gewerblich – wir transportieren Ihr Hab und Gut sicher, pünktlich und zum fairen Festpreis ans Ziel.</p>
-        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
-      </div>
-    </section>
-
-    <!--#include virtual="/includes/trust-section.shtml" -->
-
-    <section class="content-section">
-      <div class="container">
-        <h2>Unser Umzugsservice im Überblick</h2>
-        <p>Ob Sie eine kleine Wohnung oder ein ganzes Haus umziehen – Meisterwerk begleitet Sie von A bis Z. Wir kümmern uns um den gesamten Ablauf, damit Sie stressfrei in Ihr neues Zuhause einziehen können.</p>
-        <ul>
-          <li>Privatumzüge und Firmenumzüge</li>
-          <li>Möbeltransport sicher und versichert</li>
-          <li>Demontage und Montage von Möbeln</li>
-          <li>Professionelles Einpacken mit Umzugskartons</li>
-          <li>Einlagerung bei Bedarf</li>
-          <li>Entsorgung von nicht mehr benötigten Gegenständen</li>
-        </ul>
-
-        <h2>Warum Meisterwerk für Ihren Umzug?</h2>
-        <ul>
-          <li><strong>Festpreisgarantie:</strong> Sie wissen vorher, was der Umzug kostet.</li>
-          <li><strong>Erfahrenes Team:</strong> Unsere Mitarbeiter gehen sorgsam mit Ihren Möbeln um.</li>
-          <li><strong>Vollversicherung:</strong> Ihr Eigentum ist während des Transports versichert.</li>
-          <li><strong>Flexibel:</strong> Auch kurzfristige Termine sind möglich.</li>
-        </ul>
-
-        <h2>Auch Firmenumzüge</h2>
-        <p>Wir ziehen nicht nur Privathaushalte um, sondern unterstützen auch Unternehmen bei Büroumzügen und Betriebsverlagerungen – schnell und mit minimalem Betriebsausfall.</p>
-      </div>
-    </section>
-
-    <!--#include virtual="/includes/cta-box.shtml" -->
-
-    <section class="faq-section">
-      <div class="container">
-        <div class="section-title">
-          <h2>Häufige Fragen zum Umzug</h2>
-        </div>
-        <div class="faq-list">
-          <details>
-            <summary>Wie weit im Voraus muss ich buchen?</summary>
-            <p>Wir empfehlen, mindestens 2–3 Wochen im Voraus zu buchen. Kurzfristige Termine sind jedoch auf Anfrage möglich.</p>
-          </details>
-          <details>
-            <summary>Stellt ihr auch Umzugskartons?</summary>
-            <p>Ja, auf Wunsch stellen wir Kartons und Verpackungsmaterial bereit. Sprechen Sie uns einfach an.</p>
-          </details>
-          <details>
-            <summary>Sind meine Möbel versichert?</summary>
-            <p>Ja, alle Gegenstände sind während des Transports durch unsere Haftpflichtversicherung abgedeckt.</p>
-          </details>
-          <details>
-            <summary>Zieht ihr auch in andere Städte?</summary>
-            <p>Ja, wir sind nicht nur in Ingolstadt aktiv. Sprechen Sie uns bei Fernumzügen bitte direkt an.</p>
-          </details>
+        <div class="uz-hero-inner">
+          <div class="uz-hero-badge">Jetzt Termine fuer 2026 sichern</div>
+          <h1>
+            Ihr Umzug.<br>
+            <span>Perfekt geplant. Stressfrei erledigt.</span>
+          </h1>
+          <p class="uz-hero-lead">
+            Ob Privatumzug, Firmenumzug oder Seniorenumzug – Meisterwerk Ingolstadt übernimmt die komplette Planung und Durchführung. Festpreis, fester Termin, null Stress.
+          </p>
+          <div class="uz-hero-actions">
+            <a href="#quiz" class="uz-btn-primary">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              Kostenloses Angebot in 60 Sek.
+            </a>
+            <a href="tel:+4915165184976" class="uz-btn-outline">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              0151 651 849 76
+            </a>
+          </div>
+          <div class="uz-trust-bar">
+            <div class="uz-trust-item">
+              <svg width="18" height="18" fill="none" stroke="#7ee787" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              Festpreisgarantie
+            </div>
+            <div class="uz-trust-item">
+              <svg width="18" height="18" fill="none" stroke="#7ee787" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              Kostenlose Besichtigung
+            </div>
+            <div class="uz-trust-item">
+              <svg width="18" height="18" fill="none" stroke="#7ee787" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              Versichert & zuverlässig
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <!--#include virtual="/includes/lead-form.shtml" -->
+    <!-- METRICS -->
+    <section class="uz-metrics">
+      <div class="uz-metrics-inner uz-reveal">
+        <div class="uz-metric">
+          <strong>500+</strong>
+          <span>Umzüge durchgeführt</span>
+        </div>
+        <div class="uz-metric">
+          <strong>100%</strong>
+          <span>Festpreis ohne Nachzahlung</span>
+        </div>
+        <div class="uz-metric">
+          <strong>24h</strong>
+          <span>Angebot innerhalb eines Tages</span>
+        </div>
+        <div class="uz-metric">
+          <strong>4,9 ★</strong>
+          <span>Kundenbewertung</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- UMZUGSARTEN -->
+    <section class="uz-section">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">Unsere Umzugsservices</span>
+          <h2>Jeder Umzug verdient einen perfekten Plan.</h2>
+          <p>Egal ob Wohnung, Haus oder Büro – wir passen unseren Service exakt an Ihre Bedürfnisse an.</p>
+        </div>
+        <div class="uz-types-grid">
+          <div class="uz-type-card uz-reveal">
+            <div class="uz-type-icon">🏠</div>
+            <h3>Privatumzug</h3>
+            <p>Von der 1-Zimmer-Wohnung bis zum Einfamilienhaus. Wir verpacken, transportieren und bauen auf – alles aus einer Hand.</p>
+          </div>
+          <div class="uz-type-card uz-reveal delay-100">
+            <div class="uz-type-icon">🏢</div>
+            <h3>Firmenumzug</h3>
+            <p>Büroumzüge mit minimaler Ausfallzeit. Wir koordinieren den Umzug so, dass Ihr Geschäftsbetrieb kaum unterbrochen wird.</p>
+          </div>
+          <div class="uz-type-card uz-reveal delay-200">
+            <div class="uz-type-icon">👴</div>
+            <h3>Seniorenumzug</h3>
+            <p>Einfühlsam, geduldig und mit vollem Service. Wir kümmern uns um alles – vom Einpacken bis zum Einrichten im neuen Zuhause.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN IM DETAIL -->
+    <section class="uz-section uz-section-soft">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">Alles inklusive</span>
+          <h2>Was in unserem Umzugsservice steckt.</h2>
+          <p>Kein Detail wird dem Zufall überlassen. Hier ist, was Sie von uns erwarten können.</p>
+        </div>
+        <div class="uz-included-grid">
+          <div class="uz-included-item uz-reveal">
+            <div class="uz-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Professionelles Verpacken</h4>
+              <p>Wir bringen hochwertiges Verpackungsmaterial mit und packen alles sicher ein.</p>
+            </div>
+          </div>
+          <div class="uz-included-item uz-reveal delay-100">
+            <div class="uz-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Möbel De- & Montage</h4>
+              <p>Küche, Schränke, Betten – wir bauen ab und im neuen Zuhause wieder auf.</p>
+            </div>
+          </div>
+          <div class="uz-included-item uz-reveal delay-200">
+            <div class="uz-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Sicherer Transport</h4>
+              <p>Voll ausgestattete Umzugswagen mit Gurten, Decken und Polsterung.</p>
+            </div>
+          </div>
+          <div class="uz-included-item uz-reveal delay-300">
+            <div class="uz-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Halteverbot einrichten</h4>
+              <p>Wir beantragen die Halteverbotszone vor beiden Adressen für Sie.</p>
+            </div>
+          </div>
+          <div class="uz-included-item uz-reveal delay-400">
+            <div class="uz-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Endreinigung (optional)</h4>
+              <p>Besenreine Übergabe der alten Wohnung – perfekt für die Kautionsrückgabe.</p>
+            </div>
+          </div>
+          <div class="uz-included-item uz-reveal delay-500">
+            <div class="uz-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Transportversicherung</h4>
+              <p>Ihr Hab und Gut ist während des gesamten Umzugs vollständig versichert.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section class="uz-process">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">So funktioniert's</span>
+          <h2>In 4 Schritten zum stressfreien Umzug.</h2>
+          <p>Von der ersten Anfrage bis zur Schlüsselübergabe – wir haben an alles gedacht.</p>
+        </div>
+        <div class="uz-steps">
+          <div class="uz-step uz-reveal">
+            <div class="uz-step-num">01</div>
+            <h3>Anfrage stellen</h3>
+            <p>Füllen Sie unser kurzes Quiz aus oder rufen Sie uns an. Wir melden uns innerhalb von 24 Stunden.</p>
+          </div>
+          <div class="uz-step uz-reveal delay-100">
+            <div class="uz-step-num">02</div>
+            <h3>Kostenlose Besichtigung</h3>
+            <p>Wir kommen vorbei und erfassen alle Details vor Ort. Danach erhalten Sie ein verbindliches Festpreis-Angebot.</p>
+          </div>
+          <div class="uz-step uz-reveal delay-200">
+            <div class="uz-step-num">03</div>
+            <h3>Professionelle Durchführung</h3>
+            <p>Am Umzugstag übernimmt unser geschultes Team – pünktlich, sorgfältig und mit System.</p>
+          </div>
+          <div class="uz-step uz-reveal delay-300">
+            <div class="uz-step-num">04</div>
+            <h3>Einrichten & Fertig</h3>
+            <p>Möbel aufbauen, Kartons platzieren, alte Wohnung besenrein. Sie lehnen sich zurück.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MID-PAGE CTA -->
+    <section class="uz-cta-banner">
+      <div class="container uz-reveal">
+        <h2>Bereit für Ihren stressfreien Umzug?</h2>
+        <p>Erhalten Sie in unter 60 Sekunden ein unverbindliches Angebot – komplett kostenlos.</p>
+        <a href="#quiz" class="uz-btn-primary">Jetzt Angebot anfordern</a>
+      </div>
+    </section>
+
+    <!-- BEWERTUNGEN -->
+    <section class="uz-section">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">Kundenstimmen</span>
+          <h2>Was unsere Kunden über uns sagen.</h2>
+          <p>Echte Erfahrungen von echten Kunden aus Ingolstadt und Umgebung.</p>
+        </div>
+        <div class="uz-testimonials">
+          <div class="uz-testimonial uz-reveal">
+            <div class="uz-testimonial-stars">★★★★★</div>
+            <p>„Der komplette Umzug war in unter 6 Stunden erledigt – inklusive Möbelabbau und -aufbau. Absolut professionell und freundlich!"</p>
+            <div class="uz-testimonial-author">
+              <div class="uz-testimonial-avatar">MK</div>
+              <div>
+                <div class="uz-testimonial-name">Markus K.</div>
+                <div class="uz-testimonial-detail">3-Zimmer-Umzug in Ingolstadt</div>
+              </div>
+            </div>
+          </div>
+          <div class="uz-testimonial uz-reveal delay-100">
+            <div class="uz-testimonial-stars">★★★★★</div>
+            <p>„Wir hatten Angst vor dem Umzug mit unserer Oma – das Team war so einfühlsam und hat sich um alles gekümmert. Wirklich top!"</p>
+            <div class="uz-testimonial-author">
+              <div class="uz-testimonial-avatar">SH</div>
+              <div>
+                <div class="uz-testimonial-name">Sandra H.</div>
+                <div class="uz-testimonial-detail">Seniorenumzug nach Gaimersheim</div>
+              </div>
+            </div>
+          </div>
+          <div class="uz-testimonial uz-reveal delay-200">
+            <div class="uz-testimonial-stars">★★★★★</div>
+            <p>„Festpreis war Festpreis – kein Cent mehr. Der Umzug war besser organisiert als alles, was ich von anderen Firmen kenne."</p>
+            <div class="uz-testimonial-author">
+              <div class="uz-testimonial-avatar">TW</div>
+              <div>
+                <div class="uz-testimonial-name">Thomas W.</div>
+                <div class="uz-testimonial-detail">Firmenumzug in Ingolstadt</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ / LEAD GEN -->
+    <section class="uz-quiz-section" id="quiz">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">Ihr persönliches Angebot</span>
+          <h2>In 60 Sekunden zum Umzugsangebot.</h2>
+          <p>Beantworten Sie ein paar kurze Fragen und wir erstellen Ihnen ein maßgeschneidertes Angebot.</p>
+        </div>
+
+        <div class="uz-quiz-wrapper uz-reveal delay-100">
+
+          <div class="uz-quiz-header" id="uz-quiz-header">
+            <h2>Umzugs-Schnellcheck</h2>
+            <p>Kostenlos & unverbindlich</p>
+          </div>
+
+          <!-- Progress -->
+          <div class="uz-progress" id="uz-progress">
+            <div class="uz-progress-bar">
+              <div class="uz-progress-fill" id="uz-progress-fill" style="width: 12.5%"></div>
+            </div>
+            <div class="uz-progress-text">
+              <span>Frage <strong id="uz-step-current">1</strong> von <strong>8</strong></span>
+              <span id="uz-step-percent">12%</span>
+            </div>
+          </div>
+
+          <!-- Step 1: Art des Umzugs -->
+          <div class="uz-quiz-step active" id="uz-step-1">
+            <div class="uz-step-question">Welche Art von Umzug planen Sie?</div>
+            <div class="uz-step-subtitle">Wählen Sie die passende Option.</div>
+            <div class="uz-options grid-3">
+              <div class="uz-option" data-field="umzugsart" data-value="Privatumzug">
+                <span class="uz-option-icon">🏠</span>
+                <span class="uz-option-title">Privatumzug</span>
+              </div>
+              <div class="uz-option" data-field="umzugsart" data-value="Firmenumzug">
+                <span class="uz-option-icon">🏢</span>
+                <span class="uz-option-title">Firmenumzug</span>
+              </div>
+              <div class="uz-option" data-field="umzugsart" data-value="Seniorenumzug">
+                <span class="uz-option-icon">👴</span>
+                <span class="uz-option-title">Seniorenumzug</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Wohnungsgröße -->
+          <div class="uz-quiz-step" id="uz-step-2">
+            <div class="uz-step-question">Wie groß ist Ihre aktuelle Wohnung?</div>
+            <div class="uz-step-subtitle">Ungefähre Größe reicht aus.</div>
+            <div class="uz-options grid-2">
+              <div class="uz-option" data-field="wohnungsgroesse" data-value="1-2 Zimmer">
+                <span class="uz-option-icon">🛏️</span>
+                <span class="uz-option-title">1–2 Zimmer</span>
+                <span class="uz-option-desc">bis ca. 50 m²</span>
+              </div>
+              <div class="uz-option" data-field="wohnungsgroesse" data-value="3 Zimmer">
+                <span class="uz-option-icon">🏡</span>
+                <span class="uz-option-title">3 Zimmer</span>
+                <span class="uz-option-desc">ca. 60–80 m²</span>
+              </div>
+              <div class="uz-option" data-field="wohnungsgroesse" data-value="4-5 Zimmer">
+                <span class="uz-option-icon">🏘️</span>
+                <span class="uz-option-title">4–5 Zimmer</span>
+                <span class="uz-option-desc">ca. 80–120 m²</span>
+              </div>
+              <div class="uz-option" data-field="wohnungsgroesse" data-value="6+ Zimmer / Haus">
+                <span class="uz-option-icon">🏰</span>
+                <span class="uz-option-title">6+ Zimmer / Haus</span>
+                <span class="uz-option-desc">über 120 m²</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 3: Stockwerk -->
+          <div class="uz-quiz-step" id="uz-step-3">
+            <div class="uz-step-question">In welchem Stockwerk wohnen Sie aktuell?</div>
+            <div class="uz-step-subtitle">Wichtig für die Kalkulation.</div>
+            <div class="uz-options grid-2">
+              <div class="uz-option" data-field="stockwerk" data-value="Erdgeschoss">
+                <span class="uz-option-icon">0️⃣</span>
+                <span class="uz-option-title">Erdgeschoss</span>
+              </div>
+              <div class="uz-option" data-field="stockwerk" data-value="1.-2. OG">
+                <span class="uz-option-icon">2️⃣</span>
+                <span class="uz-option-title">1.–2. OG</span>
+              </div>
+              <div class="uz-option" data-field="stockwerk" data-value="3.-4. OG">
+                <span class="uz-option-icon">4️⃣</span>
+                <span class="uz-option-title">3.–4. OG</span>
+              </div>
+              <div class="uz-option" data-field="stockwerk" data-value="5. OG oder höher">
+                <span class="uz-option-icon">🔝</span>
+                <span class="uz-option-title">5. OG+</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Aufzug -->
+          <div class="uz-quiz-step" id="uz-step-4">
+            <div class="uz-step-question">Gibt es einen Aufzug?</div>
+            <div class="uz-step-subtitle">In der aktuellen Wohnung.</div>
+            <div class="uz-options grid-2">
+              <div class="uz-option" data-field="aufzug" data-value="Ja">
+                <span class="uz-option-icon">✅</span>
+                <span class="uz-option-title">Ja, Aufzug vorhanden</span>
+              </div>
+              <div class="uz-option" data-field="aufzug" data-value="Nein">
+                <span class="uz-option-icon">🚶</span>
+                <span class="uz-option-title">Nein, kein Aufzug</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Zusatzleistungen (Multi-Select) -->
+          <div class="uz-quiz-step" id="uz-step-5">
+            <div class="uz-step-question">Brauchen Sie Zusatzleistungen?</div>
+            <div class="uz-step-subtitle">Mehrfachauswahl möglich.</div>
+            <div class="uz-options" id="uz-extras">
+              <div class="uz-option" data-field="extras" data-value="Verpackungsservice">
+                <span class="uz-option-icon">📦</span>
+                <span class="uz-option-title">Verpackungsservice</span>
+              </div>
+              <div class="uz-option" data-field="extras" data-value="Möbelmontage">
+                <span class="uz-option-icon">🔧</span>
+                <span class="uz-option-title">Möbel ab- & aufbauen</span>
+              </div>
+              <div class="uz-option" data-field="extras" data-value="Endreinigung">
+                <span class="uz-option-icon">🧹</span>
+                <span class="uz-option-title">Endreinigung</span>
+              </div>
+              <div class="uz-option" data-field="extras" data-value="Halteverbot">
+                <span class="uz-option-icon">🚫</span>
+                <span class="uz-option-title">Halteverbot einrichten</span>
+              </div>
+            </div>
+            <div class="uz-quiz-nav">
+              <button class="uz-quiz-back" onclick="uzPrev()">Zurück</button>
+              <button class="uz-quiz-next" onclick="uzNext()">Weiter</button>
+            </div>
+          </div>
+
+          <!-- Step 6: Zeitraum -->
+          <div class="uz-quiz-step" id="uz-step-6">
+            <div class="uz-step-question">Wann soll der Umzug stattfinden?</div>
+            <div class="uz-step-subtitle">Ein ungefährer Zeitraum reicht.</div>
+            <div class="uz-options grid-2">
+              <div class="uz-option" data-field="zeitraum" data-value="So schnell wie möglich">
+                <span class="uz-option-icon">⚡</span>
+                <span class="uz-option-title">So schnell wie möglich</span>
+              </div>
+              <div class="uz-option" data-field="zeitraum" data-value="In 2-4 Wochen">
+                <span class="uz-option-icon">📅</span>
+                <span class="uz-option-title">In 2–4 Wochen</span>
+              </div>
+              <div class="uz-option" data-field="zeitraum" data-value="In 1-3 Monaten">
+                <span class="uz-option-icon">🗓️</span>
+                <span class="uz-option-title">In 1–3 Monaten</span>
+              </div>
+              <div class="uz-option" data-field="zeitraum" data-value="Noch unbekannt">
+                <span class="uz-option-icon">🤔</span>
+                <span class="uz-option-title">Weiß ich noch nicht</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 7: Von wo nach wo -->
+          <div class="uz-quiz-step" id="uz-step-7">
+            <div class="uz-step-question">Von wo nach wo ziehen Sie?</div>
+            <div class="uz-step-subtitle">Damit wir die Entfernung einschätzen können.</div>
+            <div class="uz-form-group">
+              <label for="uz-von">Aktuelle Adresse / Stadt</label>
+              <input type="text" id="uz-von" class="uz-input" placeholder="z.B. Ingolstadt, Münchener Str. 5">
+            </div>
+            <div class="uz-form-group">
+              <label for="uz-nach">Neue Adresse / Stadt</label>
+              <input type="text" id="uz-nach" class="uz-input" placeholder="z.B. Neuburg an der Donau">
+            </div>
+            <div class="uz-quiz-nav">
+              <button class="uz-quiz-back" onclick="uzPrev()">Zurück</button>
+              <button class="uz-quiz-next" onclick="uzNext()">Weiter</button>
+            </div>
+          </div>
+
+          <!-- Step 8: Kontaktdaten -->
+          <div class="uz-quiz-step" id="uz-step-8">
+            <div class="uz-step-question">Fast geschafft! Ihre Kontaktdaten.</div>
+            <div class="uz-step-subtitle">Damit wir Ihnen Ihr Angebot zusenden können.</div>
+            <div class="uz-form-row">
+              <div class="uz-form-group">
+                <label for="uz-name">Vor- & Nachname *</label>
+                <input type="text" id="uz-name" class="uz-input" placeholder="Max Mustermann" required>
+              </div>
+              <div class="uz-form-group">
+                <label for="uz-telefon">Telefonnummer *</label>
+                <input type="tel" id="uz-telefon" class="uz-input" placeholder="0151 123 456 78" required>
+              </div>
+            </div>
+            <div class="uz-form-group">
+              <label for="uz-email">E-Mail-Adresse (optional)</label>
+              <input type="email" id="uz-email" class="uz-input" placeholder="max@beispiel.de">
+            </div>
+            <div class="uz-form-group">
+              <label for="uz-nachricht">Zusätzliche Hinweise (optional)</label>
+              <textarea id="uz-nachricht" class="uz-input uz-textarea" placeholder="z.B. Klavier, schwere Möbel, enger Treppenaufgang..."></textarea>
+            </div>
+            <div class="uz-quiz-nav">
+              <button class="uz-quiz-back" onclick="uzPrev()">Zurück</button>
+              <button class="uz-quiz-next" id="uz-submit-btn" onclick="uzSubmit()">Angebot anfordern</button>
+            </div>
+            <div id="uz-error"></div>
+          </div>
+
+          <!-- Success -->
+          <div class="uz-quiz-success" id="uz-success">
+            <div class="uz-success-icon">✓</div>
+            <h3>Vielen Dank für Ihre Anfrage!</h3>
+            <p>Wir haben alle Informationen erhalten und melden uns innerhalb von 24 Stunden bei Ihnen – telefonisch oder per E-Mail.</p>
+            <p style="margin-top: 20px; font-weight: 700; color: var(--uz-blue);">Meisterwerk – Ihr Umzug in besten Händen.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="uz-section uz-section-soft">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">Häufige Fragen</span>
+          <h2>Alles, was Sie wissen müssen.</h2>
+        </div>
+        <div class="uz-faq uz-reveal delay-100">
+          <details>
+            <summary>Was kostet ein Umzug mit Meisterwerk?</summary>
+            <p>Die Kosten hängen von der Wohnungsgröße, der Entfernung und den gewünschten Zusatzleistungen ab. Nach einer kostenlosen Besichtigung erhalten Sie ein verbindliches Festpreis-Angebot – ohne versteckte Kosten.</p>
+          </details>
+          <details>
+            <summary>Wie kurzfristig kann ich einen Umzug buchen?</summary>
+            <p>Dank unserer flexiblen Planung sind auch kurzfristige Termine innerhalb weniger Tage möglich. Kontaktieren Sie uns einfach – wir finden eine Lösung.</p>
+          </details>
+          <details>
+            <summary>Sind meine Sachen während des Umzugs versichert?</summary>
+            <p>Ja, alle Gegenstände sind während des gesamten Transports über unsere Betriebshaftpflicht versichert. Auf Wunsch können wir auch eine erweiterte Transportversicherung anbieten.</p>
+          </details>
+          <details>
+            <summary>Bieten Sie auch Umzüge außerhalb von Ingolstadt an?</summary>
+            <p>Ja! Wir führen Umzüge in der gesamten Region durch – Eichstätt, Neuburg, Pfaffenhofen, Schrobenhausen und bayernweit. Auch Fernumzüge sind möglich.</p>
+          </details>
+          <details>
+            <summary>Muss ich selbst mit anpacken?</summary>
+            <p>Nein, überhaupt nicht. Unser Team übernimmt alles – vom Einpacken über den Transport bis zum Aufbau am Zielort. Sie müssen keinen Finger rühren.</p>
+          </details>
+          <details>
+            <summary>Wie läuft die kostenlose Besichtigung ab?</summary>
+            <p>Wir kommen zu einem vereinbarten Termin vorbei, schauen uns die Räumlichkeiten und das Umzugsgut an und erstellen daraus ein genaues Festpreis-Angebot. Das Ganze dauert meist nur 20–30 Minuten.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGION -->
+    <section class="uz-section">
+      <div class="container">
+        <div class="uz-section-head uz-reveal">
+          <span class="uz-eyebrow">Einsatzgebiet</span>
+          <h2>Umzüge in Ingolstadt und der Region.</h2>
+          <p>Wir sind in der gesamten Region 10 aktiv – für lokale und überregionale Umzüge.</p>
+        </div>
+        <div class="uz-region-tags uz-reveal delay-100">
+          <span class="uz-region-tag">Ingolstadt</span>
+          <span class="uz-region-tag">Eichstätt</span>
+          <span class="uz-region-tag">Neuburg a. d. Donau</span>
+          <span class="uz-region-tag">Pfaffenhofen a. d. Ilm</span>
+          <span class="uz-region-tag">Manching</span>
+          <span class="uz-region-tag">Gaimersheim</span>
+          <span class="uz-region-tag">Schrobenhausen</span>
+          <span class="uz-region-tag">Beilngries</span>
+          <span class="uz-region-tag">Kösching</span>
+          <span class="uz-region-tag">Vohburg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="uz-cta-banner" style="background: linear-gradient(135deg, var(--uz-blue-deep) 0%, var(--uz-blue) 100%);">
+      <div class="container uz-reveal">
+        <h2>Starten Sie jetzt Ihre Umzugsplanung.</h2>
+        <p>Kostenlose Besichtigung, verbindlicher Festpreis, null Stress. Wir freuen uns auf Ihre Anfrage.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+          <a href="#quiz" class="uz-btn-primary">Kostenloses Angebot anfordern</a>
+          <a href="tel:+4915165184976" class="uz-btn-outline">Jetzt anrufen: 0151 651 849 76</a>
+        </div>
+      </div>
+    </section>
 
   </main>
 
   <!--#include virtual="/includes/footer.shtml" -->
 
+  <!-- Floating Mobile CTA -->
+  <div class="uz-floating-cta">
+    <a href="#quiz">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      Kostenloses Angebot anfordern
+    </a>
+  </div>
+
   <script src="/assets/js/main.js"></script>
+
+  <script>
+    // ─── QUIZ LOGIC ───
+    const uzData = {
+      umzugsart: '',
+      wohnungsgroesse: '',
+      stockwerk: '',
+      aufzug: '',
+      extras: [],
+      zeitraum: '',
+      von: '',
+      nach: '',
+      name: '',
+      telefon: '',
+      email: '',
+      nachricht: ''
+    };
+
+    const totalSteps = 8;
+    let currentStep = 1;
+
+    document.querySelectorAll('.uz-option').forEach(function(option) {
+      option.addEventListener('click', function() {
+        var field = this.dataset.field;
+        var value = this.dataset.value;
+        var parent = this.closest('.uz-quiz-step');
+
+        if (field === 'extras') {
+          this.classList.toggle('selected');
+          if (this.classList.contains('selected')) {
+            uzData.extras.push(value);
+          } else {
+            uzData.extras = uzData.extras.filter(function(v) { return v !== value; });
+          }
+          return;
+        }
+
+        parent.querySelectorAll('.uz-option').forEach(function(o) { o.classList.remove('selected'); });
+        this.classList.add('selected');
+        uzData[field] = value;
+
+        setTimeout(function() { uzNext(); }, 400);
+      });
+    });
+
+    function uzNext() {
+      if (currentStep === 7) {
+        uzData.von = document.getElementById('uz-von').value.trim();
+        uzData.nach = document.getElementById('uz-nach').value.trim();
+      }
+      if (currentStep >= totalSteps) return;
+
+      document.getElementById('uz-step-' + currentStep).classList.remove('active');
+      currentStep++;
+      document.getElementById('uz-step-' + currentStep).classList.add('active');
+      updateProgress();
+    }
+
+    function uzPrev() {
+      if (currentStep <= 1) return;
+      document.getElementById('uz-step-' + currentStep).classList.remove('active');
+      currentStep--;
+      document.getElementById('uz-step-' + currentStep).classList.add('active');
+      updateProgress();
+    }
+
+    function updateProgress() {
+      var pct = Math.round((currentStep / totalSteps) * 100);
+      document.getElementById('uz-progress-fill').style.width = pct + '%';
+      document.getElementById('uz-step-current').textContent = currentStep;
+      document.getElementById('uz-step-percent').textContent = pct + '%';
+    }
+
+    async function uzSubmit() {
+      var name = document.getElementById('uz-name').value.trim();
+      var telefon = document.getElementById('uz-telefon').value.trim();
+      var email = document.getElementById('uz-email').value.trim();
+      var nachricht = document.getElementById('uz-nachricht').value.trim();
+      var errorEl = document.getElementById('uz-error');
+
+      if (!name || !telefon) {
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Bitte geben Sie mindestens Name und Telefonnummer an.';
+        return;
+      }
+
+      uzData.name = name;
+      uzData.telefon = telefon;
+      uzData.email = email;
+      uzData.nachricht = nachricht;
+      uzData.von = document.getElementById('uz-von').value.trim();
+      uzData.nach = document.getElementById('uz-nach').value.trim();
+
+      var btn = document.getElementById('uz-submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet...';
+      errorEl.style.display = 'none';
+
+      var bodyText = [
+        'Umzugsart: ' + uzData.umzugsart,
+        'Wohnungsgröße: ' + uzData.wohnungsgroesse,
+        'Stockwerk: ' + uzData.stockwerk,
+        'Aufzug: ' + uzData.aufzug,
+        'Extras: ' + (uzData.extras.length ? uzData.extras.join(', ') : 'Keine'),
+        'Zeitraum: ' + uzData.zeitraum,
+        'Von: ' + (uzData.von || 'nicht angegeben'),
+        'Nach: ' + (uzData.nach || 'nicht angegeben'),
+        'Nachricht: ' + (uzData.nachricht || 'keine')
+      ].join('\n');
+
+      try {
+        var response = await fetch('/api/send-contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            leistung: 'umzug',
+            betreff: 'Umzugs-Anfrage über Quiz',
+            name: uzData.name,
+            email: uzData.email || 'nicht angegeben',
+            telefon: uzData.telefon,
+            nachricht: bodyText
+          })
+        });
+
+        if (response.ok) {
+          document.getElementById('uz-quiz-header').style.display = 'none';
+          document.getElementById('uz-progress').style.display = 'none';
+          document.getElementById('uz-step-' + currentStep).classList.remove('active');
+          document.getElementById('uz-success').classList.add('active');
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (err) {
+        console.error('Fehler:', err);
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an: 0151 651 849 76';
+        btn.disabled = false;
+        btn.textContent = 'Angebot anfordern';
+      }
+    }
+
+    // ─── SCROLL REVEAL ───
+    document.addEventListener('DOMContentLoaded', function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.uz-reveal').forEach(function(el) { observer.observe(el); });
+    });
+  </script>
+
 </body>
 </html>
