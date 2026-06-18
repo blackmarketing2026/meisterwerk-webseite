@@ -8,7 +8,7 @@
   <title>Seitentitel | Meisterwerk Ingolstadt</title>
   <meta name="description" content="Meta Description für diese Seite (max. 160 Zeichen).">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/SEITE.shtml">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/SEITE">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
@@ -25,7 +25,7 @@
       <div class="container">
         <h1>Seitenüberschrift (H1)</h1>
         <p>Kurze Einleitung mit klarem Nutzenversprechen für den Besucher.</p>
-        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
+        <a href="/kontakt" class="btn-primary">Kostenlose Anfrage stellen</a>
       </div>
     </section>
 

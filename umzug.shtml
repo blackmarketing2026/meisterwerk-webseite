@@ -7,7 +7,7 @@
   <title>Umzug Ingolstadt – Stressfrei umziehen | Meisterwerk</title>
   <meta name="description" content="Professioneller Umzugsservice in Ingolstadt und Umgebung. Privatumzug, Firmenumzug oder Seniorenumzug – kostenlose Besichtigung, Festpreisgarantie. Jetzt Angebot sichern!">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/umzug.shtml">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/umzug">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
@@ -1010,7 +1010,7 @@
     "@context": "https://schema.org",
     "@type": "MovingCompany",
     "name": "Meisterwerk Ingolstadt – Umzugsservice",
-    "url": "https://www.meisterwerk-ingolstadt.de/umzug.shtml",
+    "url": "https://www.meisterwerk-ingolstadt.de/umzug",
     "telephone": "+4915165184976",
     "email": "meisterwerk.in@web.de",
     "address": {

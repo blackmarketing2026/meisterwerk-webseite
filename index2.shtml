@@ -7,7 +7,7 @@
   <title>Meisterwerk Ingolstadt - Entrümpelung, Umzüge & Gartenservice (V2)</title>
   <meta name="description" content="Meisterwerk Ingolstadt: Entrümpelung, Haushaltsauflösung, Umzug und Gartenservice aus einer Hand. Kostenlose Besichtigung, faire Festpreise und schnelle Termine.">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/index2.shtml">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/index2">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
@@ -772,7 +772,7 @@
             Vergessen Sie den Stress von Umzügen und Räumungen. Meisterwerk Ingolstadt übernimmt die komplette Abwicklung – diskret, effizient und mit höchster Präzision. Für Privat- und Geschäftskunden, die Wert auf Perfektion legen.
           </p>
           <div class="v3-hero-actions reveal delay-300">
-            <a href="/quiz.shtml" class="v3-btn v3-btn-primary">Exklusives Angebot anfordern</a>
+            <a href="/quiz" class="v3-btn v3-btn-primary">Exklusives Angebot anfordern</a>
             <a href="tel:+4915165184976" class="v3-btn v3-btn-secondary">Persönliche Beratung: 0151 6518 4976</a>
           </div>
         </div>
@@ -815,7 +815,7 @@
             </div>
             <h3>High-End Entrümpelung</h3>
             <p>Diskretion und Struktur bei Haushaltsauflösungen und gewerblichen Räumungen. Verwertbares wird fair angerechnet, Reststoffe werden nachhaltig und zertifiziert recycelt.</p>
-            <a href="/entruempelung.shtml" class="v3-card-link">Details zur Entrümpelung</a>
+            <a href="/entruempelung" class="v3-card-link">Details zur Entrümpelung</a>
           </div>
 
           <!-- Service 2 -->
@@ -825,7 +825,7 @@
             </div>
             <h3>Premium Umzüge</h3>
             <p>Ihr Inventar verdient Respekt. Wir verpacken, transportieren und montieren auf höchstem Niveau. Jeder Umzug wird detailliert geplant – für einen nahtlosen Start im neuen Zuhause.</p>
-            <a href="/umzug.shtml" class="v3-card-link">Details zu Umzügen</a>
+            <a href="/umzug" class="v3-card-link">Details zu Umzügen</a>
           </div>
 
           <!-- Service 3 -->
@@ -835,7 +835,7 @@
             </div>
             <h3>Immobilien- & Gartenpflege</h3>
             <p>Werterhalt beginnt im Detail. Wir bringen verwilderte Gärten, Einfahrten und Außenanlagen wieder in einen repräsentativen Zustand – ideal zur Vorbereitung auf Verkauf oder Vermietung.</p>
-            <a href="/kontakt.shtml" class="v3-card-link">Service anfragen</a>
+            <a href="/kontakt" class="v3-card-link">Service anfragen</a>
           </div>
         </div>
       </div>
@@ -909,7 +909,7 @@
         </div>
 
         <div style="text-align: center; margin-top: 80px;" class="reveal delay-300">
-          <a href="/quiz.shtml" class="v3-btn v3-btn-primary" style="padding: 24px 48px; font-size: 1.2rem;">Kostenfreie Potenzial-Analyse starten</a>
+          <a href="/quiz" class="v3-btn v3-btn-primary" style="padding: 24px 48px; font-size: 1.2rem;">Kostenfreie Potenzial-Analyse starten</a>
         </div>
       </div>
     </section>

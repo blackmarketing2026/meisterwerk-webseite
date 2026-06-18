@@ -5,7 +5,7 @@
       <div class="footer-grid">
 
         <div class="footer-brand">
-          <a href="/index.shtml">
+          <a href="/">
             <img src="/assets/img/logo/logo-general.png" alt="Meisterwerk Ingolstadt" class="footer-logo">
           </a>
           <p>Ihr zuverlässiger Partner für Entrümpelung, Umzüge und Gartenservice in Ingolstadt und der gesamten Region.</p>
@@ -18,23 +18,23 @@
 
         <div class="footer-col">
           <h4>Leistungen</h4>
-          <a href="/entruempelung.shtml">Entrümpelung</a>
-          <a href="/umzug.shtml">Umzüge</a>
-          <a href="/gartenservice.shtml">Gartenservice</a>
-          <a href="/blog/index.shtml">Ratgeber</a>
+          <a href="/entruempelung">Entrümpelung</a>
+          <a href="/umzug">Umzüge</a>
+          <a href="/gartenservice">Gartenservice</a>
+          <a href="/blog/">Ratgeber</a>
         </div>
 
         <div class="footer-col">
           <h4>Kontakt</h4>
           <a href="tel:+4915165184976">📞 0151 651 849 76</a>
           <a href="mailto:meisterwerk.in@web.de">✉️ E-Mail schreiben</a>
-          <a href="/kontakt.shtml">Anfrage stellen</a>
+          <a href="/kontakt">Anfrage stellen</a>
         </div>
 
         <div class="footer-col">
           <h4>Rechtliches</h4>
-          <a href="/impressum.shtml">Impressum</a>
-          <a href="/datenschutz.shtml">Datenschutz</a>
+          <a href="/impressum">Impressum</a>
+          <a href="/datenschutz">Datenschutz</a>
         </div>
 
       </div>
@@ -45,8 +45,8 @@
     <div class="container footer-bottom-inner">
       <p>&copy; 2026 Meisterwerk Ingolstadt. Alle Rechte vorbehalten.</p>
       <div class="footer-bottom-links">
-        <a href="/impressum.shtml">Impressum</a>
-        <a href="/datenschutz.shtml">Datenschutz</a>
+        <a href="/impressum">Impressum</a>
+        <a href="/datenschutz">Datenschutz</a>
       </div>
     </div>
   </div>

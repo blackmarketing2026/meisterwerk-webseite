@@ -7,7 +7,7 @@
   <title>Gartenservice Ingolstadt – Grünpflege & Hofpflege | Meisterwerk</title>
   <meta name="description" content="Professioneller Gartenservice in Ingolstadt und Umgebung. Rasenmähen, Grünanlagenpflege, Hofpflege, Parkplatzreinigung – für Privat, Gewerbe & Kommunen. Jetzt Angebot sichern!">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/gartenservice.shtml">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/gartenservice">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
@@ -1010,7 +1010,7 @@
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
     "name": "Meisterwerk Ingolstadt – Gartenservice",
-    "url": "https://www.meisterwerk-ingolstadt.de/gartenservice.shtml",
+    "url": "https://www.meisterwerk-ingolstadt.de/gartenservice",
     "telephone": "+4915165184976",
     "email": "meisterwerk.in@web.de",
     "address": {

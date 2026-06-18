@@ -31,7 +31,7 @@
       <div class="container">
         <div class="blog-grid">
 
-          <a href="/blog/entruempelung-ingolstadt.shtml" class="blog-card">
+          <a href="/blog/entruempelung-ingolstadt" class="blog-card">
             <img src="/assets/img/blog/entruempelung-ingolstadt/hero.webp" alt="Entrümpelung Ingolstadt" loading="lazy">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
@@ -41,7 +41,7 @@
             </div>
           </a>
 
-          <a href="/blog/haushaltsaufloesung-kosten.shtml" class="blog-card">
+          <a href="/blog/haushaltsaufloesung-kosten" class="blog-card">
             <img src="/assets/img/blog/haushaltsaufloesung-kosten/hero.webp" alt="Haushaltsauflösung Kosten" loading="lazy">
             <div class="blog-card-body">
               <span class="tag">Haushaltsauflösung</span>
@@ -51,7 +51,7 @@
             </div>
           </a>
 
-          <a href="/blog/umzug-checkliste.shtml" class="blog-card">
+          <a href="/blog/umzug-checkliste" class="blog-card">
             <img src="/assets/img/blog/umzug-checkliste/hero.webp" alt="Umzug Checkliste" loading="lazy">
             <div class="blog-card-body">
               <span class="tag">Umzug</span>

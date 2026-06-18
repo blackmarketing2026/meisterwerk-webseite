@@ -10,17 +10,17 @@
   <div class="header-main">
     <div class="container header-inner">
 
-      <a href="/index.shtml" class="logo" aria-label="Meisterwerk Startseite">
+      <a href="/" class="logo" aria-label="Meisterwerk Startseite">
         <img src="/assets/img/logo/logo-general.png" alt="Meisterwerk Ingolstadt">
       </a>
 
       <nav class="main-nav" aria-label="Hauptnavigation">
-        <a href="/index.shtml">Start</a>
-        <a href="/entruempelung.shtml">Entrümpelung</a>
-        <a href="/umzug.shtml">Umzüge</a>
-        <a href="/gartenservice.shtml">Gartenservice</a>
-        <a href="/blog/index.shtml">Ratgeber</a>
-        <a href="/kontakt.shtml">Kontakt</a>
+        <a href="/">Start</a>
+        <a href="/entruempelung">Entrümpelung</a>
+        <a href="/umzug">Umzüge</a>
+        <a href="/gartenservice">Gartenservice</a>
+        <a href="/blog/">Ratgeber</a>
+        <a href="/kontakt">Kontakt</a>
       </nav>
 
       <div class="header-actions">

@@ -1290,7 +1290,7 @@
 
           <div class="mw-hero-panel">
             <div class="mw-hero-cards">
-              <a class="mw-hero-card orange" href="/entruempelung.shtml">
+              <a class="mw-hero-card orange" href="/entruempelung">
                 <img src="/assets/img/logo/Meisterwerk-entruemplung.png" alt="Meisterwerk Entrümpelung" loading="lazy">
                 <div>
                   <strong>Entrümpelung</strong>
@@ -1298,7 +1298,7 @@
                   <span class="mw-card-arrow">Mehr erfahren →</span>
                 </div>
               </a>
-              <a class="mw-hero-card blue" href="/umzug.shtml">
+              <a class="mw-hero-card blue" href="/umzug">
                 <img src="/assets/img/logo/Meisterwerk-umzug.png" alt="Meisterwerk Umzug" loading="lazy">
                 <div>
                   <strong>Umzüge</strong>
@@ -1306,7 +1306,7 @@
                   <span class="mw-card-arrow">Mehr erfahren →</span>
                 </div>
               </a>
-              <a class="mw-hero-card green" href="/gartenservice.shtml">
+              <a class="mw-hero-card green" href="/gartenservice">
                 <img src="/assets/img/logo/Meisterwerk-garten.png" alt="Meisterwerk Gartenservice" loading="lazy">
                 <div>
                   <strong>Gartenservice</strong>
@@ -1354,7 +1354,7 @@
         </div>
 
         <div class="mw-services-grid">
-          <a class="mw-service-card orange mw-reveal" href="/entruempelung.shtml">
+          <a class="mw-service-card orange mw-reveal" href="/entruempelung">
             <div class="mw-service-visual">
               <img src="/assets/img/logo/Meisterwerk-entruemplung.png" alt="Entrümpelung Ingolstadt" loading="lazy">
             </div>
@@ -1371,7 +1371,7 @@
             </div>
           </a>
 
-          <a class="mw-service-card blue mw-reveal delay-200" href="/umzug.shtml">
+          <a class="mw-service-card blue mw-reveal delay-200" href="/umzug">
             <div class="mw-service-visual">
               <img src="/assets/img/logo/Meisterwerk-umzug.png" alt="Umzugsservice Ingolstadt" loading="lazy">
             </div>
@@ -1388,7 +1388,7 @@
             </div>
           </a>
 
-          <a class="mw-service-card green mw-reveal delay-400" href="/gartenservice.shtml">
+          <a class="mw-service-card green mw-reveal delay-400" href="/gartenservice">
             <div class="mw-service-visual">
               <img src="/assets/img/logo/Meisterwerk-garten.png" alt="Gartenservice Ingolstadt" loading="lazy">
             </div>

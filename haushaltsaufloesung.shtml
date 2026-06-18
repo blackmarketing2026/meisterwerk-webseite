@@ -7,7 +7,7 @@
   <title>Haushaltsauflösung Ingolstadt – Meisterwerk | Diskret & Zuverlässig</title>
   <meta name="description" content="Haushaltsauflösung in Ingolstadt: Komplett-Service, Festpreis, diskrete Abwicklung. Meisterwerk übernimmt alles – jetzt kostenlos anfragen!">
   <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/haushaltsaufloesung.shtml">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/haushaltsaufloesung">
 
   <link rel="stylesheet" href="/assets/css/style.css">
   <link rel="stylesheet" href="/assets/css/responsive.css">
@@ -23,7 +23,7 @@
       <div class="container">
         <h1>Haushaltsauflösung in Ingolstadt</h1>
         <p>Komplette Auflösung von Haushalten – diskret, zuverlässig und zum Festpreis. Wir kümmern uns um alles.</p>
-        <a href="/kontakt.shtml" class="btn-primary">Kostenlose Anfrage stellen</a>
+        <a href="/kontakt" class="btn-primary">Kostenlose Anfrage stellen</a>
       </div>
     </section>
 
