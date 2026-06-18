@@ -1,4 +1,29 @@
 {
-  "cleanUrls": true,
-  "trailingSlash": false
+  "trailingSlash": false,
+  "rewrites": [
+    { "source": "/", "destination": "/index.shtml" },
+    { "source": "/entruempelung", "destination": "/entruempelung.shtml" },
+    { "source": "/umzug", "destination": "/umzug.shtml" },
+    { "source": "/gartenservice", "destination": "/gartenservice.shtml" },
+    { "source": "/kontakt", "destination": "/kontakt.shtml" },
+    { "source": "/haushaltsaufloesung", "destination": "/haushaltsaufloesung.shtml" },
+    { "source": "/impressum", "destination": "/impressum.shtml" },
+    { "source": "/datenschutz", "destination": "/datenschutz.shtml" },
+    { "source": "/quiz", "destination": "/quiz.shtml" },
+    { "source": "/index2", "destination": "/index2.shtml" },
+    { "source": "/forgot-password", "destination": "/forgot-password.shtml" },
+    { "source": "/reset-password", "destination": "/reset-password.shtml" },
+    { "source": "/blog", "destination": "/blog/index.shtml" },
+    { "source": "/blog/entruempelung-ingolstadt", "destination": "/blog/entruempelung-ingolstadt.shtml" },
+    { "source": "/blog/haushaltsaufloesung-kosten", "destination": "/blog/haushaltsaufloesung-kosten.shtml" },
+    { "source": "/blog/umzug-checkliste", "destination": "/blog/umzug-checkliste.shtml" }
+  ],
+  "headers": [
+    {
+      "source": "/(.*)\\.shtml",
+      "headers": [
+        { "key": "Content-Type", "value": "text/html; charset=utf-8" }
+      ]
+    }
+  ]
 }
