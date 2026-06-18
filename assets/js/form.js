@@ -10,13 +10,15 @@ document.addEventListener('DOMContentLoaded', function () {
     btn.textContent = 'Wird gesendet…';
     btn.disabled = true;
 
+    const vorname = (form.vorname?.value || '').trim();
+    const nachname = (form.nachname?.value || '').trim();
     const data = {
-      vorname:   form.vorname?.value.trim(),
-      nachname:  form.nachname?.value.trim(),
-      telefon:   form.telefon?.value.trim(),
-      email:     form.email?.value.trim(),
-      leistung:  form.leistung?.value,
-      nachricht: form.nachricht?.value.trim(),
+      leistung:  form.leistung?.value || 'sonstiges',
+      betreff:   'Anfrage über Kontaktformular',
+      name:      (vorname + ' ' + nachname).trim(),
+      email:     (form.email?.value || '').trim(),
+      telefon:   (form.telefon?.value || '').trim(),
+      nachricht: (form.nachricht?.value || '').trim(),
     };
 
     try {

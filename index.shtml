@@ -1760,13 +1760,21 @@
           btn.disabled = true;
 
           var fd = new FormData(form);
-          var lines = [];
-          fd.forEach(function(val, key) { if (val) lines.push(key + ': ' + val); });
+          var vorname = (fd.get('vorname') || '').trim();
+          var nachname = (fd.get('nachname') || '').trim();
+          var fullName = (vorname + ' ' + nachname).trim();
 
           fetch('/api/send-contact', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ message: lines.join('\n'), source: 'startseite' })
+            body: JSON.stringify({
+              leistung: fd.get('leistung') || 'sonstiges',
+              betreff: 'Anfrage über Startseite',
+              name: fullName,
+              email: fd.get('email') || 'nicht angegeben',
+              telefon: fd.get('telefon') || '',
+              nachricht: fd.get('nachricht') || ''
+            })
           })
           .then(function(r) { return r.ok ? r.json() : Promise.reject(); })
           .then(function() {
