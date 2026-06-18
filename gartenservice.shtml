@@ -1,0 +1,1738 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Gartenservice Ingolstadt – Grünpflege & Hofpflege | Meisterwerk</title>
+  <meta name="description" content="Professioneller Gartenservice in Ingolstadt und Umgebung. Rasenmähen, Grünanlagenpflege, Hofpflege, Parkplatzreinigung – für Privat, Gewerbe & Kommunen. Jetzt Angebot sichern!">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.meisterwerk-ingolstadt.de/gartenservice.shtml">
+
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <link rel="stylesheet" href="/assets/css/responsive.css">
+
+  <style>
+    :root {
+      --gs-green: #16a34a;
+      --gs-green-dark: #0d7a35;
+      --gs-green-deep: #064e22;
+      --gs-green-light: #e8f5e9;
+      --gs-green-glow: rgba(22, 163, 74, 0.15);
+      --gs-accent: #22c55e;
+      --gs-ink: #10131a;
+      --gs-ink-soft: #2c3340;
+      --gs-muted: #667085;
+      --gs-line: #e2e6f0;
+      --gs-paper: #ffffff;
+      --gs-soft: #f4faf6;
+      --gs-radius: 16px;
+      --gs-radius-sm: 10px;
+      --gs-shadow: 0 20px 50px rgba(22, 163, 74, 0.08);
+      --gs-shadow-hover: 0 28px 60px rgba(22, 163, 74, 0.16);
+    }
+
+    /* ── ANIMATIONS ── */
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(40px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInScale {
+      from { opacity: 0; transform: scale(0.92); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes pulse {
+      0%, 100% { transform: scale(1); }
+      50% { transform: scale(1.05); }
+    }
+    @keyframes shimmer {
+      0% { background-position: -200% center; }
+      100% { background-position: 200% center; }
+    }
+    @keyframes gradientShift {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    .gs-reveal {
+      opacity: 0;
+      transform: translateY(40px);
+      transition: opacity 0.8s cubic-bezier(0.16, 1, 0.3, 1), transform 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .gs-reveal.is-visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .gs-reveal.delay-100 { transition-delay: 0.1s; }
+    .gs-reveal.delay-200 { transition-delay: 0.2s; }
+    .gs-reveal.delay-300 { transition-delay: 0.3s; }
+    .gs-reveal.delay-400 { transition-delay: 0.4s; }
+    .gs-reveal.delay-500 { transition-delay: 0.5s; }
+
+    /* ── HERO ── */
+    .gs-hero {
+      position: relative;
+      overflow: hidden;
+      background: linear-gradient(135deg, var(--gs-green-deep) 0%, var(--gs-green) 50%, #1db954 100%);
+      background-size: 200% 200%;
+      animation: gradientShift 12s ease infinite;
+      color: #fff;
+      padding: 100px 0 80px;
+      min-height: 85vh;
+      display: flex;
+      align-items: center;
+    }
+    .gs-hero::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 80%, rgba(34, 197, 94, 0.3), transparent 50%),
+        radial-gradient(ellipse at 80% 20%, rgba(255, 255, 255, 0.08), transparent 40%);
+      pointer-events: none;
+    }
+    .gs-hero::after {
+      content: "";
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      right: 0;
+      height: 80px;
+      background: linear-gradient(to top, #fff, transparent);
+      pointer-events: none;
+    }
+    .gs-hero-inner {
+      position: relative;
+      z-index: 1;
+      max-width: 800px;
+      margin: 0 auto;
+      text-align: center;
+    }
+    .gs-hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.2);
+      border-radius: 999px;
+      padding: 8px 20px;
+      font-size: 0.85rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+      backdrop-filter: blur(10px);
+      animation: fadeInScale 0.8s ease forwards;
+    }
+    .gs-hero-badge::before {
+      content: "";
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background: #7ee787;
+      box-shadow: 0 0 0 4px rgba(126, 231, 135, 0.2);
+      animation: pulse 2s infinite;
+    }
+    .gs-hero h1 {
+      font-size: clamp(2.4rem, 6vw, 4.2rem);
+      line-height: 1.05;
+      letter-spacing: -0.02em;
+      margin-bottom: 24px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.2s;
+      opacity: 0;
+    }
+    .gs-hero h1 span {
+      display: block;
+      background: linear-gradient(90deg, #a8ffc0, #d4ffe0, #a8ffc0);
+      background-size: 200% auto;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      animation: shimmer 4s linear infinite;
+    }
+    .gs-hero-lead {
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+      line-height: 1.7;
+      color: rgba(255,255,255,0.85);
+      max-width: 620px;
+      margin: 0 auto 40px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.4s;
+      opacity: 0;
+    }
+    .gs-hero-actions {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 16px;
+      margin-bottom: 40px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.6s;
+      opacity: 0;
+    }
+    .gs-btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: #fff;
+      color: var(--gs-green);
+      padding: 18px 36px;
+      border-radius: var(--gs-radius);
+      font-size: 1.1rem;
+      font-weight: 800;
+      text-decoration: none;
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.2);
+      position: relative;
+      overflow: hidden;
+    }
+    .gs-btn-primary::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(90deg, transparent, rgba(22, 163, 74, 0.05), transparent);
+      transform: translateX(-100%);
+      transition: transform 0.6s;
+    }
+    .gs-btn-primary:hover {
+      transform: translateY(-3px) scale(1.02);
+      box-shadow: 0 24px 50px rgba(0,0,0,0.3);
+      color: var(--gs-green);
+    }
+    .gs-btn-primary:hover::after {
+      transform: translateX(100%);
+    }
+    .gs-btn-outline {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      background: transparent;
+      color: #fff;
+      padding: 18px 36px;
+      border-radius: var(--gs-radius);
+      font-size: 1.05rem;
+      font-weight: 700;
+      text-decoration: none;
+      border: 2px solid rgba(255,255,255,0.35);
+      transition: all 0.3s ease;
+    }
+    .gs-btn-outline:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.6);
+      color: #fff;
+      transform: translateY(-2px);
+    }
+
+    .gs-trust-bar {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      animation: fadeInUp 1s ease forwards;
+      animation-delay: 0.8s;
+      opacity: 0;
+    }
+    .gs-trust-item {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      color: rgba(255,255,255,0.8);
+      font-size: 0.95rem;
+      font-weight: 600;
+    }
+    .gs-trust-item svg { flex-shrink: 0; }
+
+    /* ── METRICS BAR ── */
+    .gs-metrics {
+      position: relative;
+      z-index: 2;
+      margin-top: -50px;
+      padding: 0 20px;
+    }
+    .gs-metrics-inner {
+      max-width: 1100px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 1px;
+      background: var(--gs-line);
+      border-radius: var(--gs-radius);
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(22, 163, 74, 0.12);
+    }
+    .gs-metric {
+      background: #fff;
+      padding: 32px 24px;
+      text-align: center;
+      transition: background 0.3s;
+    }
+    .gs-metric:hover { background: var(--gs-green-light); }
+    .gs-metric strong {
+      display: block;
+      font-size: clamp(1.8rem, 3vw, 2.6rem);
+      color: var(--gs-green);
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .gs-metric span {
+      color: var(--gs-muted);
+      font-size: 0.9rem;
+      line-height: 1.4;
+    }
+
+    /* ── SECTION BASE ── */
+    .gs-section { padding: 100px 0; }
+    .gs-section-soft { background: var(--gs-soft); }
+    .gs-section-head {
+      max-width: 700px;
+      margin: 0 auto 60px;
+      text-align: center;
+    }
+    .gs-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      color: var(--gs-green);
+      font-size: 0.82rem;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 16px;
+    }
+    .gs-eyebrow::before {
+      content: "";
+      width: 28px;
+      height: 3px;
+      background: var(--gs-green);
+      border-radius: 999px;
+    }
+    .gs-section-head h2 {
+      color: var(--gs-ink);
+      font-size: clamp(1.9rem, 4vw, 2.8rem);
+      line-height: 1.15;
+      letter-spacing: -0.02em;
+      margin-bottom: 16px;
+    }
+    .gs-section-head p {
+      color: var(--gs-muted);
+      font-size: 1.1rem;
+      line-height: 1.7;
+    }
+
+    /* ── SERVICE TYPES ── */
+    .gs-types-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .gs-type-card {
+      background: #fff;
+      border: 1px solid var(--gs-line);
+      border-radius: var(--gs-radius);
+      padding: 40px 28px;
+      text-align: center;
+      transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+      overflow: hidden;
+    }
+    .gs-type-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, var(--gs-green), var(--gs-accent));
+      transform: scaleX(0);
+      transform-origin: left;
+      transition: transform 0.4s ease;
+    }
+    .gs-type-card:hover {
+      transform: translateY(-8px);
+      box-shadow: var(--gs-shadow-hover);
+      border-color: transparent;
+    }
+    .gs-type-card:hover::before { transform: scaleX(1); }
+    .gs-type-icon {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--gs-green-light);
+      color: var(--gs-green);
+      margin-bottom: 20px;
+      font-size: 2rem;
+      transition: all 0.4s ease;
+    }
+    .gs-type-card:hover .gs-type-icon {
+      background: var(--gs-green);
+      color: #fff;
+      transform: scale(1.1) rotate(-5deg);
+    }
+    .gs-type-card h3 {
+      color: var(--gs-ink);
+      font-size: 1.25rem;
+      margin-bottom: 10px;
+    }
+    .gs-type-card p {
+      color: var(--gs-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ── INCLUDED SERVICES ── */
+    .gs-included-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+    }
+    .gs-included-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+      background: #fff;
+      border: 1px solid var(--gs-line);
+      border-radius: var(--gs-radius-sm);
+      padding: 24px;
+      transition: all 0.3s ease;
+    }
+    .gs-included-item:hover {
+      border-color: var(--gs-green);
+      box-shadow: var(--gs-shadow);
+      transform: translateX(4px);
+    }
+    .gs-check {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--gs-green-light);
+      color: var(--gs-green);
+      flex-shrink: 0;
+      transition: all 0.3s ease;
+    }
+    .gs-included-item:hover .gs-check {
+      background: var(--gs-green);
+      color: #fff;
+    }
+    .gs-included-item h4 {
+      color: var(--gs-ink);
+      font-size: 1rem;
+      margin-bottom: 4px;
+    }
+    .gs-included-item p {
+      color: var(--gs-muted);
+      font-size: 0.9rem;
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── PROCESS SECTION ── */
+    .gs-process {
+      background: linear-gradient(135deg, var(--gs-green-deep) 0%, var(--gs-green) 100%);
+      color: #fff;
+      padding: 100px 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .gs-process::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(34, 197, 94, 0.25), transparent 60%);
+      pointer-events: none;
+    }
+    .gs-process .gs-section-head h2 { color: #fff; }
+    .gs-process .gs-section-head p { color: rgba(255,255,255,0.7); }
+    .gs-process .gs-eyebrow { color: rgba(255,255,255,0.7); }
+    .gs-process .gs-eyebrow::before { background: rgba(255,255,255,0.5); }
+
+    .gs-steps {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 24px;
+      position: relative;
+    }
+    .gs-step {
+      position: relative;
+      background: rgba(255,255,255,0.06);
+      border: 1px solid rgba(255,255,255,0.12);
+      border-radius: var(--gs-radius);
+      padding: 36px 28px;
+      transition: all 0.4s ease;
+      backdrop-filter: blur(10px);
+    }
+    .gs-step:hover {
+      background: rgba(255,255,255,0.1);
+      border-color: rgba(255,255,255,0.25);
+      transform: translateY(-6px);
+    }
+    .gs-step-num {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 52px;
+      height: 52px;
+      border-radius: 14px;
+      background: linear-gradient(135deg, var(--gs-accent), var(--gs-green));
+      color: #fff;
+      font-size: 1.3rem;
+      font-weight: 900;
+      margin-bottom: 20px;
+      box-shadow: 0 8px 24px rgba(34, 197, 94, 0.4);
+    }
+    .gs-step h3 {
+      color: #fff;
+      font-size: 1.15rem;
+      margin-bottom: 10px;
+    }
+    .gs-step p {
+      color: rgba(255,255,255,0.7);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    /* ── TESTIMONIALS ── */
+    .gs-testimonials {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 24px;
+    }
+    .gs-testimonial {
+      background: #fff;
+      border: 1px solid var(--gs-line);
+      border-radius: var(--gs-radius);
+      padding: 32px;
+      transition: all 0.3s ease;
+    }
+    .gs-testimonial:hover {
+      box-shadow: var(--gs-shadow-hover);
+      transform: translateY(-4px);
+    }
+    .gs-testimonial-stars {
+      color: #fbbf24;
+      font-size: 1.1rem;
+      margin-bottom: 16px;
+      letter-spacing: 2px;
+    }
+    .gs-testimonial p {
+      color: var(--gs-ink-soft);
+      font-size: 0.98rem;
+      line-height: 1.7;
+      margin-bottom: 20px;
+      font-style: italic;
+    }
+    .gs-testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+    .gs-testimonial-avatar {
+      width: 44px;
+      height: 44px;
+      border-radius: 12px;
+      background: var(--gs-green-light);
+      color: var(--gs-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 800;
+      font-size: 1rem;
+    }
+    .gs-testimonial-name {
+      font-weight: 700;
+      color: var(--gs-ink);
+      font-size: 0.95rem;
+    }
+    .gs-testimonial-detail {
+      color: var(--gs-muted);
+      font-size: 0.85rem;
+    }
+
+    /* ── FAQ ── */
+    .gs-faq {
+      max-width: 800px;
+      margin: 0 auto;
+    }
+    .gs-faq details {
+      background: #fff;
+      border: 1px solid var(--gs-line);
+      border-radius: var(--gs-radius-sm);
+      margin-bottom: 12px;
+      transition: all 0.3s ease;
+      overflow: hidden;
+    }
+    .gs-faq details:hover { border-color: var(--gs-green); }
+    .gs-faq details[open] {
+      border-color: var(--gs-green);
+      box-shadow: 0 8px 30px var(--gs-green-glow);
+    }
+    .gs-faq summary {
+      padding: 22px 56px 22px 24px;
+      color: var(--gs-ink);
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      list-style: none;
+      position: relative;
+      transition: color 0.2s;
+    }
+    .gs-faq summary::-webkit-details-marker { display: none; }
+    .gs-faq summary:hover { color: var(--gs-green); }
+    .gs-faq summary::after {
+      content: "+";
+      position: absolute;
+      right: 24px;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--gs-green-light);
+      color: var(--gs-green);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.3rem;
+      font-weight: 400;
+      transition: all 0.3s ease;
+    }
+    .gs-faq details[open] summary::after {
+      content: "\2212";
+      background: var(--gs-green);
+      color: #fff;
+      transform: translateY(-50%) rotate(180deg);
+    }
+    .gs-faq details p {
+      padding: 0 24px 22px;
+      color: var(--gs-muted);
+      line-height: 1.7;
+      font-size: 0.98rem;
+    }
+
+    /* ── CTA BANNER ── */
+    .gs-cta-banner {
+      background: linear-gradient(135deg, var(--gs-green) 0%, var(--gs-accent) 100%);
+      color: #fff;
+      padding: 72px 0;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+    }
+    .gs-cta-banner::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(ellipse at 50% 120%, rgba(255,255,255,0.1), transparent 60%);
+      pointer-events: none;
+    }
+    .gs-cta-banner h2 {
+      color: #fff;
+      font-size: clamp(1.8rem, 4vw, 2.6rem);
+      margin-bottom: 16px;
+      position: relative;
+    }
+    .gs-cta-banner p {
+      color: rgba(255,255,255,0.85);
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto 32px;
+      position: relative;
+    }
+    .gs-cta-banner .gs-btn-primary {
+      font-size: 1.15rem;
+      padding: 20px 42px;
+      animation: pulse 3s infinite;
+      position: relative;
+    }
+
+    /* ── QUIZ SECTION ── */
+    .gs-quiz-section {
+      padding: 100px 0;
+      background: linear-gradient(180deg, var(--gs-soft) 0%, #fff 100%);
+    }
+    .gs-quiz-wrapper {
+      max-width: 680px;
+      margin: 0 auto;
+      background: #fff;
+      border-radius: 24px;
+      box-shadow: 0 30px 80px rgba(22, 163, 74, 0.1);
+      padding: 48px;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid var(--gs-line);
+    }
+    .gs-quiz-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 5px;
+      background: linear-gradient(90deg, var(--gs-green), var(--gs-accent), var(--gs-green));
+      background-size: 200% auto;
+      animation: shimmer 3s linear infinite;
+    }
+
+    .gs-quiz-header {
+      text-align: center;
+      margin-bottom: 36px;
+    }
+    .gs-quiz-header h2 {
+      color: var(--gs-green);
+      font-size: clamp(1.6rem, 3.5vw, 2.2rem);
+      margin-bottom: 8px;
+    }
+    .gs-quiz-header p {
+      color: var(--gs-muted);
+      font-size: 1rem;
+    }
+
+    /* Progress bar */
+    .gs-progress { margin-bottom: 40px; }
+    .gs-progress-bar {
+      height: 6px;
+      background: var(--gs-line);
+      border-radius: 999px;
+      overflow: hidden;
+      margin-bottom: 12px;
+    }
+    .gs-progress-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--gs-green), var(--gs-accent));
+      border-radius: 999px;
+      transition: width 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+      position: relative;
+    }
+    .gs-progress-fill::after {
+      content: "";
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+      background: var(--gs-green);
+      box-shadow: 0 0 0 4px rgba(22, 163, 74, 0.2);
+    }
+    .gs-progress-text {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.85rem;
+      color: var(--gs-muted);
+    }
+    .gs-progress-text strong { color: var(--gs-green); }
+
+    /* Quiz Steps */
+    .gs-quiz-step {
+      display: none;
+      animation: fadeInUp 0.5s ease forwards;
+    }
+    .gs-quiz-step.active { display: block; }
+    .gs-step-question {
+      font-size: 1.3rem;
+      color: var(--gs-ink);
+      font-weight: 700;
+      margin-bottom: 8px;
+      text-align: center;
+    }
+    .gs-step-subtitle {
+      color: var(--gs-muted);
+      font-size: 0.95rem;
+      text-align: center;
+      margin-bottom: 28px;
+    }
+
+    /* Option cards */
+    .gs-options {
+      display: grid;
+      gap: 12px;
+    }
+    .gs-options.grid-2 { grid-template-columns: repeat(2, 1fr); }
+    .gs-options.grid-3 { grid-template-columns: repeat(3, 1fr); }
+    .gs-option {
+      border: 2px solid var(--gs-line);
+      border-radius: var(--gs-radius-sm);
+      padding: 20px;
+      text-align: center;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+      background: #fff;
+      position: relative;
+      overflow: hidden;
+    }
+    .gs-option:hover {
+      border-color: var(--gs-green);
+      background: var(--gs-green-light);
+      transform: translateY(-2px);
+    }
+    .gs-option.selected {
+      border-color: var(--gs-green);
+      background: var(--gs-green);
+      color: #fff;
+      box-shadow: 0 8px 30px var(--gs-green-glow);
+      transform: scale(1.02);
+    }
+    .gs-option.selected .gs-option-icon { transform: scale(1.15); }
+    .gs-option-icon {
+      font-size: 2rem;
+      margin-bottom: 8px;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .gs-option-title {
+      font-weight: 700;
+      font-size: 1rem;
+      display: block;
+    }
+    .gs-option-desc {
+      font-size: 0.82rem;
+      margin-top: 4px;
+      display: block;
+      opacity: 0.7;
+    }
+
+    /* Form fields */
+    .gs-form-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+    .gs-form-group { margin-bottom: 20px; }
+    .gs-form-group label {
+      display: block;
+      font-weight: 700;
+      color: var(--gs-ink);
+      font-size: 0.95rem;
+      margin-bottom: 8px;
+    }
+    .gs-input {
+      width: 100%;
+      padding: 16px 18px;
+      border: 2px solid var(--gs-line);
+      border-radius: var(--gs-radius-sm);
+      font-size: 1rem;
+      font-family: inherit;
+      transition: all 0.3s ease;
+      background: #fff;
+    }
+    .gs-input:focus {
+      outline: none;
+      border-color: var(--gs-green);
+      box-shadow: 0 0 0 4px var(--gs-green-glow);
+    }
+    .gs-input::placeholder { color: #b0b8c9; }
+    .gs-textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+
+    /* Quiz buttons */
+    .gs-quiz-nav {
+      display: flex;
+      gap: 12px;
+      margin-top: 28px;
+    }
+    .gs-quiz-back {
+      flex: 0 0 auto;
+      background: transparent;
+      color: var(--gs-muted);
+      border: 2px solid var(--gs-line);
+      border-radius: var(--gs-radius-sm);
+      padding: 16px 24px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all 0.2s;
+      font-family: inherit;
+    }
+    .gs-quiz-back:hover {
+      border-color: var(--gs-green);
+      color: var(--gs-green);
+    }
+    .gs-quiz-next {
+      flex: 1;
+      background: var(--gs-green);
+      color: #fff;
+      border: none;
+      border-radius: var(--gs-radius-sm);
+      padding: 16px;
+      font-size: 1.05rem;
+      font-weight: 700;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      font-family: inherit;
+    }
+    .gs-quiz-next:hover {
+      background: var(--gs-green-dark);
+      transform: translateY(-1px);
+      box-shadow: 0 8px 24px var(--gs-green-glow);
+    }
+    .gs-quiz-next:disabled {
+      background: #b0c9b8;
+      cursor: not-allowed;
+      transform: none;
+      box-shadow: none;
+    }
+
+    /* Success */
+    .gs-quiz-success {
+      display: none;
+      text-align: center;
+      padding: 40px 20px;
+    }
+    .gs-quiz-success.active {
+      display: block;
+      animation: fadeInScale 0.6s ease forwards;
+    }
+    .gs-success-icon {
+      width: 80px;
+      height: 80px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #22c55e, #16a34a);
+      color: #fff;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 24px;
+      font-size: 2.2rem;
+      box-shadow: 0 12px 40px rgba(34, 197, 94, 0.3);
+    }
+    .gs-quiz-success h3 {
+      color: var(--gs-ink);
+      font-size: 1.6rem;
+      margin-bottom: 12px;
+    }
+    .gs-quiz-success p {
+      color: var(--gs-muted);
+      font-size: 1.05rem;
+      line-height: 1.7;
+    }
+
+    #gs-error {
+      color: #dc2626;
+      text-align: center;
+      margin-top: 12px;
+      font-weight: 600;
+      font-size: 0.95rem;
+      display: none;
+    }
+
+    /* ── FLOATING CTA (MOBILE) ── */
+    .gs-floating-cta {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 999;
+      background: #fff;
+      border-top: 1px solid var(--gs-line);
+      padding: 12px 16px;
+      box-shadow: 0 -8px 30px rgba(0,0,0,0.1);
+    }
+    .gs-floating-cta a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      background: var(--gs-green);
+      color: #fff;
+      padding: 16px;
+      border-radius: var(--gs-radius-sm);
+      font-weight: 700;
+      font-size: 1.05rem;
+      text-decoration: none;
+      animation: pulse 3s infinite;
+    }
+
+    /* ── REGION TAGS ── */
+    .gs-region-tags {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 12px;
+    }
+    .gs-region-tag {
+      background: #fff;
+      border: 1px solid var(--gs-line);
+      border-radius: 999px;
+      padding: 10px 20px;
+      color: var(--gs-ink-soft);
+      font-size: 0.95rem;
+      transition: all 0.3s;
+      cursor: default;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.04);
+    }
+    .gs-region-tag:hover {
+      border-color: var(--gs-green);
+      transform: translateY(-2px);
+      box-shadow: 0 8px 20px rgba(22, 163, 74, 0.1);
+    }
+
+    /* ── RESPONSIVE ── */
+    @media (max-width: 980px) {
+      .gs-types-grid, .gs-testimonials { grid-template-columns: 1fr; }
+      .gs-steps { grid-template-columns: repeat(2, 1fr); }
+      .gs-included-grid { grid-template-columns: 1fr; }
+      .gs-metrics-inner { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .gs-hero { padding: 80px 0 60px; min-height: auto; }
+      .gs-hero h1 { font-size: clamp(2rem, 10vw, 2.8rem); }
+      .gs-hero-actions { flex-direction: column; align-items: stretch; }
+      .gs-btn-primary, .gs-btn-outline { justify-content: center; text-align: center; }
+      .gs-trust-bar { flex-direction: column; align-items: center; gap: 12px; }
+      .gs-metrics-inner { grid-template-columns: 1fr 1fr; }
+      .gs-section, .gs-process { padding: 64px 0; }
+      .gs-steps { grid-template-columns: 1fr; }
+      .gs-options.grid-2, .gs-options.grid-3 { grid-template-columns: 1fr; }
+      .gs-quiz-wrapper { padding: 32px 20px; border-radius: 16px; margin: 0 4px; }
+      .gs-form-row { grid-template-columns: 1fr; }
+      .gs-quiz-nav { flex-direction: column-reverse; }
+      .gs-floating-cta { display: block; }
+      body { padding-bottom: 72px; }
+      .gs-cta-banner { padding: 48px 0; }
+    }
+  </style>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Meisterwerk Ingolstadt – Gartenservice",
+    "url": "https://www.meisterwerk-ingolstadt.de/gartenservice.shtml",
+    "telephone": "+4915165184976",
+    "email": "meisterwerk.in@web.de",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Beilngrieserstr. 108",
+      "addressLocality": "Ingolstadt",
+      "postalCode": "85055",
+      "addressCountry": "DE"
+    },
+    "areaServed": ["Ingolstadt", "Eichstätt", "Neuburg an der Donau", "Pfaffenhofen", "Manching", "Gaimersheim", "Schrobenhausen", "Beilngries"],
+    "description": "Professioneller Gartenservice in Ingolstadt: Rasenmähen, Grünanlagenpflege, Hofpflege und Parkplatzreinigung für Privat, Gewerbe und Kommunen.",
+    "priceRange": "$$"
+  }
+  </script>
+</head>
+
+<body>
+
+  <!--#include virtual="/includes/header.shtml" -->
+
+  <main>
+
+    <!-- HERO -->
+    <section class="gs-hero">
+      <div class="container">
+        <div class="gs-hero-inner">
+          <div class="gs-hero-badge">Jetzt Pflegevertrag sichern</div>
+          <h1>
+            Ihr Gartenservice.<br>
+            <span>Professionell gepflegt. Ganzjährig betreut.</span>
+          </h1>
+          <p class="gs-hero-lead">
+            Rasenmähen, Grünanlagenpflege, Hofpflege oder Parkplatzreinigung – Meisterwerk Ingolstadt übernimmt die komplette Außenpflege. Für Privat, Gewerbe und Kommunen.
+          </p>
+          <div class="gs-hero-actions">
+            <a href="#quiz" class="gs-btn-primary">
+              <svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+              Kostenloses Angebot in 60 Sek.
+            </a>
+            <a href="tel:+4915165184976" class="gs-btn-outline">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              0151 651 849 76
+            </a>
+          </div>
+          <div class="gs-trust-bar">
+            <div class="gs-trust-item">
+              <svg width="18" height="18" fill="none" stroke="#7ee787" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              Festpreisgarantie
+            </div>
+            <div class="gs-trust-item">
+              <svg width="18" height="18" fill="none" stroke="#7ee787" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              Kostenlose Erstbegehung
+            </div>
+            <div class="gs-trust-item">
+              <svg width="18" height="18" fill="none" stroke="#7ee787" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+              Versichert & zuverlässig
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- METRICS -->
+    <section class="gs-metrics">
+      <div class="gs-metrics-inner gs-reveal">
+        <div class="gs-metric">
+          <strong>300+</strong>
+          <span>Gepflegte Objekte</span>
+        </div>
+        <div class="gs-metric">
+          <strong>100%</strong>
+          <span>Festpreis ohne Nachzahlung</span>
+        </div>
+        <div class="gs-metric">
+          <strong>24h</strong>
+          <span>Angebot innerhalb eines Tages</span>
+        </div>
+        <div class="gs-metric">
+          <strong>4,9 ★</strong>
+          <span>Kundenbewertung</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- KUNDENGRUPPEN -->
+    <section class="gs-section">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">Für jeden der richtige Service</span>
+          <h2>Grünpflege, die zu Ihnen passt.</h2>
+          <p>Ob Privatgarten, Gewerbefläche oder kommunale Anlage – wir kümmern uns um Ihre Außenbereiche.</p>
+        </div>
+        <div class="gs-types-grid">
+          <div class="gs-type-card gs-reveal">
+            <div class="gs-type-icon">🏡</div>
+            <h3>Privatkunden</h3>
+            <p>Rasenmähen, Hecken schneiden, Beete pflegen – wir halten Ihren Garten das ganze Jahr über in Schuss.</p>
+          </div>
+          <div class="gs-type-card gs-reveal delay-100">
+            <div class="gs-type-icon">🏢</div>
+            <h3>Gewerbekunden</h3>
+            <p>Gepflegte Außenanlagen, saubere Parkplätze und repräsentative Grünflächen für Ihr Unternehmen.</p>
+          </div>
+          <div class="gs-type-card gs-reveal delay-200">
+            <div class="gs-type-icon">🏛️</div>
+            <h3>Kommunen & Städte</h3>
+            <p>Öffentliche Grünpflege, Straßenbegleitgrün, Spielplatzpflege und kommunale Freiflächen – zuverlässig und termingerecht.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- LEISTUNGEN IM DETAIL -->
+    <section class="gs-section gs-section-soft">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">Unsere Leistungen</span>
+          <h2>Von Rasenpflege bis Parkplatzreinigung.</h2>
+          <p>Alles rund um die professionelle Pflege Ihrer Außenflächen – aus einer Hand.</p>
+        </div>
+        <div class="gs-included-grid">
+          <div class="gs-included-item gs-reveal">
+            <div class="gs-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Rasenmähen & Rasenpflege</h4>
+              <p>Regelmäßiges Mähen, Vertikutieren und Düngen für einen dichten, gesunden Rasen.</p>
+            </div>
+          </div>
+          <div class="gs-included-item gs-reveal delay-100">
+            <div class="gs-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Grünanlagenpflege</h4>
+              <p>Pflege von Grünflächen, Beeten, Sträuchern und Bepflanzungen – ganzjährig oder saisonal.</p>
+            </div>
+          </div>
+          <div class="gs-included-item gs-reveal delay-200">
+            <div class="gs-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Hofpflege & Hofrinnung</h4>
+              <p>Kehren, Unkraut entfernen, Rinnen säubern – damit Ihr Hof immer gepflegt aussieht.</p>
+            </div>
+          </div>
+          <div class="gs-included-item gs-reveal delay-300">
+            <div class="gs-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Parkplatzreinigung</h4>
+              <p>Kehren, Laubentfernung, Unkrautbeseitigung und Sauberhalten von Parkflächen.</p>
+            </div>
+          </div>
+          <div class="gs-included-item gs-reveal delay-400">
+            <div class="gs-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Heckenschnitt & Baumschnitt</h4>
+              <p>Fachgerechter Rückschnitt von Hecken, Büschen und kleineren Bäumen.</p>
+            </div>
+          </div>
+          <div class="gs-included-item gs-reveal delay-500">
+            <div class="gs-check">
+              <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M20 6L9 17l-5-5"/></svg>
+            </div>
+            <div>
+              <h4>Öffentliche Grünpflege</h4>
+              <p>Pflege von kommunalen Flächen, Straßenbegleitgrün, Spielplätzen und öffentlichen Anlagen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABLAUF -->
+    <section class="gs-process">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">So funktioniert's</span>
+          <h2>In 4 Schritten zur gepflegten Außenanlage.</h2>
+          <p>Von der Anfrage bis zum regelmäßigen Pflegeservice – unkompliziert und transparent.</p>
+        </div>
+        <div class="gs-steps">
+          <div class="gs-step gs-reveal">
+            <div class="gs-step-num">01</div>
+            <h3>Anfrage stellen</h3>
+            <p>Füllen Sie unser kurzes Quiz aus oder rufen Sie uns an. Wir melden uns innerhalb von 24 Stunden.</p>
+          </div>
+          <div class="gs-step gs-reveal delay-100">
+            <div class="gs-step-num">02</div>
+            <h3>Kostenlose Erstbegehung</h3>
+            <p>Wir besichtigen Ihre Flächen vor Ort und erstellen ein verbindliches Festpreis-Angebot.</p>
+          </div>
+          <div class="gs-step gs-reveal delay-200">
+            <div class="gs-step-num">03</div>
+            <h3>Professionelle Durchführung</h3>
+            <p>Unser geschultes Team pflegt Ihre Flächen termingerecht und mit professionellem Equipment.</p>
+          </div>
+          <div class="gs-step gs-reveal delay-300">
+            <div class="gs-step-num">04</div>
+            <h3>Regelmäßige Pflege</h3>
+            <p>Einmalig oder als Pflegevertrag – wir kümmern uns dauerhaft um Ihre Außenanlagen.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MID-PAGE CTA -->
+    <section class="gs-cta-banner">
+      <div class="container gs-reveal">
+        <h2>Schluss mit ungepflegten Außenflächen.</h2>
+        <p>Erhalten Sie in unter 60 Sekunden ein unverbindliches Angebot – komplett kostenlos.</p>
+        <a href="#quiz" class="gs-btn-primary">Jetzt Angebot anfordern</a>
+      </div>
+    </section>
+
+    <!-- BEWERTUNGEN -->
+    <section class="gs-section">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">Kundenstimmen</span>
+          <h2>Was unsere Kunden über uns sagen.</h2>
+          <p>Echte Erfahrungen von Privatkunden, Unternehmen und Kommunen aus der Region.</p>
+        </div>
+        <div class="gs-testimonials">
+          <div class="gs-testimonial gs-reveal">
+            <div class="gs-testimonial-stars">★★★★★</div>
+            <p>„Seit Meisterwerk unseren Garten pflegt, sieht er besser aus als je zuvor. Rasenmähen, Hecke schneiden – alles wie am Schnürchen."</p>
+            <div class="gs-testimonial-author">
+              <div class="gs-testimonial-avatar">AW</div>
+              <div>
+                <div class="gs-testimonial-name">Andrea W.</div>
+                <div class="gs-testimonial-detail">Privatgarten in Ingolstadt</div>
+              </div>
+            </div>
+          </div>
+          <div class="gs-testimonial gs-reveal delay-100">
+            <div class="gs-testimonial-stars">★★★★★</div>
+            <p>„Die Parkplatzreinigung und Grünpflege für unsere Firmenzentrale läuft top. Pünktlich, sauber und unkompliziert – genau was wir brauchen."</p>
+            <div class="gs-testimonial-author">
+              <div class="gs-testimonial-avatar">JR</div>
+              <div>
+                <div class="gs-testimonial-name">Jürgen R.</div>
+                <div class="gs-testimonial-detail">Facility Manager, Gewerbekunde</div>
+              </div>
+            </div>
+          </div>
+          <div class="gs-testimonial gs-reveal delay-200">
+            <div class="gs-testimonial-stars">★★★★★</div>
+            <p>„Wir haben Meisterwerk für die kommunale Grünpflege beauftragt. Zuverlässig, termingerecht und immer ein sauberes Ergebnis. Können wir nur empfehlen."</p>
+            <div class="gs-testimonial-author">
+              <div class="gs-testimonial-avatar">HB</div>
+              <div>
+                <div class="gs-testimonial-name">Helmut B.</div>
+                <div class="gs-testimonial-detail">Gemeindeverwaltung</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUIZ / LEAD GEN -->
+    <section class="gs-quiz-section" id="quiz">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">Ihr persönliches Angebot</span>
+          <h2>In 60 Sekunden zum Grünpflege-Angebot.</h2>
+          <p>Beantworten Sie ein paar kurze Fragen und wir erstellen Ihnen ein maßgeschneidertes Angebot.</p>
+        </div>
+
+        <div class="gs-quiz-wrapper gs-reveal delay-100">
+
+          <div class="gs-quiz-header" id="gs-quiz-header">
+            <h2>Gartenservice-Schnellcheck</h2>
+            <p>Kostenlos & unverbindlich</p>
+          </div>
+
+          <!-- Progress -->
+          <div class="gs-progress" id="gs-progress">
+            <div class="gs-progress-bar">
+              <div class="gs-progress-fill" id="gs-progress-fill" style="width: 14%"></div>
+            </div>
+            <div class="gs-progress-text">
+              <span>Frage <strong id="gs-step-current">1</strong> von <strong>7</strong></span>
+              <span id="gs-step-percent">14%</span>
+            </div>
+          </div>
+
+          <!-- Step 1: Kundentyp -->
+          <div class="gs-quiz-step active" id="gs-step-1">
+            <div class="gs-step-question">Wer sind Sie?</div>
+            <div class="gs-step-subtitle">Damit wir den passenden Service anbieten können.</div>
+            <div class="gs-options grid-3">
+              <div class="gs-option" data-field="kundentyp" data-value="Privat">
+                <span class="gs-option-icon">🏡</span>
+                <span class="gs-option-title">Privatkunde</span>
+              </div>
+              <div class="gs-option" data-field="kundentyp" data-value="Gewerbe">
+                <span class="gs-option-icon">🏢</span>
+                <span class="gs-option-title">Gewerbekunde</span>
+              </div>
+              <div class="gs-option" data-field="kundentyp" data-value="Kommune / Stadt">
+                <span class="gs-option-icon">🏛️</span>
+                <span class="gs-option-title">Kommune / Stadt</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 2: Leistung -->
+          <div class="gs-quiz-step" id="gs-step-2">
+            <div class="gs-step-question">Welche Leistung benötigen Sie?</div>
+            <div class="gs-step-subtitle">Mehrfachauswahl möglich.</div>
+            <div class="gs-options" id="gs-leistungen">
+              <div class="gs-option" data-field="leistungen" data-value="Rasenmähen">
+                <span class="gs-option-icon">🌱</span>
+                <span class="gs-option-title">Rasenmähen & Rasenpflege</span>
+              </div>
+              <div class="gs-option" data-field="leistungen" data-value="Grünanlagenpflege">
+                <span class="gs-option-icon">🌿</span>
+                <span class="gs-option-title">Grünanlagenpflege</span>
+              </div>
+              <div class="gs-option" data-field="leistungen" data-value="Hofpflege">
+                <span class="gs-option-icon">🧹</span>
+                <span class="gs-option-title">Hofpflege</span>
+              </div>
+              <div class="gs-option" data-field="leistungen" data-value="Parkplatzreinigung">
+                <span class="gs-option-icon">🅿️</span>
+                <span class="gs-option-title">Parkplatzreinigung</span>
+              </div>
+              <div class="gs-option" data-field="leistungen" data-value="Heckenschnitt">
+                <span class="gs-option-icon">✂️</span>
+                <span class="gs-option-title">Hecken- & Baumschnitt</span>
+              </div>
+              <div class="gs-option" data-field="leistungen" data-value="Öffentliche Grünpflege">
+                <span class="gs-option-icon">🏛️</span>
+                <span class="gs-option-title">Öffentliche Grünpflege</span>
+              </div>
+            </div>
+            <div class="gs-quiz-nav">
+              <button class="gs-quiz-back" onclick="gsPrev()">Zurück</button>
+              <button class="gs-quiz-next" onclick="gsNext()">Weiter</button>
+            </div>
+          </div>
+
+          <!-- Step 3: Flächengröße -->
+          <div class="gs-quiz-step" id="gs-step-3">
+            <div class="gs-step-question">Wie groß ist die zu pflegende Fläche?</div>
+            <div class="gs-step-subtitle">Eine grobe Einschätzung reicht aus.</div>
+            <div class="gs-options grid-2">
+              <div class="gs-option" data-field="flaechengroesse" data-value="Klein (bis 200 m²)">
+                <span class="gs-option-icon">🌿</span>
+                <span class="gs-option-title">Klein</span>
+                <span class="gs-option-desc">bis ca. 200 m²</span>
+              </div>
+              <div class="gs-option" data-field="flaechengroesse" data-value="Mittel (200-1000 m²)">
+                <span class="gs-option-icon">🌳</span>
+                <span class="gs-option-title">Mittel</span>
+                <span class="gs-option-desc">ca. 200–1.000 m²</span>
+              </div>
+              <div class="gs-option" data-field="flaechengroesse" data-value="Groß (1000-5000 m²)">
+                <span class="gs-option-icon">🏞️</span>
+                <span class="gs-option-title">Groß</span>
+                <span class="gs-option-desc">ca. 1.000–5.000 m²</span>
+              </div>
+              <div class="gs-option" data-field="flaechengroesse" data-value="Sehr groß (über 5000 m²)">
+                <span class="gs-option-icon">🗺️</span>
+                <span class="gs-option-title">Sehr groß</span>
+                <span class="gs-option-desc">über 5.000 m²</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 4: Häufigkeit -->
+          <div class="gs-quiz-step" id="gs-step-4">
+            <div class="gs-step-question">Wie oft soll die Pflege stattfinden?</div>
+            <div class="gs-step-subtitle">Wir passen uns Ihrem Bedarf an.</div>
+            <div class="gs-options grid-2">
+              <div class="gs-option" data-field="haeufigkeit" data-value="Einmalig">
+                <span class="gs-option-icon">1️⃣</span>
+                <span class="gs-option-title">Einmalig</span>
+              </div>
+              <div class="gs-option" data-field="haeufigkeit" data-value="Monatlich">
+                <span class="gs-option-icon">📅</span>
+                <span class="gs-option-title">Monatlich</span>
+              </div>
+              <div class="gs-option" data-field="haeufigkeit" data-value="14-tägig / Wöchentlich">
+                <span class="gs-option-icon">🔄</span>
+                <span class="gs-option-title">14-tägig / Wöchentlich</span>
+              </div>
+              <div class="gs-option" data-field="haeufigkeit" data-value="Saisonvertrag">
+                <span class="gs-option-icon">📋</span>
+                <span class="gs-option-title">Saisonvertrag</span>
+                <span class="gs-option-desc">Ganzjährige Pflege</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 5: Zeitraum -->
+          <div class="gs-quiz-step" id="gs-step-5">
+            <div class="gs-step-question">Wann soll es losgehen?</div>
+            <div class="gs-step-subtitle">Ein ungefährer Zeitraum reicht.</div>
+            <div class="gs-options grid-2">
+              <div class="gs-option" data-field="zeitraum" data-value="So schnell wie möglich">
+                <span class="gs-option-icon">⚡</span>
+                <span class="gs-option-title">So schnell wie möglich</span>
+              </div>
+              <div class="gs-option" data-field="zeitraum" data-value="In 2-4 Wochen">
+                <span class="gs-option-icon">📅</span>
+                <span class="gs-option-title">In 2–4 Wochen</span>
+              </div>
+              <div class="gs-option" data-field="zeitraum" data-value="In 1-3 Monaten">
+                <span class="gs-option-icon">🗓️</span>
+                <span class="gs-option-title">In 1–3 Monaten</span>
+              </div>
+              <div class="gs-option" data-field="zeitraum" data-value="Noch unbekannt">
+                <span class="gs-option-icon">🤔</span>
+                <span class="gs-option-title">Weiß ich noch nicht</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Step 6: Adresse & Nachricht -->
+          <div class="gs-quiz-step" id="gs-step-6">
+            <div class="gs-step-question">Wo befindet sich die Fläche?</div>
+            <div class="gs-step-subtitle">Damit wir die Anfahrt einschätzen können.</div>
+            <div class="gs-form-group">
+              <label for="gs-adresse">Adresse / Ort</label>
+              <input type="text" id="gs-adresse" class="gs-input" placeholder="z.B. Ingolstadt, Musterstraße 5">
+            </div>
+            <div class="gs-form-group">
+              <label for="gs-details">Zusätzliche Infos (optional)</label>
+              <textarea id="gs-details" class="gs-input gs-textarea" placeholder="z.B. Hanggrundstück, schwer zugängliche Fläche, besondere Wünsche..."></textarea>
+            </div>
+            <div class="gs-quiz-nav">
+              <button class="gs-quiz-back" onclick="gsPrev()">Zurück</button>
+              <button class="gs-quiz-next" onclick="gsNext()">Weiter</button>
+            </div>
+          </div>
+
+          <!-- Step 7: Kontaktdaten -->
+          <div class="gs-quiz-step" id="gs-step-7">
+            <div class="gs-step-question">Fast geschafft! Ihre Kontaktdaten.</div>
+            <div class="gs-step-subtitle">Damit wir Ihnen Ihr Angebot zusenden können.</div>
+            <div class="gs-form-row">
+              <div class="gs-form-group">
+                <label for="gs-name">Vor- & Nachname *</label>
+                <input type="text" id="gs-name" class="gs-input" placeholder="Max Mustermann" required>
+              </div>
+              <div class="gs-form-group">
+                <label for="gs-telefon">Telefonnummer *</label>
+                <input type="tel" id="gs-telefon" class="gs-input" placeholder="0151 123 456 78" required>
+              </div>
+            </div>
+            <div class="gs-form-group">
+              <label for="gs-email">E-Mail-Adresse (optional)</label>
+              <input type="email" id="gs-email" class="gs-input" placeholder="max@beispiel.de">
+            </div>
+            <div class="gs-form-group">
+              <label for="gs-nachricht">Zusätzliche Hinweise (optional)</label>
+              <textarea id="gs-nachricht" class="gs-input gs-textarea" placeholder="z.B. Firma/Gemeinde, Ansprechpartner, bevorzugte Kontaktzeit..."></textarea>
+            </div>
+            <div class="gs-quiz-nav">
+              <button class="gs-quiz-back" onclick="gsPrev()">Zurück</button>
+              <button class="gs-quiz-next" id="gs-submit-btn" onclick="gsSubmit()">Angebot anfordern</button>
+            </div>
+            <div id="gs-error"></div>
+          </div>
+
+          <!-- Success -->
+          <div class="gs-quiz-success" id="gs-success">
+            <div class="gs-success-icon">✓</div>
+            <h3>Vielen Dank für Ihre Anfrage!</h3>
+            <p>Wir haben alle Informationen erhalten und melden uns innerhalb von 24 Stunden bei Ihnen – telefonisch oder per E-Mail.</p>
+            <p style="margin-top: 20px; font-weight: 700; color: var(--gs-green);">Meisterwerk – Ihre Außenanlagen in besten Händen.</p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="gs-section gs-section-soft">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">Häufige Fragen</span>
+          <h2>Alles, was Sie wissen müssen.</h2>
+        </div>
+        <div class="gs-faq gs-reveal delay-100">
+          <details>
+            <summary>Was kostet der Gartenservice?</summary>
+            <p>Die Kosten hängen von der Flächengröße, den gewünschten Leistungen und der Häufigkeit ab. Nach einer kostenlosen Erstbegehung erhalten Sie ein verbindliches Festpreis-Angebot – transparent und ohne versteckte Kosten.</p>
+          </details>
+          <details>
+            <summary>Bieten Sie auch regelmäßige Pflege an?</summary>
+            <p>Ja! Neben Einzelaufträgen bieten wir flexible Pflegeverträge an – wöchentlich, 14-tägig, monatlich oder als Saisonvertrag. So bleibt Ihre Außenanlage das ganze Jahr über gepflegt.</p>
+          </details>
+          <details>
+            <summary>Arbeiten Sie auch für Unternehmen und Gemeinden?</summary>
+            <p>Absolut. Ein großer Teil unserer Kunden sind Gewerbebetriebe und Kommunen. Wir übernehmen die komplette Außenpflege – von der Grünanlage bis zur Parkplatzreinigung.</p>
+          </details>
+          <details>
+            <summary>Wie kurzfristig können Sie beginnen?</summary>
+            <p>In vielen Fällen können wir bereits innerhalb weniger Tage starten. Kontaktieren Sie uns einfach – wir finden einen passenden Termin.</p>
+          </details>
+          <details>
+            <summary>Bringen Sie eigene Geräte mit?</summary>
+            <p>Ja, wir kommen mit allem, was nötig ist – professionelle Rasenmäher, Heckenscheren, Laubbläser und Reinigungsgeräte. Sie müssen sich um nichts kümmern.</p>
+          </details>
+          <details>
+            <summary>In welcher Region sind Sie tätig?</summary>
+            <p>Unser Einsatzgebiet umfasst Ingolstadt und die gesamte Umgebung – Eichstätt, Neuburg, Pfaffenhofen, Schrobenhausen und weitere Orte in der Region.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- REGION -->
+    <section class="gs-section">
+      <div class="container">
+        <div class="gs-section-head gs-reveal">
+          <span class="gs-eyebrow">Einsatzgebiet</span>
+          <h2>Gartenservice in Ingolstadt und der Region.</h2>
+          <p>Wir pflegen Außenanlagen in der gesamten Region – für Privat, Gewerbe und Kommunen.</p>
+        </div>
+        <div class="gs-region-tags gs-reveal delay-100">
+          <span class="gs-region-tag">Ingolstadt</span>
+          <span class="gs-region-tag">Eichstätt</span>
+          <span class="gs-region-tag">Neuburg a. d. Donau</span>
+          <span class="gs-region-tag">Pfaffenhofen a. d. Ilm</span>
+          <span class="gs-region-tag">Manching</span>
+          <span class="gs-region-tag">Gaimersheim</span>
+          <span class="gs-region-tag">Schrobenhausen</span>
+          <span class="gs-region-tag">Beilngries</span>
+          <span class="gs-region-tag">Kösching</span>
+          <span class="gs-region-tag">Vohburg</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- FINAL CTA -->
+    <section class="gs-cta-banner" style="background: linear-gradient(135deg, var(--gs-green-deep) 0%, var(--gs-green) 100%);">
+      <div class="container gs-reveal">
+        <h2>Lassen Sie Ihre Außenanlagen professionell pflegen.</h2>
+        <p>Kostenlose Erstbegehung, verbindlicher Festpreis, zuverlässige Pflege. Wir freuen uns auf Ihre Anfrage.</p>
+        <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 16px;">
+          <a href="#quiz" class="gs-btn-primary">Kostenloses Angebot anfordern</a>
+          <a href="tel:+4915165184976" class="gs-btn-outline">Jetzt anrufen: 0151 651 849 76</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!--#include virtual="/includes/footer.shtml" -->
+
+  <!-- Floating Mobile CTA -->
+  <div class="gs-floating-cta">
+    <a href="#quiz">
+      <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"/></svg>
+      Kostenloses Angebot anfordern
+    </a>
+  </div>
+
+  <script src="/assets/js/main.js"></script>
+
+  <script>
+    // ─── QUIZ LOGIC ───
+    var gsData = {
+      kundentyp: '',
+      leistungen: [],
+      flaechengroesse: '',
+      haeufigkeit: '',
+      zeitraum: '',
+      adresse: '',
+      details: '',
+      name: '',
+      telefon: '',
+      email: '',
+      nachricht: ''
+    };
+
+    var gsTotalSteps = 7;
+    var gsCurrentStep = 1;
+
+    document.querySelectorAll('.gs-option').forEach(function(option) {
+      option.addEventListener('click', function() {
+        var field = this.dataset.field;
+        var value = this.dataset.value;
+        var parent = this.closest('.gs-quiz-step');
+
+        if (field === 'leistungen') {
+          this.classList.toggle('selected');
+          if (this.classList.contains('selected')) {
+            gsData.leistungen.push(value);
+          } else {
+            gsData.leistungen = gsData.leistungen.filter(function(v) { return v !== value; });
+          }
+          return;
+        }
+
+        parent.querySelectorAll('.gs-option').forEach(function(o) { o.classList.remove('selected'); });
+        this.classList.add('selected');
+        gsData[field] = value;
+
+        setTimeout(function() { gsNext(); }, 400);
+      });
+    });
+
+    function gsNext() {
+      if (gsCurrentStep === 6) {
+        gsData.adresse = document.getElementById('gs-adresse').value.trim();
+        gsData.details = document.getElementById('gs-details').value.trim();
+      }
+      if (gsCurrentStep >= gsTotalSteps) return;
+
+      document.getElementById('gs-step-' + gsCurrentStep).classList.remove('active');
+      gsCurrentStep++;
+      document.getElementById('gs-step-' + gsCurrentStep).classList.add('active');
+      gsUpdateProgress();
+    }
+
+    function gsPrev() {
+      if (gsCurrentStep <= 1) return;
+      document.getElementById('gs-step-' + gsCurrentStep).classList.remove('active');
+      gsCurrentStep--;
+      document.getElementById('gs-step-' + gsCurrentStep).classList.add('active');
+      gsUpdateProgress();
+    }
+
+    function gsUpdateProgress() {
+      var pct = Math.round((gsCurrentStep / gsTotalSteps) * 100);
+      document.getElementById('gs-progress-fill').style.width = pct + '%';
+      document.getElementById('gs-step-current').textContent = gsCurrentStep;
+      document.getElementById('gs-step-percent').textContent = pct + '%';
+    }
+
+    async function gsSubmit() {
+      var name = document.getElementById('gs-name').value.trim();
+      var telefon = document.getElementById('gs-telefon').value.trim();
+      var email = document.getElementById('gs-email').value.trim();
+      var nachricht = document.getElementById('gs-nachricht').value.trim();
+      var errorEl = document.getElementById('gs-error');
+
+      if (!name || !telefon) {
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Bitte geben Sie mindestens Name und Telefonnummer an.';
+        return;
+      }
+
+      gsData.name = name;
+      gsData.telefon = telefon;
+      gsData.email = email;
+      gsData.nachricht = nachricht;
+      gsData.adresse = document.getElementById('gs-adresse').value.trim();
+      gsData.details = document.getElementById('gs-details').value.trim();
+
+      var btn = document.getElementById('gs-submit-btn');
+      btn.disabled = true;
+      btn.textContent = 'Wird gesendet...';
+      errorEl.style.display = 'none';
+
+      var bodyText = [
+        'Kundentyp: ' + gsData.kundentyp,
+        'Leistungen: ' + (gsData.leistungen.length ? gsData.leistungen.join(', ') : 'Keine Angabe'),
+        'Flächengröße: ' + gsData.flaechengroesse,
+        'Häufigkeit: ' + gsData.haeufigkeit,
+        'Zeitraum: ' + gsData.zeitraum,
+        'Adresse: ' + (gsData.adresse || 'nicht angegeben'),
+        'Details: ' + (gsData.details || 'keine'),
+        'Nachricht: ' + (gsData.nachricht || 'keine')
+      ].join('\n');
+
+      try {
+        var response = await fetch('/api/send-contact', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({
+            leistung: 'gartenservice',
+            betreff: 'Gartenservice-Anfrage über Quiz',
+            name: gsData.name,
+            email: gsData.email || 'nicht angegeben',
+            telefon: gsData.telefon,
+            nachricht: bodyText
+          })
+        });
+
+        if (response.ok) {
+          document.getElementById('gs-quiz-header').style.display = 'none';
+          document.getElementById('gs-progress').style.display = 'none';
+          document.getElementById('gs-step-' + gsCurrentStep).classList.remove('active');
+          document.getElementById('gs-success').classList.add('active');
+        } else {
+          throw new Error('Server error');
+        }
+      } catch (err) {
+        console.error('Fehler:', err);
+        errorEl.style.display = 'block';
+        errorEl.textContent = 'Fehler beim Senden. Bitte versuchen Sie es erneut oder rufen Sie uns an: 0151 651 849 76';
+        btn.disabled = false;
+        btn.textContent = 'Angebot anfordern';
+      }
+    }
+
+    // ─── SCROLL REVEAL ───
+    document.addEventListener('DOMContentLoaded', function() {
+      var observer = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+          }
+        });
+      }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+
+      document.querySelectorAll('.gs-reveal').forEach(function(el) { observer.observe(el); });
+    });
+  </script>
+
+</body>
+</html>
