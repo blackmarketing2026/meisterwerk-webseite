@@ -19,7 +19,16 @@
     { "source": "/blog/entruempelung-ingolstadt", "destination": "/blog/entruempelung-ingolstadt.shtml" },
     { "source": "/blog/haushaltsaufloesung-kosten", "destination": "/blog/haushaltsaufloesung-kosten.shtml" },
     { "source": "/blog/umzug-checkliste", "destination": "/blog/umzug-checkliste.shtml" },
-    { "source": "/blog/wohnungsaufloesung-kosten", "destination": "/blog/wohnungsaufloesung-kosten.shtml" }
+    { "source": "/blog/wohnungsaufloesung-kosten", "destination": "/blog/wohnungsaufloesung-kosten.shtml" },
+    { "source": "/blog/container-kosten-entruempelung", "destination": "/blog/container-kosten-entruempelung.shtml" },
+    { "source": "/blog/wohnungsentruempelung-kosten", "destination": "/blog/wohnungsentruempelung-kosten.shtml" },
+    { "source": "/blog/hausraeumung-kosten", "destination": "/blog/hausraeumung-kosten.shtml" },
+    { "source": "/blog/entruempelung-kosten-rechner", "destination": "/blog/entruempelung-kosten-rechner.shtml" },
+    { "source": "/blog/haus-entruempeln-container", "destination": "/blog/haus-entruempeln-container.shtml" },
+    { "source": "/blog/haushaltsaufloesung-wohin-mit-den-sachen", "destination": "/blog/haushaltsaufloesung-wohin-mit-den-sachen.shtml" },
+    { "source": "/blog/messiwohnung-reinigen-kosten", "destination": "/blog/messiwohnung-reinigen-kosten.shtml" },
+    { "source": "/blog/moebel-entsorgen-lassen", "destination": "/blog/moebel-entsorgen-lassen.shtml" },
+    { "source": "/blog/wohnungsaufloesung-wie-vorgehen", "destination": "/blog/wohnungsaufloesung-wie-vorgehen.shtml" }
   ],
   "headers": [
     {

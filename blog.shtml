@@ -74,6 +74,87 @@
             </div>
           </a>
 
+          <a href="/blog/container-kosten-entruempelung" class="blog-card blog-card--no-img" data-title="Was kostet ein Container zum Entrümpeln?" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Was kostet ein Container zum Entrümpeln? Preise & Tipps</h3>
+              <p>Alle Containergrößen, Preise und worauf Sie bei der Bestellung achten sollten.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/wohnungsentruempelung-kosten" class="blog-card blog-card--no-img" data-title="Wohnungsentrümpelung Kosten" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Wohnungsentrümpelung Kosten – Was Sie wirklich bezahlen</h3>
+              <p>Was eine Wohnungsentrümpelung kostet, welche Faktoren den Preis bestimmen und wie Sie sparen.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/hausraeumung-kosten" class="blog-card blog-card--no-img" data-title="Hausräumung Kosten" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Hausräumung Kosten – Preise, Ablauf & Spartipps</h3>
+              <p>Was eine professionelle Hausräumung kostet und wie der Ablauf funktioniert.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/entruempelung-kosten-rechner" class="blog-card blog-card--no-img" data-title="Entrümpelung Kosten Rechner" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Entrümpelung Kosten Rechner – So kalkulieren Sie richtig</h3>
+              <p>Berechnen Sie die Kosten Ihrer Entrümpelung mit klaren Richtwerten und Rechenbeispielen.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/haus-entruempeln-container" class="blog-card blog-card--no-img" data-title="Haus entrümpeln: Welcher Container ist der richtige?" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Haus entrümpeln: Welcher Container ist der richtige?</h3>
+              <p>Die passende Containergröße finden, Kosten sparen und Fehler vermeiden.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/haushaltsaufloesung-wohin-mit-den-sachen" class="blog-card blog-card--no-img" data-title="Haushaltsauflösung: Wohin mit den Sachen?" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Haushaltsauflösung: Wohin mit den Sachen?</h3>
+              <p>Verkaufen, spenden, entsorgen – alle Möglichkeiten für Ihren Hausrat im Überblick.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/messiwohnung-reinigen-kosten" class="blog-card blog-card--no-img" data-title="Messiwohnung reinigen: Kosten und Ablauf" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Messiwohnung reinigen: Kosten und Ablauf</h3>
+              <p>Was die Reinigung einer Messiwohnung kostet und wie der Ablauf aussieht.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/moebel-entsorgen-lassen" class="blog-card blog-card--no-img" data-title="Möbel entsorgen lassen" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Möbel entsorgen lassen – Kosten, Optionen & Tipps</h3>
+              <p>Alle Optionen, Kosten und Tipps für die einfache und günstige Möbelentsorgung.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/wohnungsaufloesung-wie-vorgehen" class="blog-card blog-card--no-img" data-title="Wohnungsauflösung: Wie vorgehen?" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Wohnungsauflösung: Wie vorgehen? Schritt-für-Schritt-Anleitung</h3>
+              <p>Die komplette Anleitung für eine stressfreie Wohnungsauflösung – von der Planung bis zur Übergabe.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
         </div>
       </div>
     </section>
