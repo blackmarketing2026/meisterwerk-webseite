@@ -20,42 +20,310 @@
     <div class="legal-content">
       <h1>Datenschutzerklärung</h1>
 
-      <h2>1. Datenschutz auf einen Blick</h2>
-      <p>Die folgenden Hinweise geben einen einfachen Überblick darüber, was mit Ihren personenbezogenen Daten passiert, wenn Sie diese Website besuchen.</p>
-
-      <h2>2. Verantwortliche Stelle</h2>
+      <h2>1. Verantwortlicher</h2>
+      <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) und sonstiger datenschutzrechtlicher Vorschriften ist:</p>
       <p>
-        Meisterwerk Gebäudeservice<br>
-        [Straße und Hausnummer]<br>
-        85049 Ingolstadt<br>
-        E-Mail: <a href="mailto:info@meisterwerk-ingolstadt.de">info@meisterwerk-ingolstadt.de</a>
+        Meisterwerk<br>
+        Inhaber: Kay Rieger<br>
+        Beilngrieserstr. 108<br>
+        85055 Ingolstadt<br>
+        Deutschland
+      </p>
+      <p>
+        E-Mail: <a href="mailto:meisterwerk.in@web.de">meisterwerk.in@web.de</a><br>
+        Telefon: <a href="tel:+4915165184976">+49 151 651 849 76</a>
       </p>
 
-      <h2>3. Datenerfassung auf dieser Website</h2>
-      <p>Die Datenverarbeitung auf dieser Website erfolgt durch den Websitebetreiber. Ihre Daten werden zum einen dadurch erhoben, dass Sie uns diese mitteilen (z. B. per Kontaktformular oder E-Mail). Andere Daten werden beim Besuch der Website durch unsere IT-Systeme automatisch erfasst (technische Daten wie Browser, Betriebssystem, Uhrzeit des Seitenaufrufs).</p>
-
-      <h2>4. Ihre Rechte</h2>
-      <p>Sie haben jederzeit das Recht:</p>
+      <h2>2. Allgemeine Hinweise zur Datenverarbeitung</h2>
+      <p>Wir nehmen den Schutz personenbezogener Daten ernst. Personenbezogene Daten werden vertraulich und entsprechend den geltenden Datenschutzvorschriften verarbeitet.</p>
+      <p>Personenbezogene Daten sind alle Informationen, mit denen eine Person direkt oder indirekt identifiziert werden kann. Hierzu können insbesondere gehören:</p>
       <ul>
-        <li>unentgeltlich Auskunft über Herkunft, Empfänger und Zweck Ihrer gespeicherten personenbezogenen Daten zu erhalten,</li>
-        <li>die Berichtigung oder Löschung dieser Daten zu verlangen,</li>
-        <li>die Einschränkung der Verarbeitung zu verlangen,</li>
-        <li>Widerspruch gegen die Verarbeitung einzulegen,</li>
-        <li>Datenübertragbarkeit zu fordern.</li>
+        <li>Name</li>
+        <li>Telefonnummer</li>
+        <li>E-Mail-Adresse</li>
+        <li>Anschrift oder Standortangaben</li>
+        <li>Unternehmensdaten</li>
+        <li>IP-Adresse</li>
+        <li>Geräte- und Browserinformationen</li>
+        <li>Nutzungsdaten</li>
+        <li>Kommunikationsinhalte</li>
+        <li>Angaben aus Kontakt- oder Anfrageformularen</li>
       </ul>
-      <p>Zuständige Aufsichtsbehörde in Bayern ist das Bayerische Landesamt für Datenschutzaufsicht (BayLDA), Promenade 18, 91522 Ansbach.</p>
+      <p>Wir verarbeiten personenbezogene Daten nur, wenn hierfür eine gesetzliche Grundlage besteht. Dies kann insbesondere der Fall sein, wenn die Verarbeitung zur Bearbeitung einer Anfrage, zur Durchführung vorvertraglicher Maßnahmen, zur Vertragserfüllung, zur Erfüllung gesetzlicher Pflichten, aufgrund einer Einwilligung oder aufgrund berechtigter Interessen erforderlich ist.</p>
 
-      <h2>5. Hosting</h2>
-      <p>Diese Website wird bei einem externen Dienstleister gehostet. Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an sicherer Bereitstellung).</p>
+      <h2>3. Hosting, technische Bereitstellung und Server-Logfiles</h2>
+      <p>Diese Website wurde mit dem Website-Dienst Lovable erstellt und technisch bereitgestellt. Die Domainverwaltung sowie E-Mail-Dienste erfolgen über ALL-INKL.COM.</p>
+      <p>Beim Aufruf dieser Website werden durch den Webserver automatisch technische Informationen verarbeitet. Hierzu können insbesondere gehören:</p>
+      <ul>
+        <li>IP-Adresse</li>
+        <li>Datum und Uhrzeit der Anfrage</li>
+        <li>aufgerufene Seite oder Datei</li>
+        <li>Referrer-URL</li>
+        <li>Browsertyp und Browserversion</li>
+        <li>verwendetes Betriebssystem</li>
+        <li>Hostname des zugreifenden Rechners</li>
+        <li>Spracheinstellungen</li>
+        <li>HTTP-Statuscode</li>
+        <li>übertragene Datenmenge</li>
+      </ul>
+      <p>Die Verarbeitung dieser Daten erfolgt zur sicheren und funktionsfähigen Bereitstellung der Website, zur Fehleranalyse, zur Abwehr von Angriffen und zur Gewährleistung der Stabilität der Systeme.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sicheren, stabilen und ordnungsgemäßen Bereitstellung der Website.</p>
+      <p>Soweit personenbezogene Daten durch Hosting- oder technische Dienstleister in unserem Auftrag verarbeitet werden, erfolgt dies auf Grundlage eines Vertrags zur Auftragsverarbeitung gemäß Art. 28 DSGVO.</p>
+      <p>Server-Logfiles werden grundsätzlich nur so lange gespeichert, wie dies für die genannten Zwecke erforderlich ist. Eine längere Speicherung kann erfolgen, wenn dies aus Sicherheitsgründen, zur Aufklärung von Missbrauch oder zur Durchsetzung rechtlicher Ansprüche erforderlich ist.</p>
 
-      <h2>6. Kontaktformular und E-Mail</h2>
-      <p>Wenn Sie uns per Formular oder E-Mail kontaktieren, werden Ihre Angaben zur Bearbeitung der Anfrage bei uns gespeichert. Diese Daten geben wir nicht ohne Ihre Einwilligung weiter. Rechtsgrundlage: Art. 6 Abs. 1 lit. b und f DSGVO.</p>
+      <h2>4. SSL- bzw. TLS-Verschlüsselung</h2>
+      <p>Diese Website nutzt aus Sicherheitsgründen eine SSL- bzw. TLS-Verschlüsselung. Eine verschlüsselte Verbindung erkennen Sie daran, dass die Adresszeile des Browsers mit „https://" beginnt sowie an dem Schloss-Symbol in der Browserzeile.</p>
+      <p>Dadurch können Daten, die Sie über diese Website übermitteln, grundsätzlich nicht ohne Weiteres von Dritten mitgelesen werden.</p>
 
-      <h2>7. Cookies</h2>
-      <p>Diese Website verwendet keine Cookies, die über technisch notwendige Funktionen hinausgehen.</p>
+      <h2>5. Cookies und vergleichbare Technologien</h2>
+      <p>Diese Website verwendet Cookies und vergleichbare Technologien. Cookies sind kleine Textdateien, die auf Ihrem Endgerät gespeichert werden oder den Zugriff auf Informationen auf Ihrem Endgerät ermöglichen.</p>
+      <p>Wir unterscheiden zwischen:</p>
+      <ul>
+        <li>technisch notwendigen Cookies</li>
+        <li>funktionalen Cookies</li>
+        <li>Statistik- und Analyse-Cookies</li>
+        <li>Marketing- und Tracking-Cookies</li>
+      </ul>
+      <p>Technisch notwendige Cookies sind erforderlich, damit die Website ordnungsgemäß funktioniert. Sie können zum Beispiel für die technische Darstellung der Website, die Sicherheit oder die Speicherung Ihrer Cookie-Einstellungen erforderlich sein.</p>
+      <p>Nicht notwendige Cookies und vergleichbare Technologien, insbesondere für Analyse, Marketing, Remarketing oder Conversion-Tracking, werden nur nach Ihrer ausdrücklichen Einwilligung eingesetzt.</p>
+      <p>Rechtsgrundlage für technisch notwendige Cookies ist Art. 6 Abs. 1 lit. f DSGVO sowie § 25 Abs. 2 TDDDG.</p>
+      <p>Rechtsgrundlage für nicht notwendige Cookies und Tracking-Technologien ist Ihre Einwilligung gemäß Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p>
+      <p>Sie können eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen oder ändern.</p>
 
-      <h2>8. Aktualität</h2>
-      <p>Stand: Juni 2026</p>
+      <h2>6. Consent-Management</h2>
+      <p>Zur Verwaltung von Einwilligungen kann auf dieser Website ein Cookie-Consent-System eingesetzt werden.</p>
+      <p>Dabei werden Ihre Einwilligungsentscheidungen gespeichert, damit die Website nachvollziehen kann, welchen Diensten Sie zugestimmt oder widersprochen haben.</p>
+      <p>Hierbei können insbesondere folgende Daten verarbeitet werden:</p>
+      <ul>
+        <li>Einwilligungsstatus</li>
+        <li>Zeitpunkt der Einwilligung</li>
+        <li>verwendeter Browser</li>
+        <li>Geräteinformationen</li>
+        <li>IP-Adresse in gekürzter oder vollständiger Form</li>
+        <li>ausgewählte Cookie-Kategorien</li>
+      </ul>
+      <p>Die Verarbeitung erfolgt zur Einholung und Dokumentation datenschutzrechtlich erforderlicher Einwilligungen.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. c DSGVO, soweit die Verarbeitung zur Erfüllung rechtlicher Nachweispflichten erforderlich ist. Soweit die Verarbeitung zur technischen Verwaltung der Einwilligungen erfolgt, ist Rechtsgrundlage Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+      <h2>7. Kontaktformular und Anfrageformulare</h2>
+      <p>Wenn Sie uns über ein Kontaktformular oder Anfrageformular kontaktieren, verarbeiten wir die von Ihnen eingegebenen Daten.</p>
+      <p>Hierzu können insbesondere gehören:</p>
+      <ul>
+        <li>Vor- und Nachname</li>
+        <li>Telefonnummer</li>
+        <li>E-Mail-Adresse</li>
+        <li>Anschrift oder Standortangaben</li>
+        <li>Unternehmensdaten</li>
+        <li>Angaben zur gewünschten Dienstleistung</li>
+        <li>Anfrageinhalt</li>
+        <li>IP-Adresse</li>
+        <li>Zeitpunkt der Anfrage</li>
+      </ul>
+      <p>Die Verarbeitung erfolgt zum Zweck der Bearbeitung Ihrer Anfrage, der Kontaktaufnahme, der Beratung, der Terminvereinbarung, der Angebotserstellung und der Durchführung vorvertraglicher Maßnahmen.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die Verarbeitung zur Bearbeitung Ihrer Anfrage oder zur Durchführung vorvertraglicher Maßnahmen erforderlich ist.</p>
+      <p>Soweit Sie uns freiwillige Angaben machen oder ausdrücklich in bestimmte Verarbeitungen einwilligen, erfolgt die Verarbeitung zusätzlich auf Grundlage von Art. 6 Abs. 1 lit. a DSGVO.</p>
+
+      <h2>8. Leadgenerierung, Anfragevermittlung und Weitergabe an Partnerunternehmen</h2>
+      <p>Auf dieser Website können Nutzer Anfragen zu bestimmten Produkten oder Dienstleistungen stellen. Meisterwerk kann solche Anfragen erfassen, vorqualifizieren und an geeignete Anbieter, Fachbetriebe, Dienstleister, Kooperationspartner oder Partnerunternehmen weiterleiten.</p>
+      <p>Je nach konkreter Anfrage können dies insbesondere Partner aus dem jeweils angefragten Dienstleistungsbereich sein, zum Beispiel regionale Dienstleister, Handwerksbetriebe, Reinigungsfirmen, Versicherungsvermittler, Sachverständige, Beratungsunternehmen oder sonstige Anbieter, die zur Bearbeitung der Anfrage fachlich passen.</p>
+      <p>Eine Weitergabe erfolgt nur, wenn dies zur Bearbeitung Ihrer konkreten Anfrage erforderlich ist oder wenn Sie ausdrücklich eingewilligt haben.</p>
+      <p>Verarbeitet und weitergegeben werden können insbesondere:</p>
+      <ul>
+        <li>Vor- und Nachname</li>
+        <li>Telefonnummer</li>
+        <li>E-Mail-Adresse</li>
+        <li>Anschrift oder Standortangaben</li>
+        <li>Unternehmensdaten</li>
+        <li>Angaben zur gewünschten Dienstleistung</li>
+        <li>Anfrageinhalte</li>
+        <li>Zeitpunkt der Anfrage</li>
+        <li>technische Informationen zur Anfrage</li>
+      </ul>
+      <p>Die Weitergabe erfolgt ausschließlich zum Zweck der Bearbeitung Ihrer Anfrage, der Kontaktaufnahme, der Beratung, der Angebotserstellung oder der Vermittlung eines passenden Angebots.</p>
+      <p>Ihre Daten werden nicht ohne gesonderte Rechtsgrundlage zu anderen Zwecken verkauft oder weitergegeben.</p>
+      <p>Rechtsgrundlage für die Verarbeitung und Weitergabe ist Art. 6 Abs. 1 lit. b DSGVO, soweit die Verarbeitung zur Durchführung vorvertraglicher Maßnahmen auf Ihre Anfrage hin erforderlich ist.</p>
+      <p>Soweit eine ausdrückliche Einwilligung eingeholt wird, insbesondere für die Weitergabe an mehrere Partnerunternehmen oder für werbliche Kontaktaufnahme, ist Rechtsgrundlage Art. 6 Abs. 1 lit. a DSGVO.</p>
+      <p>Eine erteilte Einwilligung können Sie jederzeit mit Wirkung für die Zukunft widerrufen. Die Rechtmäßigkeit der bis zum Widerruf erfolgten Verarbeitung bleibt unberührt.</p>
+      <p>Meisterwerk tritt bei vermittelten Anfragen grundsätzlich als Vermittler auf. Verträge über Produkte oder Dienstleistungen kommen ausschließlich zwischen Ihnen und dem jeweiligen Partnerunternehmen zustande. Für Inhalte von Angeboten, Preise, Vertragsbedingungen und die Durchführung der vermittelten Leistung ist ausschließlich das jeweilige Partnerunternehmen verantwortlich.</p>
+
+      <h2>9. Einwilligung zur Kontaktaufnahme</h2>
+      <p>Wenn Sie über ein Formular ausdrücklich einwilligen, dürfen wir oder passende Partnerunternehmen Sie zur Bearbeitung Ihrer Anfrage kontaktieren.</p>
+      <p>Die Kontaktaufnahme kann je nach Einwilligung erfolgen per:</p>
+      <ul>
+        <li>Telefon</li>
+        <li>E-Mail</li>
+        <li>WhatsApp</li>
+        <li>SMS oder sonstige elektronische Kommunikationswege</li>
+      </ul>
+      <p>Eine werbliche Kontaktaufnahme erfolgt nur, wenn hierfür eine entsprechende Einwilligung oder eine sonstige gesetzliche Erlaubnis vorliegt.</p>
+      <p>Bei Telefonwerbung gegenüber Verbrauchern wird eine vorherige ausdrückliche Einwilligung eingeholt und dokumentiert.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO. Für werbliche Kommunikation gelten zusätzlich die Vorgaben des Gesetzes gegen den unlauteren Wettbewerb.</p>
+      <p>Sie können eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+
+      <h2>10. Kontaktaufnahme per E-Mail oder Telefon</h2>
+      <p>Wenn Sie uns per E-Mail oder Telefon kontaktieren, verarbeiten wir die von Ihnen mitgeteilten personenbezogenen Daten.</p>
+      <p>Hierzu können gehören:</p>
+      <ul>
+        <li>Name</li>
+        <li>Telefonnummer</li>
+        <li>E-Mail-Adresse</li>
+        <li>Kommunikationsinhalt</li>
+        <li>Zeitpunkt der Kontaktaufnahme</li>
+        <li>sonstige freiwillige Angaben</li>
+      </ul>
+      <p>Die Verarbeitung erfolgt zur Bearbeitung Ihrer Anfrage, zur Kommunikation mit Ihnen und gegebenenfalls zur Durchführung vorvertraglicher oder vertraglicher Maßnahmen.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO, sofern die Kontaktaufnahme mit einer Anfrage, einem Angebot oder einem Vertrag zusammenhängt.</p>
+      <p>In anderen Fällen ist Rechtsgrundlage Art. 6 Abs. 1 lit. f DSGVO. Unser berechtigtes Interesse liegt in der sachgerechten Bearbeitung eingehender Anfragen.</p>
+
+      <h2>11. Kommunikation über WhatsApp</h2>
+      <p>Wir können für die Kommunikation mit Interessenten und Kunden WhatsApp nutzen, sofern Sie uns über WhatsApp kontaktieren oder ausdrücklich in eine Kontaktaufnahme über WhatsApp einwilligen.</p>
+      <p>Bei der Nutzung von WhatsApp können insbesondere folgende Daten verarbeitet werden:</p>
+      <ul>
+        <li>Telefonnummer</li>
+        <li>Profilname</li>
+        <li>Nachrichteninhalte</li>
+        <li>Kommunikationszeitpunkte</li>
+        <li>übermittelte Dateien und Medien</li>
+        <li>technische Metadaten</li>
+      </ul>
+      <p>Anbieter von WhatsApp ist WhatsApp Ireland Limited, 4 Grand Canal Square, Grand Canal Harbour, Dublin 2, Irland.</p>
+      <p>Wir weisen darauf hin, dass bei der Nutzung von WhatsApp Daten auch durch WhatsApp bzw. Unternehmen der Meta-Gruppe verarbeitet werden können. Dabei kann es auch zu einer Übermittlung von Daten in Länder außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums kommen.</p>
+      <p>Die Nutzung von WhatsApp erfolgt freiwillig. Sie können uns alternativ auch per E-Mail oder Telefon kontaktieren.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO, sofern Sie ausdrücklich in die Kommunikation per WhatsApp einwilligen. Wenn Sie uns selbst über WhatsApp kontaktieren, erfolgt die Verarbeitung je nach Inhalt der Anfrage auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO oder Art. 6 Abs. 1 lit. f DSGVO.</p>
+
+      <h2>12. Google Tag Manager</h2>
+      <p>Diese Website kann den Google Tag Manager verwenden. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+      <p>Der Google Tag Manager dient der zentralen Verwaltung und Einbindung von Website-Tags. Über den Google Tag Manager können andere Dienste eingebunden werden, zum Beispiel Analyse- oder Marketingdienste.</p>
+      <p>Der Google Tag Manager selbst erstellt nach unserem Verständnis keine eigenen Nutzerprofile, sondern dient der technischen Auslösung anderer Dienste. Soweit über den Google Tag Manager Dienste eingebunden werden, die personenbezogene Daten verarbeiten oder Cookies setzen, erfolgt dies nur nach entsprechender Einwilligung.</p>
+      <p>Rechtsgrundlage für den Einsatz des Google Tag Managers ist Art. 6 Abs. 1 lit. f DSGVO, soweit der Dienst zur technischen Verwaltung von Tags eingesetzt wird.</p>
+      <p>Soweit über den Google Tag Manager nicht notwendige Dienste ausgelöst werden, ist Rechtsgrundlage Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p>
+
+      <h2>13. Google Analytics</h2>
+      <p>Diese Website kann Google Analytics verwenden. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+      <p>Google Analytics dient der Analyse des Nutzerverhaltens auf unserer Website. Dabei können insbesondere folgende Informationen verarbeitet werden:</p>
+      <ul>
+        <li>Seitenaufrufe</li>
+        <li>Verweildauer</li>
+        <li>Scrollverhalten</li>
+        <li>Klickverhalten</li>
+        <li>Geräteinformationen</li>
+        <li>Browserinformationen</li>
+        <li>ungefähre Standortdaten</li>
+        <li>Referrer-URL</li>
+        <li>Interaktionen mit der Website</li>
+      </ul>
+      <p>Google Analytics wird nur eingesetzt, wenn Sie hierfür Ihre Einwilligung erteilt haben.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p>
+      <p>Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+      <p>Im Rahmen der Nutzung von Google-Diensten kann es zu einer Übermittlung personenbezogener Daten an Google LLC in den USA kommen. Google stützt solche Übermittlungen unter anderem auf geeignete Datenschutzgarantien, insbesondere die Zertifizierung nach dem EU-U.S. Data Privacy Framework, soweit anwendbar.</p>
+
+      <h2>14. Google Ads und Conversion-Tracking</h2>
+      <p>Diese Website kann Google Ads und das Google Ads Conversion-Tracking verwenden. Anbieter ist Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Irland.</p>
+      <p>Mit Google Ads können wir Werbeanzeigen in der Google-Suche, auf Google-Websites und im Google-Werbenetzwerk schalten. Das Conversion-Tracking hilft uns zu erkennen, ob Nutzer nach dem Klick auf eine Werbeanzeige eine bestimmte Handlung auf unserer Website ausführen, zum Beispiel ein Formular absenden oder auf eine Telefonnummer klicken.</p>
+      <p>Dabei können insbesondere folgende Daten verarbeitet werden:</p>
+      <ul>
+        <li>Klickdaten</li>
+        <li>Conversion-Daten</li>
+        <li>Geräte- und Browserinformationen</li>
+        <li>IP-Adresse</li>
+        <li>Referrer-URL</li>
+        <li>Interaktionsdaten</li>
+        <li>Zeitpunkt der Conversion</li>
+        <li>aufgerufene Seiten</li>
+      </ul>
+      <p>Die Verarbeitung erfolgt nur nach Ihrer Einwilligung.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p>
+      <p>Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+      <p>Im Rahmen der Nutzung von Google-Diensten kann es zu einer Übermittlung personenbezogener Daten an Google LLC in den USA kommen. Google stützt solche Übermittlungen unter anderem auf geeignete Datenschutzgarantien, insbesondere die Zertifizierung nach dem EU-U.S. Data Privacy Framework, soweit anwendbar.</p>
+
+      <h2>15. Meta Pixel und Meta Conversion-Tracking</h2>
+      <p>Diese Website kann das Meta Pixel bzw. Meta Conversion-Tracking verwenden. Anbieter ist Meta Platforms Ireland Limited, Merrion Road, Dublin 4, D04 X2K5, Irland.</p>
+      <p>Mit Hilfe des Meta Pixels können wir nachvollziehen, ob Nutzer nach dem Klick auf eine Facebook- oder Instagram-Werbeanzeige eine bestimmte Handlung auf unserer Website ausführen, zum Beispiel ein Formular absenden oder eine bestimmte Seite besuchen.</p>
+      <p>Außerdem können mit dem Meta Pixel Zielgruppen für Werbeanzeigen erstellt oder Werbekampagnen ausgewertet werden.</p>
+      <p>Dabei können insbesondere folgende Daten verarbeitet werden:</p>
+      <ul>
+        <li>IP-Adresse</li>
+        <li>Browserinformationen</li>
+        <li>Geräteinformationen</li>
+        <li>Referrer-URL</li>
+        <li>besuchte Seiten</li>
+        <li>Klickverhalten</li>
+        <li>Conversion-Daten</li>
+        <li>Zeitpunkt der Interaktion</li>
+        <li>technische Nutzungsdaten</li>
+      </ul>
+      <p>Die Verarbeitung erfolgt nur nach Ihrer ausdrücklichen Einwilligung.</p>
+      <p>Rechtsgrundlage ist Art. 6 Abs. 1 lit. a DSGVO sowie § 25 Abs. 1 TDDDG.</p>
+      <p>Sie können Ihre Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+      <p>Im Rahmen der Nutzung von Meta-Diensten kann es zu einer Übermittlung personenbezogener Daten an Meta Platforms, Inc. in den USA kommen. Meta stützt solche Übermittlungen unter anderem auf geeignete Datenschutzgarantien, insbesondere die Zertifizierung nach dem EU-U.S. Data Privacy Framework, soweit anwendbar.</p>
+
+      <h2>16. Empfänger personenbezogener Daten</h2>
+      <p>Personenbezogene Daten können im Rahmen der oben genannten Zwecke an folgende Empfänger oder Kategorien von Empfängern übermittelt werden:</p>
+      <ul>
+        <li>Hosting- und technische Dienstleister</li>
+        <li>Domain- und E-Mail-Dienstleister</li>
+        <li>Anbieter von Analyse- und Trackingdiensten</li>
+        <li>Anbieter von Werbeplattformen</li>
+        <li>Kommunikationsdienstleister</li>
+        <li>CRM- oder Formular-Dienstleister</li>
+        <li>passende Partnerunternehmen und Kooperationspartner zur Bearbeitung konkreter Anfragen</li>
+        <li>Steuerberater, Rechtsberater oder Behörden, soweit gesetzlich erforderlich</li>
+      </ul>
+      <p>Eine Weitergabe erfolgt nur, wenn hierfür eine Rechtsgrundlage besteht, eine Einwilligung vorliegt oder dies zur Bearbeitung Ihrer Anfrage erforderlich ist.</p>
+
+      <h2>17. Drittlandübermittlung</h2>
+      <p>Bei der Nutzung bestimmter Dienste, insbesondere Google, Meta oder WhatsApp, kann es zu einer Übermittlung personenbezogener Daten in Länder außerhalb der Europäischen Union oder des Europäischen Wirtschaftsraums kommen.</p>
+      <p>Soweit personenbezogene Daten in Drittländer übermittelt werden, erfolgt dies nur, wenn hierfür eine gesetzliche Grundlage besteht. Dies kann insbesondere ein Angemessenheitsbeschluss der Europäischen Kommission, eine Zertifizierung nach dem EU-U.S. Data Privacy Framework, der Abschluss von EU-Standardvertragsklauseln oder Ihre ausdrückliche Einwilligung sein.</p>
+      <p>Wir weisen darauf hin, dass in Drittländern unter Umständen kein Datenschutzniveau besteht, das dem der Europäischen Union vollständig entspricht.</p>
+
+      <h2>18. Speicherdauer</h2>
+      <p>Wir speichern personenbezogene Daten nur so lange, wie dies für die jeweiligen Verarbeitungszwecke erforderlich ist.</p>
+      <p>Daten aus Kontakt- oder Anfrageformularen werden grundsätzlich nur so lange gespeichert, wie dies zur Bearbeitung der Anfrage, zur Vermittlung, zur Angebotserstellung oder zur Erfüllung gesetzlicher Pflichten erforderlich ist.</p>
+      <p>Sofern gesetzliche Aufbewahrungspflichten bestehen, kann die Speicherdauer entsprechend länger sein.</p>
+      <p>Daten, die auf Grundlage einer Einwilligung verarbeitet werden, werden spätestens dann gelöscht oder nicht mehr für den jeweiligen Zweck verarbeitet, wenn Sie Ihre Einwilligung widerrufen, sofern keine andere Rechtsgrundlage für die weitere Verarbeitung besteht.</p>
+
+      <h2>19. Widerruf von Einwilligungen</h2>
+      <p>Sie können eine erteilte Einwilligung jederzeit mit Wirkung für die Zukunft widerrufen.</p>
+      <p>Der Widerruf kann insbesondere per E-Mail an <a href="mailto:meisterwerk.in@web.de">meisterwerk.in@web.de</a> erfolgen.</p>
+      <p>Die Rechtmäßigkeit der Verarbeitung, die bis zum Widerruf auf Grundlage der Einwilligung erfolgt ist, bleibt vom Widerruf unberührt.</p>
+
+      <h2>20. Widerspruchsrecht</h2>
+      <p>Wenn personenbezogene Daten auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO verarbeitet werden, haben Sie das Recht, aus Gründen, die sich aus Ihrer besonderen Situation ergeben, jederzeit Widerspruch gegen diese Verarbeitung einzulegen.</p>
+      <p>Wenn personenbezogene Daten zum Zwecke der Direktwerbung verarbeitet werden, haben Sie jederzeit das Recht, Widerspruch gegen die Verarbeitung zum Zwecke derartiger Werbung einzulegen.</p>
+
+      <h2>21. Betroffenenrechte</h2>
+      <p>Sie haben nach Maßgabe der gesetzlichen Voraussetzungen folgende Rechte:</p>
+      <ul>
+        <li>Recht auf Auskunft gemäß Art. 15 DSGVO</li>
+        <li>Recht auf Berichtigung gemäß Art. 16 DSGVO</li>
+        <li>Recht auf Löschung gemäß Art. 17 DSGVO</li>
+        <li>Recht auf Einschränkung der Verarbeitung gemäß Art. 18 DSGVO</li>
+        <li>Recht auf Datenübertragbarkeit gemäß Art. 20 DSGVO</li>
+        <li>Recht auf Widerspruch gemäß Art. 21 DSGVO</li>
+        <li>Recht auf Widerruf erteilter Einwilligungen</li>
+        <li>Recht auf Beschwerde bei einer Datenschutzaufsichtsbehörde</li>
+      </ul>
+      <p>Zur Ausübung Ihrer Rechte können Sie uns jederzeit unter <a href="mailto:meisterwerk.in@web.de">meisterwerk.in@web.de</a> kontaktieren.</p>
+
+      <h2>22. Beschwerderecht bei einer Aufsichtsbehörde</h2>
+      <p>Sie haben das Recht, sich bei einer Datenschutzaufsichtsbehörde zu beschweren, wenn Sie der Ansicht sind, dass die Verarbeitung Ihrer personenbezogenen Daten gegen die DSGVO verstößt.</p>
+      <p>Sie können sich hierzu an die Datenschutzaufsichtsbehörde Ihres Wohnorts, Ihres Arbeitsplatzes oder des Orts des mutmaßlichen Datenschutzverstoßes wenden.</p>
+
+      <h2>23. Pflicht zur Bereitstellung von Daten</h2>
+      <p>Die Bereitstellung personenbezogener Daten ist grundsätzlich freiwillig.</p>
+      <p>Wenn Sie jedoch eine Anfrage stellen, sind bestimmte Angaben erforderlich, damit wir Ihre Anfrage bearbeiten oder an passende Partnerunternehmen weiterleiten können. Ohne diese Angaben kann eine Bearbeitung der Anfrage möglicherweise nicht erfolgen.</p>
+
+      <h2>24. Automatisierte Entscheidungsfindung</h2>
+      <p>Eine ausschließlich automatisierte Entscheidungsfindung im Sinne von Art. 22 DSGVO findet nicht statt.</p>
+      <p>Soweit Analyse-, Tracking- oder Werbedienste eingesetzt werden, können pseudonyme Nutzungsprofile erstellt werden. Dies erfolgt nur nach Ihrer Einwilligung, soweit eine solche erforderlich ist.</p>
+
+      <h2>25. Sicherheit der Verarbeitung</h2>
+      <p>Wir treffen technische und organisatorische Maßnahmen, um personenbezogene Daten vor Verlust, Missbrauch, unbefugtem Zugriff, Veränderung oder Offenlegung zu schützen.</p>
+      <p>Dazu gehören insbesondere verschlüsselte Datenübertragung, Zugriffsbeschränkungen und die sorgfältige Auswahl eingesetzter Dienstleister.</p>
+
+      <h2>26. Aktualität und Änderung dieser Datenschutzerklärung</h2>
+      <p>Diese Datenschutzerklärung hat den Stand Juni 2026.</p>
+      <p>Wir behalten uns vor, diese Datenschutzerklärung anzupassen, wenn sich rechtliche Anforderungen, technische Abläufe, eingesetzte Dienste oder unsere Leistungen ändern.</p>
     </div>
   </main>
 
