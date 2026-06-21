@@ -2,7 +2,10 @@ import { Resend } from 'resend';
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
-const RECIPIENT = 'lead@function-concept.de';
+const RECIPIENTS = [
+  'lead@function-concept.de',
+  'meisterwerk.in@web.de',
+];
 
 const LEISTUNG_LABEL = {
   umzug:         'Umzüge',
@@ -170,9 +173,9 @@ export default async function handler(req, res) {
   try {
     await resend.emails.send({
       from: process.env.RESEND_FROM_EMAIL,
-      to: RECIPIENT,
+      to: RECIPIENTS,
       reply_to: email,
-      subject: `[${label}] ${betreff} – ${name}`,
+      subject: `Lead - Meisterwerk ${label} - ${name}`,
       html: buildEmailHtml({ leistung, betreff, nachricht, name, email, telefon }),
     });
 
