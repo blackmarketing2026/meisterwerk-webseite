@@ -387,19 +387,22 @@ Blog-Übersicht:
 
 Die URL `/blog` ist die zentrale Blog-Übersichtsseite. Die Datei liegt als `blog.shtml` im Wurzelverzeichnis (nicht als `index.shtml` in einem Unterordner). Hier werden alle vorhandenen Blogartikel angezeigt.
 
-Blogartikel liegen als einzelne `.shtml`-Dateien im `/blog/`-Ordner. Es werden keine Unterordner pro Artikel angelegt.
+Einzelne Blogartikel liegen als `.shtml`-Dateien im `/blog/`-Ordner. Pro Artikel wird kein eigener Unterordner angelegt – nur eine einzelne `.shtml`-Datei.
 
 ### Regel: Blog-Übersicht automatisch aktualisieren
 
-Wenn ein neuer Blogartikel erstellt wird, muss die Blog-Übersichtsseite (`/blog/index.shtml`) automatisch mit aktualisiert werden. Der neue Artikel wird als Karte in die Übersicht eingefügt.
+Wenn ein neuer Blogartikel erstellt wird, muss die Blog-Übersichtsseite (`/blog.shtml`) automatisch mit aktualisiert werden. Der neue Artikel wird als Karte in die Übersicht eingefügt.
 
 ### Sortierung und Darstellung
 
 Die Blog-Übersichtsseite bietet dem Besucher folgende Sortiermöglichkeiten:
 
 - **Neueste zuerst** (chronologisch, neu nach alt) – Standardsortierung
-- **Beliebteste zuerst** (nach Beliebtheit/Relevanz)
-- **Kachelansicht** (kompakte Darstellung, Karten näher beieinander)
+- **Alphabetisch** (A–Z nach Titel)
+
+Jede Blog-Karte hat `data-title` und `data-date` Attribute für die Sortierung per JavaScript.
+
+Wenn ein Blogartikel kein Thumbnail/Bild hat, wird die Karte mit der CSS-Klasse `blog-card--no-img` vereinfacht dargestellt (ohne `<img>`, mit orangem linken Rand).
 
 Alle Blogartikel müssen auf der Übersichtsseite sichtbar sein. Es werden keine Artikel ausgeblendet oder ausgelassen.
 

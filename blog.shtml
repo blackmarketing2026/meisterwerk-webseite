@@ -29,9 +29,25 @@
 
     <section class="content-section">
       <div class="container">
-        <div class="blog-grid">
 
-          <a href="/blog/entruempelung-ingolstadt" class="blog-card">
+        <div class="blog-sort-bar">
+          <span class="blog-sort-label">Sortieren:</span>
+          <button class="blog-sort-btn active" data-sort="date">Neueste zuerst</button>
+          <button class="blog-sort-btn" data-sort="alpha">Alphabetisch</button>
+        </div>
+
+        <div class="blog-grid" id="blog-grid">
+
+          <a href="/blog/wohnungsaufloesung-kosten" class="blog-card blog-card--no-img" data-title="Was kostet eine Wohnungsauflösung?" data-date="2026-06-21">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Was kostet eine Wohnungsauflösung? Preise, Faktoren & Spartipps</h3>
+              <p>Alle Preisfaktoren, realistische Kosten und praktische Spartipps für Ihre Wohnungsauflösung auf einen Blick.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/entruempelung-ingolstadt" class="blog-card" data-title="Entrümpelung in Ingolstadt: Was kostet es und wie läuft es ab?" data-date="2026-05-10">
             <img src="/assets/img/blog/entruempelung-ingolstadt/hero.webp" alt="Entrümpelung Ingolstadt" loading="lazy">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
@@ -41,7 +57,7 @@
             </div>
           </a>
 
-          <a href="/blog/haushaltsaufloesung-kosten" class="blog-card">
+          <a href="/blog/haushaltsaufloesung-kosten" class="blog-card" data-title="Haushaltsauflösung: Kosten, Ablauf und was Sie sparen können" data-date="2026-05-15">
             <img src="/assets/img/blog/haushaltsaufloesung-kosten/hero.webp" alt="Haushaltsauflösung Kosten" loading="lazy">
             <div class="blog-card-body">
               <span class="tag">Haushaltsauflösung</span>
@@ -51,7 +67,7 @@
             </div>
           </a>
 
-          <a href="/blog/umzug-checkliste" class="blog-card">
+          <a href="/blog/umzug-checkliste" class="blog-card" data-title="Umzug-Checkliste: So vergessen Sie nichts beim Umziehen" data-date="2026-06-18">
             <img src="/assets/img/blog/umzug-checkliste/hero.webp" alt="Umzug Checkliste" loading="lazy">
             <div class="blog-card-body">
               <span class="tag">Umzug</span>
@@ -64,6 +80,32 @@
         </div>
       </div>
     </section>
+
+    <script>
+    (function() {
+      var grid = document.getElementById('blog-grid');
+      var btns = document.querySelectorAll('.blog-sort-btn');
+
+      function sortCards(mode) {
+        var cards = Array.from(grid.querySelectorAll('.blog-card'));
+        cards.sort(function(a, b) {
+          if (mode === 'alpha') {
+            return a.dataset.title.localeCompare(b.dataset.title, 'de');
+          }
+          return b.dataset.date.localeCompare(a.dataset.date);
+        });
+        cards.forEach(function(card) { grid.appendChild(card); });
+      }
+
+      btns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          btns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          sortCards(btn.dataset.sort);
+        });
+      });
+    })();
+    </script>
 
     <!--#include virtual="/includes/cta-box.shtml" -->
 

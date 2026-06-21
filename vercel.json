@@ -18,7 +18,8 @@
     { "source": "/blog", "destination": "/blog.shtml" },
     { "source": "/blog/entruempelung-ingolstadt", "destination": "/blog/entruempelung-ingolstadt.shtml" },
     { "source": "/blog/haushaltsaufloesung-kosten", "destination": "/blog/haushaltsaufloesung-kosten.shtml" },
-    { "source": "/blog/umzug-checkliste", "destination": "/blog/umzug-checkliste.shtml" }
+    { "source": "/blog/umzug-checkliste", "destination": "/blog/umzug-checkliste.shtml" },
+    { "source": "/blog/wohnungsaufloesung-kosten", "destination": "/blog/wohnungsaufloesung-kosten.shtml" }
   ],
   "headers": [
     {
