@@ -139,7 +139,7 @@ function buildEmailHtml({ leistung, betreff, nachricht, name, email, telefon }) 
                 <a href="tel:${telefon}" style="font-size:13px;color:#888;text-decoration:none">oder anrufen: ${telefon}</a>
               </p>` : ''}
               <p style="margin:20px 0 0;font-size:11px;color:#bbb">
-                Diese Anfrage wurde über das Kontaktformular auf meisterwerk-ingolstadt.de gesendet.
+                Diese Anfrage wurde über das Kontaktformular auf meisterwerkin.com gesendet.
               </p>
             </td>
           </tr>

@@ -4,4 +4,4 @@ Allow: /
 Disallow: /templates/
 Disallow: /content/
 
-Sitemap: https://www.meisterwerk-ingolstadt.de/sitemap.xml
+Sitemap: https://www.meisterwerkin.com/sitemap.xml
