@@ -163,11 +163,137 @@
 
         <div class="blog-grid blog-grid--category" data-category="umzug">
 
+          <a href="/blog/umzugsunternehmen-kosten" class="blog-card" data-title="Umzugsunternehmen Kosten: Was kostet ein Umzug mit Profis wirklich?" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzugsunternehmen Kosten: Was kostet ein Umzug mit Profis wirklich?</h3>
+              <p>Alle Preisfaktoren, realistische Richtwerte und praktische Spartipps im Überblick.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-kosten" class="blog-card" data-title="Umzug Kosten: Welche Ausgaben kommen wirklich auf dich zu?" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug Kosten: Welche Ausgaben kommen wirklich auf dich zu?</h3>
+              <p>Alle Kostenpunkte eines Umzugs – transparent und verständlich aufgeschlüsselt.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
           <a href="/blog/umzug-checkliste" class="blog-card" data-title="Umzug-Checkliste: So vergessen Sie nichts beim Umziehen" data-date="2026-06-18" data-cat="umzug">
             <div class="blog-card-body">
               <span class="tag">Umzug</span>
               <h3>Umzug-Checkliste: So vergessen Sie nichts beim Umziehen</h3>
               <p>Die komplette Checkliste für Ihren Umzug – von der Planung bis zum Einzug ins neue Zuhause.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-was-beachten" class="blog-card" data-title="Umzug was beachten: Die wichtigsten Punkte vor dem Umzug" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug was beachten: Die wichtigsten Punkte vor dem Umzug</h3>
+              <p>Damit beim Umzug nichts schiefgeht – alle wichtigen Punkte auf einen Blick.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-planen" class="blog-card" data-title="Umzug planen: So bereitest du deinen Umzug richtig vor" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug planen: So bereitest du deinen Umzug richtig vor</h3>
+              <p>Die komplette Anleitung für eine stressfreie Umzugsplanung.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-kostenvoranschlag" class="blog-card" data-title="Umzug Kostenvoranschlag: Darauf solltest du beim Angebot achten" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug Kostenvoranschlag: Darauf solltest du beim Angebot achten</h3>
+              <p>So erkennst du ein faires Angebot und vermeidest versteckte Kosten.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-angebot" class="blog-card" data-title="Umzug Angebot: So erkennst du ein gutes und faires Angebot" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug Angebot: So erkennst du ein gutes und faires Angebot</h3>
+              <p>Worauf es bei einem Umzugsangebot ankommt und wie du den besten Preis bekommst.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/hilfe-beim-umzug" class="blog-card" data-title="Hilfe beim Umzug: Freunde, private Helfer oder Umzugsfirma?" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Hilfe beim Umzug: Freunde, private Helfer oder Umzugsfirma?</h3>
+              <p>Alle Optionen im Vergleich – mit Kosten, Vor- und Nachteilen.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-und-entruempelung" class="blog-card" data-title="Umzug und Entrümpelung: Warum sich beides zusammen lohnt" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug und Entrümpelung: Warum sich beides zusammen lohnt</h3>
+              <p>Zeit sparen, Kosten senken und stressfrei in die neue Wohnung starten.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/halteverbotszone-umzug" class="blog-card" data-title="Halteverbotszone Umzug: Wann du sie brauchst und was sie bringt" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Halteverbotszone Umzug: Wann du sie brauchst und was sie bringt</h3>
+              <p>Kosten, Beantragung und warum eine Halteverbotszone deinen Umzug erleichtert.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzugsunternehmen-kurzfristig" class="blog-card" data-title="Umzugsunternehmen kurzfristig: Was tun, wenn der Umzug schnell gehen muss?" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzugsunternehmen kurzfristig: Was tun, wenn es schnell gehen muss?</h3>
+              <p>So findest du auch kurzfristig ein zuverlässiges Umzugsunternehmen.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/kleiner-umzug" class="blog-card" data-title="Kleiner Umzug: Wann ein kleiner Transport oder eine Umzugsfirma sinnvoll ist" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Kleiner Umzug: Wann ein Transport oder eine Umzugsfirma sinnvoll ist</h3>
+              <p>Die besten Optionen für deinen kleinen Umzug – unkompliziert und günstig.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/senioren-umzug" class="blog-card" data-title="Senioren Umzug: Stressfrei, sicher und gut organisiert umziehen" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Senioren Umzug: Stressfrei, sicher und gut organisiert umziehen</h3>
+              <p>Praktische Tipps und Unterstützung für einen entspannten Umzug im Alter.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/klavier-umzug" class="blog-card" data-title="Klavier Umzug: Warum schwere Möbel und Instrumente Profis brauchen" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Klavier Umzug: Warum schwere Möbel und Instrumente Profis brauchen</h3>
+              <p>So kommt dein Klavier sicher in die neue Wohnung – ohne Schäden und ohne Stress.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/umzug-nur-transport" class="blog-card" data-title="Umzug nur Transport: Wenn du nur Möbel und Kartons fahren lassen willst" data-date="2026-06-21" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug nur Transport: Nur Möbel und Kartons fahren lassen</h3>
+              <p>Die günstige Alternative zum Vollservice – reiner Transport ohne Extras.</p>
               <span class="read-more">Artikel lesen →</span>
             </div>
           </a>

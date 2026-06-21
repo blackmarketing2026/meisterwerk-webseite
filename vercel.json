@@ -28,7 +28,21 @@
     { "source": "/blog/haushaltsaufloesung-wohin-mit-den-sachen", "destination": "/blog/haushaltsaufloesung-wohin-mit-den-sachen.shtml" },
     { "source": "/blog/messiwohnung-reinigen-kosten", "destination": "/blog/messiwohnung-reinigen-kosten.shtml" },
     { "source": "/blog/moebel-entsorgen-lassen", "destination": "/blog/moebel-entsorgen-lassen.shtml" },
-    { "source": "/blog/wohnungsaufloesung-wie-vorgehen", "destination": "/blog/wohnungsaufloesung-wie-vorgehen.shtml" }
+    { "source": "/blog/wohnungsaufloesung-wie-vorgehen", "destination": "/blog/wohnungsaufloesung-wie-vorgehen.shtml" },
+    { "source": "/blog/umzugsunternehmen-kosten", "destination": "/blog/umzugsunternehmen-kosten.shtml" },
+    { "source": "/blog/umzug-kosten", "destination": "/blog/umzug-kosten.shtml" },
+    { "source": "/blog/umzug-was-beachten", "destination": "/blog/umzug-was-beachten.shtml" },
+    { "source": "/blog/umzug-planen", "destination": "/blog/umzug-planen.shtml" },
+    { "source": "/blog/umzug-kostenvoranschlag", "destination": "/blog/umzug-kostenvoranschlag.shtml" },
+    { "source": "/blog/umzug-angebot", "destination": "/blog/umzug-angebot.shtml" },
+    { "source": "/blog/hilfe-beim-umzug", "destination": "/blog/hilfe-beim-umzug.shtml" },
+    { "source": "/blog/umzug-und-entruempelung", "destination": "/blog/umzug-und-entruempelung.shtml" },
+    { "source": "/blog/halteverbotszone-umzug", "destination": "/blog/halteverbotszone-umzug.shtml" },
+    { "source": "/blog/umzugsunternehmen-kurzfristig", "destination": "/blog/umzugsunternehmen-kurzfristig.shtml" },
+    { "source": "/blog/kleiner-umzug", "destination": "/blog/kleiner-umzug.shtml" },
+    { "source": "/blog/senioren-umzug", "destination": "/blog/senioren-umzug.shtml" },
+    { "source": "/blog/klavier-umzug", "destination": "/blog/klavier-umzug.shtml" },
+    { "source": "/blog/umzug-nur-transport", "destination": "/blog/umzug-nur-transport.shtml" }
   ],
   "headers": [
     {
