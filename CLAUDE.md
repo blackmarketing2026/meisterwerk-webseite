@@ -382,10 +382,30 @@ Diese Seiten müssen im Footer verlinkt sein.
 Blog-Übersicht:
 
 ```text
-/blog/index.shtml
+/blog.shtml
 ```
 
-Einzelne Blogartikel:
+Die URL `/blog` ist die zentrale Blog-Übersichtsseite. Die Datei liegt als `blog.shtml` im Wurzelverzeichnis (nicht als `index.shtml` in einem Unterordner). Hier werden alle vorhandenen Blogartikel angezeigt.
+
+Blogartikel liegen als einzelne `.shtml`-Dateien im `/blog/`-Ordner. Es werden keine Unterordner pro Artikel angelegt.
+
+### Regel: Blog-Übersicht automatisch aktualisieren
+
+Wenn ein neuer Blogartikel erstellt wird, muss die Blog-Übersichtsseite (`/blog/index.shtml`) automatisch mit aktualisiert werden. Der neue Artikel wird als Karte in die Übersicht eingefügt.
+
+### Sortierung und Darstellung
+
+Die Blog-Übersichtsseite bietet dem Besucher folgende Sortiermöglichkeiten:
+
+- **Neueste zuerst** (chronologisch, neu nach alt) – Standardsortierung
+- **Beliebteste zuerst** (nach Beliebtheit/Relevanz)
+- **Kachelansicht** (kompakte Darstellung, Karten näher beieinander)
+
+Alle Blogartikel müssen auf der Übersichtsseite sichtbar sein. Es werden keine Artikel ausgeblendet oder ausgelassen.
+
+### Einzelne Blogartikel
+
+Einzelne Blogartikel liegen unter:
 
 ```text
 /blog/thema-des-artikels.shtml

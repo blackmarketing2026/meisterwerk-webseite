@@ -15,7 +15,7 @@
     { "source": "/reset-password", "destination": "/reset-password.shtml" },
     { "source": "/ratgeber", "destination": "/ratgeber.shtml" },
     { "source": "/checkliste-entruempelung", "destination": "/checkliste-entruempelung.shtml" },
-    { "source": "/blog", "destination": "/blog/index.shtml" },
+    { "source": "/blog", "destination": "/blog.shtml" },
     { "source": "/blog/entruempelung-ingolstadt", "destination": "/blog/entruempelung-ingolstadt.shtml" },
     { "source": "/blog/haushaltsaufloesung-kosten", "destination": "/blog/haushaltsaufloesung-kosten.shtml" },
     { "source": "/blog/umzug-checkliste", "destination": "/blog/umzug-checkliste.shtml" }
