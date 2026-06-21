@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <!--#include virtual="/includes/gtag.shtml" -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Hilfe beim Umzug: Freunde, private Helfer oder Umzugsfirma? | Meisterwerk</title>
   <meta name="description" content="Hilfe beim Umzug: Freunde fragen, private Helfer buchen oder Umzugsfirma beauftragen? Alle Optionen, Kosten und Vor- und Nachteile im Vergleich.">

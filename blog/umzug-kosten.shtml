@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <!--#include virtual="/includes/gtag.shtml" -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Umzug Kosten: Welche Ausgaben kommen wirklich auf dich zu? | Meisterwerk</title>
   <meta name="description" content="Umzug Kosten: Alle Ausgaben im Überblick – von Umzugsfirma über Kaution bis Ummeldung. So kalkulierst du deinen Umzug richtig.">

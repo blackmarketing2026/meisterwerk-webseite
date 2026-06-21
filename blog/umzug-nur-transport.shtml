@@ -2,6 +2,7 @@
 <html lang="de">
 <head>
   <meta charset="UTF-8">
+  <!--#include virtual="/includes/gtag.shtml" -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Umzug nur Transport: Wenn du nur Möbel und Kartons fahren lassen willst | Meisterwerk</title>
   <meta name="description" content="Umzug nur Transport: Wann sich ein reiner Transportservice lohnt, was er kostet und worauf du achten musst. Alle Infos für deinen Umzug.">
