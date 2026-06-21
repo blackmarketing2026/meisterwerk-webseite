@@ -145,6 +145,47 @@
   transform: translateY(-2px);
 }
 
+/* ── BLOG KATEGORIE-ÜBERSCHRIFT ── */
+.blog-category-heading {
+  color: #1a2e6e;
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 36px 0 18px;
+  padding-bottom: 10px;
+  border-bottom: 3px solid #f26b00;
+}
+.blog-category-heading:first-of-type {
+  margin-top: 8px;
+}
+
+/* ── BLOG FILTER-LEISTE ── */
+.blog-filter-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+  flex-wrap: wrap;
+}
+.blog-filter-btn {
+  background: #f0f0f0;
+  border: none;
+  padding: 8px 18px;
+  border-radius: 20px;
+  font-size: .85rem;
+  font-weight: 600;
+  color: #555;
+  cursor: pointer;
+  transition: background .2s, color .2s;
+}
+.blog-filter-btn:hover {
+  background: #e8e0f5;
+  color: #1a2e6e;
+}
+.blog-filter-btn.active {
+  background: #1a2e6e;
+  color: #fff;
+}
+
 /* ── BLOG SORTIERLEISTE ── */
 .blog-sort-bar {
   display: flex;

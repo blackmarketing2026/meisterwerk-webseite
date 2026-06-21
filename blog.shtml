@@ -30,24 +30,25 @@
     <section class="content-section">
       <div class="container">
 
+        <div class="blog-filter-bar">
+          <span class="blog-sort-label">Kategorie:</span>
+          <button class="blog-filter-btn active" data-filter="alle">Alle</button>
+          <button class="blog-filter-btn" data-filter="entruempelung">Entrümpelung</button>
+          <button class="blog-filter-btn" data-filter="umzug">Umzüge</button>
+        </div>
+
         <div class="blog-sort-bar">
           <span class="blog-sort-label">Sortieren:</span>
           <button class="blog-sort-btn active" data-sort="date">Neueste zuerst</button>
           <button class="blog-sort-btn" data-sort="alpha">Alphabetisch</button>
         </div>
 
-        <div class="blog-grid" id="blog-grid">
+        <!-- Kategorie: Entrümpelung -->
+        <h2 class="blog-category-heading" id="cat-entruempelung">Entrümpelung & Haushaltsauflösung</h2>
 
-          <a href="/blog/wohnungsaufloesung-kosten" class="blog-card blog-card--no-img" data-title="Was kostet eine Wohnungsauflösung?" data-date="2026-06-21">
-            <div class="blog-card-body">
-              <span class="tag">Haushaltsauflösung</span>
-              <h3>Was kostet eine Wohnungsauflösung? Preise, Faktoren & Spartipps</h3>
-              <p>Alle Preisfaktoren, realistische Kosten und praktische Spartipps für Ihre Wohnungsauflösung auf einen Blick.</p>
-              <span class="read-more">Artikel lesen →</span>
-            </div>
-          </a>
+        <div class="blog-grid blog-grid--category" data-category="entruempelung">
 
-          <a href="/blog/entruempelung-ingolstadt" class="blog-card blog-card--no-img" data-title="Entrümpelung in Ingolstadt: Was kostet es und wie läuft es ab?" data-date="2026-05-10">
+          <a href="/blog/entruempelung-ingolstadt" class="blog-card" data-title="Entrümpelung in Ingolstadt: Was kostet es und wie läuft es ab?" data-date="2026-05-10" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
               <h3>Entrümpelung in Ingolstadt: Was kostet es und wie läuft es ab?</h3>
@@ -56,34 +57,7 @@
             </div>
           </a>
 
-          <a href="/blog/haushaltsaufloesung-kosten" class="blog-card blog-card--no-img" data-title="Haushaltsauflösung: Kosten, Ablauf und was Sie sparen können" data-date="2026-05-15">
-            <div class="blog-card-body">
-              <span class="tag">Haushaltsauflösung</span>
-              <h3>Haushaltsauflösung: Kosten, Ablauf und was Sie sparen können</h3>
-              <p>Was kostet eine Haushaltsauflösung wirklich? Und wie können Sie durch Wertanrechnung Geld sparen?</p>
-              <span class="read-more">Artikel lesen →</span>
-            </div>
-          </a>
-
-          <a href="/blog/umzug-checkliste" class="blog-card blog-card--no-img" data-title="Umzug-Checkliste: So vergessen Sie nichts beim Umziehen" data-date="2026-06-18">
-            <div class="blog-card-body">
-              <span class="tag">Umzug</span>
-              <h3>Umzug-Checkliste: So vergessen Sie nichts beim Umziehen</h3>
-              <p>Die komplette Checkliste für Ihren Umzug – von der Planung bis zum Einzug ins neue Zuhause.</p>
-              <span class="read-more">Artikel lesen →</span>
-            </div>
-          </a>
-
-          <a href="/blog/container-kosten-entruempelung" class="blog-card blog-card--no-img" data-title="Was kostet ein Container zum Entrümpeln?" data-date="2026-06-21">
-            <div class="blog-card-body">
-              <span class="tag">Entrümpelung</span>
-              <h3>Was kostet ein Container zum Entrümpeln? Preise & Tipps</h3>
-              <p>Alle Containergrößen, Preise und worauf Sie bei der Bestellung achten sollten.</p>
-              <span class="read-more">Artikel lesen →</span>
-            </div>
-          </a>
-
-          <a href="/blog/wohnungsentruempelung-kosten" class="blog-card blog-card--no-img" data-title="Wohnungsentrümpelung Kosten" data-date="2026-06-21">
+          <a href="/blog/wohnungsentruempelung-kosten" class="blog-card" data-title="Wohnungsentrümpelung Kosten" data-date="2026-06-21" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
               <h3>Wohnungsentrümpelung Kosten – Was Sie wirklich bezahlen</h3>
@@ -92,16 +66,7 @@
             </div>
           </a>
 
-          <a href="/blog/hausraeumung-kosten" class="blog-card blog-card--no-img" data-title="Hausräumung Kosten" data-date="2026-06-21">
-            <div class="blog-card-body">
-              <span class="tag">Haushaltsauflösung</span>
-              <h3>Hausräumung Kosten – Preise, Ablauf & Spartipps</h3>
-              <p>Was eine professionelle Hausräumung kostet und wie der Ablauf funktioniert.</p>
-              <span class="read-more">Artikel lesen →</span>
-            </div>
-          </a>
-
-          <a href="/blog/entruempelung-kosten-rechner" class="blog-card blog-card--no-img" data-title="Entrümpelung Kosten Rechner" data-date="2026-06-21">
+          <a href="/blog/entruempelung-kosten-rechner" class="blog-card" data-title="Entrümpelung Kosten Rechner" data-date="2026-06-21" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
               <h3>Entrümpelung Kosten Rechner – So kalkulieren Sie richtig</h3>
@@ -110,7 +75,16 @@
             </div>
           </a>
 
-          <a href="/blog/haus-entruempeln-container" class="blog-card blog-card--no-img" data-title="Haus entrümpeln: Welcher Container ist der richtige?" data-date="2026-06-21">
+          <a href="/blog/container-kosten-entruempelung" class="blog-card" data-title="Was kostet ein Container zum Entrümpeln?" data-date="2026-06-21" data-cat="entruempelung">
+            <div class="blog-card-body">
+              <span class="tag">Entrümpelung</span>
+              <h3>Was kostet ein Container zum Entrümpeln? Preise & Tipps</h3>
+              <p>Alle Containergrößen, Preise und worauf Sie bei der Bestellung achten sollten.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/haus-entruempeln-container" class="blog-card" data-title="Haus entrümpeln: Welcher Container ist der richtige?" data-date="2026-06-21" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
               <h3>Haus entrümpeln: Welcher Container ist der richtige?</h3>
@@ -119,16 +93,7 @@
             </div>
           </a>
 
-          <a href="/blog/haushaltsaufloesung-wohin-mit-den-sachen" class="blog-card blog-card--no-img" data-title="Haushaltsauflösung: Wohin mit den Sachen?" data-date="2026-06-21">
-            <div class="blog-card-body">
-              <span class="tag">Haushaltsauflösung</span>
-              <h3>Haushaltsauflösung: Wohin mit den Sachen?</h3>
-              <p>Verkaufen, spenden, entsorgen – alle Möglichkeiten für Ihren Hausrat im Überblick.</p>
-              <span class="read-more">Artikel lesen →</span>
-            </div>
-          </a>
-
-          <a href="/blog/messiwohnung-reinigen-kosten" class="blog-card blog-card--no-img" data-title="Messiwohnung reinigen: Kosten und Ablauf" data-date="2026-06-21">
+          <a href="/blog/messiwohnung-reinigen-kosten" class="blog-card" data-title="Messiwohnung reinigen: Kosten und Ablauf" data-date="2026-06-21" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
               <h3>Messiwohnung reinigen: Kosten und Ablauf</h3>
@@ -137,7 +102,7 @@
             </div>
           </a>
 
-          <a href="/blog/moebel-entsorgen-lassen" class="blog-card blog-card--no-img" data-title="Möbel entsorgen lassen" data-date="2026-06-21">
+          <a href="/blog/moebel-entsorgen-lassen" class="blog-card" data-title="Möbel entsorgen lassen" data-date="2026-06-21" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Entrümpelung</span>
               <h3>Möbel entsorgen lassen – Kosten, Optionen & Tipps</h3>
@@ -146,7 +111,43 @@
             </div>
           </a>
 
-          <a href="/blog/wohnungsaufloesung-wie-vorgehen" class="blog-card blog-card--no-img" data-title="Wohnungsauflösung: Wie vorgehen?" data-date="2026-06-21">
+          <a href="/blog/wohnungsaufloesung-kosten" class="blog-card" data-title="Was kostet eine Wohnungsauflösung?" data-date="2026-06-21" data-cat="entruempelung">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Was kostet eine Wohnungsauflösung? Preise, Faktoren & Spartipps</h3>
+              <p>Alle Preisfaktoren, realistische Kosten und praktische Spartipps für Ihre Wohnungsauflösung auf einen Blick.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/haushaltsaufloesung-kosten" class="blog-card" data-title="Haushaltsauflösung: Kosten, Ablauf und was Sie sparen können" data-date="2026-05-15" data-cat="entruempelung">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Haushaltsauflösung: Kosten, Ablauf und was Sie sparen können</h3>
+              <p>Was kostet eine Haushaltsauflösung wirklich? Und wie können Sie durch Wertanrechnung Geld sparen?</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/hausraeumung-kosten" class="blog-card" data-title="Hausräumung Kosten" data-date="2026-06-21" data-cat="entruempelung">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Hausräumung Kosten – Preise, Ablauf & Spartipps</h3>
+              <p>Was eine professionelle Hausräumung kostet und wie der Ablauf funktioniert.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/haushaltsaufloesung-wohin-mit-den-sachen" class="blog-card" data-title="Haushaltsauflösung: Wohin mit den Sachen?" data-date="2026-06-21" data-cat="entruempelung">
+            <div class="blog-card-body">
+              <span class="tag">Haushaltsauflösung</span>
+              <h3>Haushaltsauflösung: Wohin mit den Sachen?</h3>
+              <p>Verkaufen, spenden, entsorgen – alle Möglichkeiten für Ihren Hausrat im Überblick.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+          <a href="/blog/wohnungsaufloesung-wie-vorgehen" class="blog-card" data-title="Wohnungsauflösung: Wie vorgehen?" data-date="2026-06-21" data-cat="entruempelung">
             <div class="blog-card-body">
               <span class="tag">Haushaltsauflösung</span>
               <h3>Wohnungsauflösung: Wie vorgehen? Schritt-für-Schritt-Anleitung</h3>
@@ -156,28 +157,74 @@
           </a>
 
         </div>
+
+        <!-- Kategorie: Umzüge -->
+        <h2 class="blog-category-heading" id="cat-umzug">Umzüge</h2>
+
+        <div class="blog-grid blog-grid--category" data-category="umzug">
+
+          <a href="/blog/umzug-checkliste" class="blog-card" data-title="Umzug-Checkliste: So vergessen Sie nichts beim Umziehen" data-date="2026-06-18" data-cat="umzug">
+            <div class="blog-card-body">
+              <span class="tag">Umzug</span>
+              <h3>Umzug-Checkliste: So vergessen Sie nichts beim Umziehen</h3>
+              <p>Die komplette Checkliste für Ihren Umzug – von der Planung bis zum Einzug ins neue Zuhause.</p>
+              <span class="read-more">Artikel lesen →</span>
+            </div>
+          </a>
+
+        </div>
+
       </div>
     </section>
 
     <script>
     (function() {
-      var grid = document.getElementById('blog-grid');
-      var btns = document.querySelectorAll('.blog-sort-btn');
+      var filterBtns = document.querySelectorAll('.blog-filter-btn');
+      var sortBtns = document.querySelectorAll('.blog-sort-btn');
+      var grids = document.querySelectorAll('.blog-grid--category');
+      var headings = document.querySelectorAll('.blog-category-heading');
+
+      filterBtns.forEach(function(btn) {
+        btn.addEventListener('click', function() {
+          filterBtns.forEach(function(b) { b.classList.remove('active'); });
+          btn.classList.add('active');
+          var filter = btn.dataset.filter;
+
+          grids.forEach(function(grid) {
+            if (filter === 'alle' || grid.dataset.category === filter) {
+              grid.style.display = '';
+            } else {
+              grid.style.display = 'none';
+            }
+          });
+
+          headings.forEach(function(h) {
+            var cat = h.id.replace('cat-', '');
+            if (filter === 'alle' || cat === filter) {
+              h.style.display = '';
+            } else {
+              h.style.display = 'none';
+            }
+          });
+        });
+      });
 
       function sortCards(mode) {
-        var cards = Array.from(grid.querySelectorAll('.blog-card'));
-        cards.sort(function(a, b) {
-          if (mode === 'alpha') {
-            return a.dataset.title.localeCompare(b.dataset.title, 'de');
-          }
-          return b.dataset.date.localeCompare(a.dataset.date);
+        grids.forEach(function(grid) {
+          var cards = Array.from(grid.querySelectorAll('.blog-card'));
+          cards.sort(function(a, b) {
+            if (mode === 'alpha') {
+              return a.dataset.title.localeCompare(b.dataset.title, 'de');
+            }
+            return b.dataset.date.localeCompare(a.dataset.date);
+          });
+          cards.forEach(function(card) { grid.appendChild(card); });
         });
-        cards.forEach(function(card) { grid.appendChild(card); });
       }
 
-      btns.forEach(function(btn) {
+      sortBtns.forEach(function(btn) {
         btn.addEventListener('click', function() {
-          btns.forEach(function(b) { b.classList.remove('active'); });
+          sortBtns.forEach(function(b) { b.classList.remove('active'); });
           btn.classList.add('active');
           sortCards(btn.dataset.sort);
         });
